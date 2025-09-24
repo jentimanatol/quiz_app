@@ -39,11 +39,11 @@ jobs:
       - name: Verify icon file exists
         shell: pwsh
         run: |
-          if (Test-Path "assets\app_icon_256×256.ico") {
-            echo "Icon file found: assets\app_icon_256×256.ico"
-            Get-Item "assets\app_icon_256×256.ico" | Select-Object Name, Length, LastWriteTime
+          if (Test-Path "assets\app_icon_256x256.ico") {
+            echo "Icon file found: assets\app_icon_256x256.ico"
+            Get-Item "assets\app_icon_256x256.ico" | Select-Object Name, Length, LastWriteTime
           } else {
-            echo "Warning: Icon file not found at assets\app_icon_256×256.ico"
+            echo "Warning: Icon file not found at assets\app_icon_256x256.ico"
             echo "Available files in assets folder:"
             if (Test-Path "assets") {
               Get-ChildItem "assets" -Recurse
@@ -56,10 +56,10 @@ jobs:
         shell: pwsh
         run: |
           pyinstaller --noconfirm --onefile --windowed `
-            --icon=assets/app_icon_256×256.ico `
+            --icon=assets/app_icon_256x256.ico `
             --name quiz_app `
             --add-data "assets;assets" `
-            --add-data "assets/app_icon_32×32.ico;assets" `
+            --add-data "assets/app_icon_32x32.ico;assets" `
             quiz_app.py `
             --upx-dir upx-4.2.1-win64
 
