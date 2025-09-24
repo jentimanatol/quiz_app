@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What core idea allows convolutional layers to use far fewer parameters than fully connected layers?",
+    "options": [
+      "A) Random initialization",
+      "B) Weight sharing across spatial locations",
+      "C) Using only binary weights",
+      "D) Removing nonlinearities"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does a learned convolutional filter typically detect in early layers?",
+    "options": [
+      "A) Entire object categories",
+      "B) High-level semantics like 'dog playing'",
+      "C) Simple visual patterns such as edges or textures",
+      "D) Video frame timestamps"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What is the main role of pooling (or strided convolutions) in CNNs?",
+    "options": [
+      "A) Increase spatial resolution",
+      "B) Provide translation invariance and reduce spatial dimensions",
+      "C) Convert images to text",
+      "D) Replace the need for training data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which dataset/competition was pivotal in popularizing modern deep CNNs?",
+    "options": [
+      "A) MNIST digit recognition",
+      "B) CIFAR-10",
+      "C) ImageNet Large Scale Visual Recognition Challenge",
+      "D) COCO Captions"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which model’s success dramatically reduced error rates and sparked renewed interest in deep CNNs?",
+    "options": [
+      "A) LeNet-5",
+      "B) AlexNet",
+      "C) Naive Bayes",
+      "D) SVM with HOG features"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which activation function helped deep CNNs train more effectively in early breakthroughs?",
+    "options": [
+      "A) Linear",
+      "B) Sigmoid-only everywhere",
+      "C) ReLU",
+      "D) Softmax in hidden layers"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What is the standard output for an image classification CNN trained on ImageNet?",
+    "options": [
+      "A) A segmentation mask for each pixel",
+      "B) A ranked list of class probabilities",
+      "C) A set of bounding boxes only",
+      "D) A text caption"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is data augmentation (e.g., random crops, flips) used in training CNNs?",
+    "options": [
+      "A) To replace the need for labels",
+      "B) To make training deterministic",
+      "C) To reduce overfitting by increasing effective data variety",
+      "D) To avoid using GPUs"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What is a 'receptive field' in the context of CNNs?",
+    "options": [
+      "A) The total number of learnable parameters",
+      "B) The portion of the input image that influences a unit’s activation",
+      "C) The number of classes in the dataset",
+      "D) The GPU memory required to train"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following best describes transfer learning with ImageNet CNNs?",
+    "options": [
+      "A) Training a network from scratch for every new task",
+      "B) Using pretrained features and fine-tuning on a new dataset",
+      "C) Converting CNNs into RNNs",
+      "D) Training only on grayscale images"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why do deeper CNN architectures often outperform shallower ones (up to a point)?",
+    "options": [
+      "A) They always have fewer parameters",
+      "B) They learn hierarchical features from edges to object parts to objects",
+      "C) They remove the need for nonlinear activations",
+      "D) They do not require large datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a common metric reported for ImageNet classification performance?",
+    "options": [
+      "A) BLEU score",
+      "B) Top-1 and Top-5 accuracy",
+      "C) ROUGE-L",
+      "D) FID score"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which technique helps reduce co-adaptation of neurons and combats overfitting in CNNs?",
+    "options": [
+      "A) Dropout",
+      "B) Increasing batch size only",
+      "C) Removing all pooling layers",
+      "D) Using only 1x1 convolutions"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "What risk arises when a CNN learns 'shortcuts' from training data?",
+    "options": [
+      "A) The model becomes uninterpretable by design",
+      "B) It fails to generalize when superficial cues change",
+      "C) It cannot be deployed on GPUs",
+      "D) It cannot represent nonlinear functions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which option best illustrates dataset bias in large-scale image collections?",
+    "options": [
+      "A) Balanced representation across all object contexts",
+      "B) Labels and images reflecting cultural and social stereotypes",
+      "C) Images exclusively taken under lab conditions",
+      "D) Constant lighting across the entire dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What vulnerability shows that tiny, human-imperceptible perturbations can change a CNN’s prediction?",
+    "options": [
+      "A) Vanishing gradients",
+      "B) Adversarial examples",
+      "C) Mode collapse",
+      "D) Catastrophic forgetting"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice can make CNN predictions more robust at test time?",
+    "options": [
+      "A) Evaluating only on the training split",
+      "B) Test-time augmentation or ensembling",
+      "C) Removing validation sets",
+      "D) Using fewer classes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the function of the softmax layer in a classification CNN?",
+    "options": [
+      "A) Applies convolution to the input",
+      "B) Normalizes logits into a probability distribution over classes",
+      "C) Detects edges in the image",
+      "D) Reduces spatial resolution"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is zero-padding often used in convolutional layers?",
+    "options": [
+      "A) To increase the number of parameters",
+      "B) To preserve spatial dimensions and control receptive field growth",
+      "C) To remove the need for pooling",
+      "D) To convert images to frequency domain"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What common concern arises when evaluating models only on curated benchmarks like ImageNet?",
+    "options": [
+      "A) Benchmarks are too large to compute accuracy",
+      "B) High scores may not translate to real-world robustness",
+      "C) They never contain enough training examples",
+      "D) They forbid the use of GPUs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following best distinguishes classification from object detection?",
+    "options": [
+      "A) Detection assigns a single label to the whole image",
+      "B) Classification requires bounding boxes for each object",
+      "C) Detection localizes objects with boxes/masks in addition to labeling",
+      "D) Classification uses only grayscale images"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What practical benefit made ImageNet pretraining widely useful across vision tasks?",
+    "options": [
+      "A) It eliminated the need for labels entirely",
+      "B) It produced generic visual features transferable to new tasks with limited data",
+      "C) It reduced model size to near zero",
+      "D) It solved 3D reconstruction automatically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which element was critical to the early success of deep CNNs on ImageNet?",
+    "options": [
+      "A) Exclusive use of CPU clusters",
+      "B) Large labeled datasets plus GPU acceleration",
+      "C) Replacing convolution with decision trees",
+      "D) Training without any regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does stride control in a convolutional layer?",
+    "options": [
+      "A) The number of layers in the network",
+      "B) The step size of the filter as it moves across the input",
+      "C) The number of output classes",
+      "D) The learning rate schedule"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best describes class activation/attention maps used with CNNs?",
+    "options": [
+      "A) They deterministically prove causal understanding",
+      "B) They highlight image regions most influential for a prediction",
+      "C) They always remove bias from data",
+      "D) They replace the need for labels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What issue can arise from mislabeled or offensive categories in large image datasets?",
+    "options": [
+      "A) Faster convergence",
+      "B) Ethical and fairness concerns in downstream systems",
+      "C) Guaranteed better generalization",
+      "D) Automatic removal of spurious correlations"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can distribution shift particularly hurt CNN performance?",
+    "options": [
+      "A) CNNs only work on grayscale images",
+      "B) Learned features may depend on contexts not present in new environments",
+      "C) CNNs cannot be trained on large datasets",
+      "D) CNNs ignore local patterns entirely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which description fits 'Top-5 accuracy' in ImageNet evaluation?",
+    "options": [
+      "A) The model must predict the exact class in its top-1 guess",
+      "B) The correct class must appear among the model’s five highest-probability guesses",
+      "C) The model predicts five classes for each image and must get all five correct",
+      "D) The model predicts only five total classes across the dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which configuration typically appears near the end of a classification CNN?",
+    "options": [
+      "A) Convolution followed by softmax probabilities over classes",
+      "B) K-means clustering",
+      "C) Recurrent cells for temporal modeling",
+      "D) A purely linear pipeline without activations"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "What is a reasonable caution when interpreting spectacular benchmark results for CNNs?",
+    "options": [
+      "A) They guarantee broad human-level understanding",
+      "B) They may reflect overfitting to dataset quirks or shortcuts",
+      "C) They imply adversarial robustness",
+      "D) They prove causal reasoning about scenes"
+    ],
+    "answer": "B"
+  }
+]

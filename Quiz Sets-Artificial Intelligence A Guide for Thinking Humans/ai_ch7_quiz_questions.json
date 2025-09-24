@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What does a language model primarily learn to do?",
+    "options": [
+      "A) Parse images into objects",
+      "B) Predict the next token or sequence probability",
+      "C) Convert speech to MIDI notes",
+      "D) Translate sentiment into numbers without text"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The distributional hypothesis (“you shall know a word by the company it keeps”) motivates:",
+    "options": [
+      "A) Rule-based parsers",
+      "B) Word embeddings that capture co-occurrence patterns",
+      "C) Optical character recognition",
+      "D) Phoneme-to-grapheme models"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core limitation of n-gram language models is:",
+    "options": [
+      "A) They cannot be trained on text",
+      "B) Severe sparsity and poor long-range dependency modeling",
+      "C) They require images as input",
+      "D) They cannot compute probabilities"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which neural architecture was introduced to better capture long-range dependencies in sequences?",
+    "options": [
+      "A) k-Nearest Neighbors",
+      "B) LSTM/GRU with gating mechanisms",
+      "C) Decision Trees",
+      "D) Naive Bayes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In sequence-to-sequence learning for machine translation, the typical components are:",
+    "options": [
+      "A) Encoder–decoder networks",
+      "B) Discriminators only",
+      "C) Autoencoders for images",
+      "D) Graph neural networks for social graphs"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "What is the main idea behind attention in neural translation systems?",
+    "options": [
+      "A) Ignore most of the source sentence",
+      "B) Dynamically focus on relevant parts of the source when generating each target word",
+      "C) Replace the decoder with a parser",
+      "D) Use only word frequency counts"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Word embeddings such as word2vec or GloVe primarily capture:",
+    "options": [
+      "A) Exact dictionary definitions",
+      "B) Semantic similarity via distributional co-occurrence",
+      "C) Phonetic spellings",
+      "D) Sentence boundary rules"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which challenge involves choosing the correct meaning of a word with multiple senses?",
+    "options": [
+      "A) Part-of-speech tagging",
+      "B) Word sense disambiguation",
+      "C) Syntactic parsing",
+      "D) Lemmatization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Syntactic ambiguity (e.g., garden-path sentences) highlights difficulties in:",
+    "options": [
+      "A) Image segmentation",
+      "B) Mapping between surface structure and intended meaning",
+      "C) Phoneme recognition",
+      "D) Byte-pair encoding"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common metric used to evaluate machine translation quality is:",
+    "options": [
+      "A) Perplexity only",
+      "B) BLEU score",
+      "C) PSNR",
+      "D) Intersection-over-Union"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which issue often appears when language models generate fluent text?",
+    "options": [
+      "A) Guaranteed factual accuracy",
+      "B) Hallucinations—plausible but incorrect statements",
+      "C) Unlimited context length",
+      "D) Perfect grounding to real-world knowledge"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Intrinsic evaluation in NLP refers to:",
+    "options": [
+      "A) Testing models inside robot bodies",
+      "B) Assessing on proxy tasks (e.g., word similarity) rather than end tasks",
+      "C) Only evaluating on human exams",
+      "D) Ignoring metrics altogether"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which is a typical drawback of BLEU as an evaluation metric?",
+    "options": [
+      "A) It cannot compare any two systems",
+      "B) It may not fully reflect human judgments of adequacy and fluency",
+      "C) It requires audio input",
+      "D) It is only defined for single-word outputs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Distributional semantics can struggle with:",
+    "options": [
+      "A) Capturing co-occurrence patterns",
+      "B) Encoding visual features",
+      "C) Compositional meaning, negation, and quantifiers",
+      "D) Tokenization"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which task focuses on identifying people, places, or organizations in text?",
+    "options": [
+      "A) Dependency parsing",
+      "B) Named entity recognition",
+      "C) Lemmatization",
+      "D) Topic modeling"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Sentiment analysis often fails on:",
+    "options": [
+      "A) Long words only",
+      "B) Sarcasm and subtle context cues",
+      "C) Numeric tokens",
+      "D) Short sentences"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key benefit of pretraining followed by fine-tuning is:",
+    "options": [
+      "A) Models never overfit",
+      "B) Transfer of general language features to specific tasks with less labeled data",
+      "C) Elimination of tokenization",
+      "D) Guaranteed interpretability"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which approach helps with out-of-vocabulary words in neural NLP models?",
+    "options": [
+      "A) Fixed word lists only",
+      "B) Subword tokenization (e.g., BPE) or character-level modeling",
+      "C) Ignoring rare words",
+      "D) Mapping all unknowns to a single token without change"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Coreference resolution aims to:",
+    "options": [
+      "A) Link mentions that refer to the same entity",
+      "B) Count the number of nouns in a document",
+      "C) Convert active to passive voice",
+      "D) Remove stopwords"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which problem exposes the need for commonsense knowledge in pronoun resolution?",
+    "options": [
+      "A) Edit distance",
+      "B) Winograd-style schemas",
+      "C) Byte-pair encoding",
+      "D) Zipf’s law"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Domain shift in NLP typically appears when:",
+    "options": [
+      "A) Models are evaluated on handwriting",
+      "B) Training on newswire and testing on social media slang",
+      "C) Switching GPUs during training",
+      "D) Using different optimizers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Bias in language datasets can manifest as:",
+    "options": [
+      "A) Neutral word distributions",
+      "B) Stereotyped associations and unequal performance across groups",
+      "C) Deterministic tokenization",
+      "D) Perfect fairness by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Compositional generalization refers to:",
+    "options": [
+      "A) Learning to combine known parts in novel ways",
+      "B) Memorizing the training set",
+      "C) Counting words accurately",
+      "D) Removing punctuation"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A common objective for training language models on raw text is:",
+    "options": [
+      "A) Mean squared error on image pixels",
+      "B) Next-token prediction (or masked-token prediction)",
+      "C) Minimizing audio waveform distortion",
+      "D) Maximizing BLEU directly"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why do models that excel on narrow benchmarks sometimes fail in real use?",
+    "options": [
+      "A) Benchmarks are always harder than real-world tasks",
+      "B) Overfitting to dataset quirks and shortcuts rather than real understanding",
+      "C) Lack of enough parameters",
+      "D) Using pretraining"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which challenge is central to aligning language models with human expectations?",
+    "options": [
+      "A) Using fewer tokens",
+      "B) Ensuring outputs are truthful, safe, and non-toxic",
+      "C) Removing all training data",
+      "D) Avoiding any human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Pragmatics in language understanding concerns:",
+    "options": [
+      "A) The physical layout of keyboards",
+      "B) How context and speaker intent shape meaning beyond literal words",
+      "C) Binary encoding of characters",
+      "D) Only sentence boundary detection"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A typical sign that a model lacks grounding is:",
+    "options": [
+      "A) It refuses to process text",
+      "B) Fluent output that contradicts real-world facts or common sense",
+      "C) Perfectly calibrated probabilities",
+      "D) Reliance on human feedback"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Perplexity is commonly used to evaluate language models because it:",
+    "options": [
+      "A) Measures image reconstruction error",
+      "B) Reflects how well a model predicts a sample (lower is better)",
+      "C) Proves human-level understanding",
+      "D) Guarantees truthful outputs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which phenomenon with word embeddings showed vector arithmetic capturing analogies (e.g., king − man + woman ≈ queen)?",
+    "options": [
+      "A) Conjugation invariance",
+      "B) Linear relational structure in embedding spaces",
+      "C) Autoregressive decoding",
+      "D) Byte-pair encoding"
+    ],
+    "answer": "B"
+  }
+]

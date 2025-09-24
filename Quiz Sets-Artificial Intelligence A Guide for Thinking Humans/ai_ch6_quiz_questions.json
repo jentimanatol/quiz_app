@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the primary goal of a learning algorithm in supervised machine learning?",
+    "options": [
+      "A) Memorize the training set",
+      "B) Minimize training loss while generalizing well to unseen data",
+      "C) Maximize the number of model parameters",
+      "D) Always achieve 100% training accuracy"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which split is used to tune hyperparameters without biasing the final evaluation?",
+    "options": [
+      "A) Training set",
+      "B) Validation set",
+      "C) Test set",
+      "D) Unlabeled set"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A model fits the training data perfectly but performs poorly on new data. This is:",
+    "options": [
+      "A) Underfitting",
+      "B) Good generalization",
+      "C) Overfitting",
+      "D) Regularization"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which technique directly combats overfitting?",
+    "options": [
+      "A) Increasing model depth without constraint",
+      "B) Adding L2 weight decay",
+      "C) Using a larger learning rate",
+      "D) Removing the validation set"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Early stopping works by:",
+    "options": [
+      "A) Halting training when training loss first reaches zero",
+      "B) Halting training when validation performance stops improving",
+      "C) Halting training at a fixed number of epochs regardless of performance",
+      "D) Restarting training from random weights periodically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which combination characterizes the bias–variance trade-off?",
+    "options": [
+      "A) High bias, low variance → complex model that overfits",
+      "B) Low bias, high variance → simple model that underfits",
+      "C) High bias, low variance → simple model that underfits",
+      "D) Low bias, low variance → simple model that underfits"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Cross-validation helps primarily with:",
+    "options": [
+      "A) Generating synthetic labels",
+      "B) Measuring a model’s robustness across different training/validation splits",
+      "C) Guaranteeing zero generalization error",
+      "D) Preventing data preprocessing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data leakage occurs when:",
+    "options": [
+      "A) The model uses only the training set",
+      "B) Information from the test set influences model training or hyperparameter choices",
+      "C) The learning rate is too small",
+      "D) The dataset contains class imbalance"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice is safest to avoid leakage in preprocessing?",
+    "options": [
+      "A) Fit scalers on the entire dataset, then split",
+      "B) Fit scalers on training data only and apply to validation/test",
+      "C) Do not scale features at all",
+      "D) Shuffle only the test set"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A model with high training error and high test error is likely:",
+    "options": [
+      "A) Overfitting",
+      "B) Underfitting",
+      "C) Well-regularized",
+      "D) Experiencing label shift"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which metric is most appropriate when positive and negative classes are highly imbalanced?",
+    "options": [
+      "A) Overall accuracy only",
+      "B) Precision, recall, and F1-score",
+      "C) Training loss",
+      "D) Parameter count"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Calibration of a classifier means:",
+    "options": [
+      "A) Probabilities reflect true likelihoods of correctness",
+      "B) The confusion matrix is diagonal",
+      "C) The model never overfits",
+      "D) Hyperparameters are tuned on the test set"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which plot helps diagnose whether a model’s predicted probabilities are well-calibrated?",
+    "options": [
+      "A) Learning curve",
+      "B) Reliability (calibration) curve",
+      "C) ROC curve only",
+      "D) t-SNE plot"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A learning curve showing both training and validation error decreasing and then stabilizing indicates:",
+    "options": [
+      "A) Severe overfitting throughout",
+      "B) Training failure due to vanishing gradients",
+      "C) Healthy learning; additional data may still improve performance",
+      "D) That the model ignores the training set"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which approach addresses class imbalance during training?",
+    "options": [
+      "A) Ignoring minority classes",
+      "B) Oversampling minority classes or using class-weighted loss",
+      "C) Reducing the training set size",
+      "D) Eliminating the validation set"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Regularization primarily aims to:",
+    "options": [
+      "A) Increase training error only",
+      "B) Reduce variance and improve generalization",
+      "C) Eliminate the need for validation data",
+      "D) Force the model to memorize labels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement about gradient descent is accurate?",
+    "options": [
+      "A) It updates parameters to minimize a loss function using gradients",
+      "B) It randomly sets parameters at the end of training",
+      "C) It increases the loss function to avoid local minima",
+      "D) It requires zero learning rate to converge"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Feature scaling (e.g., standardization) is important because:",
+    "options": [
+      "A) It guarantees perfect accuracy",
+      "B) It ensures all models are unbiased",
+      "C) It can speed up convergence and stabilize training",
+      "D) It removes the need for regularization"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "AUC-ROC primarily measures:",
+    "options": [
+      "A) The expected training time",
+      "B) Trade-off between true positive rate and false positive rate across thresholds",
+      "C) Correlation between features",
+      "D) Number of classes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which is a typical signal of distribution shift harming performance?",
+    "options": [
+      "A) Training accuracy increases, test accuracy stable",
+      "B) Similar metrics across validation and test sets",
+      "C) Good validation performance but poor performance in deployment",
+      "D) Test loss and validation loss identical"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which tactic helps distinguish whether more data would likely improve a model?",
+    "options": [
+      "A) Examine learning curves",
+      "B) Use a higher learning rate",
+      "C) Add more layers without evaluation",
+      "D) Lower input resolution"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Hyperparameters are typically:",
+    "options": [
+      "A) Learned by gradient descent automatically",
+      "B) Fixed values or schedules chosen via validation or search strategies",
+      "C) Equivalent to model weights",
+      "D) Always the same across tasks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice is a sound final model evaluation protocol?",
+    "options": [
+      "A) Tune on the test set for best possible score",
+      "B) Freeze hyperparameters after validation, then evaluate once on the test set",
+      "C) Merge validation and test sets for more data",
+      "D) Report only training loss"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which description best matches underfitting?",
+    "options": [
+      "A) The model is too simple to capture patterns in the data",
+      "B) The model is too complex and memorizes training data",
+      "C) The model perfectly calibrates probabilities",
+      "D) The model uses the test set to tune parameters"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which diagnostic helps spot label noise issues?",
+    "options": [
+      "A) Inspect misclassified examples and their annotations",
+      "B) Increase batch size only",
+      "C) Train for more epochs without evaluation",
+      "D) Remove the training set"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which method can improve interpretability of model decisions?",
+    "options": [
+      "A) Randomizing labels",
+      "B) Using post-hoc explanations (e.g., feature importance, saliency/attribution)",
+      "C) Hiding model outputs from users",
+      "D) Ignoring domain knowledge"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A model that performs well on a narrow benchmark but fails in deployment most likely:",
+    "options": [
+      "A) Achieved true understanding",
+      "B) Exploited shortcuts or spurious correlations in the benchmark",
+      "C) Is perfectly calibrated",
+      "D) Used too much regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement about the test set is correct?",
+    "options": [
+      "A) It is used to fit scalers and select features",
+      "B) It should be used only once for final evaluation",
+      "C) It is interchangeable with the training set",
+      "D) It must be larger than the training set"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which approach helps handle noisy labels during training?",
+    "options": [
+      "A) Ignore label quality entirely",
+      "B) Robust loss functions or filtering/cleaning suspicious samples",
+      "C) Tune hyperparameters on the test set",
+      "D) Use no validation split"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which scenario most clearly indicates data leakage?",
+    "options": [
+      "A) Very high training accuracy, moderate validation accuracy",
+      "B) Validation features inadvertently include information computed from the full dataset",
+      "C) Slow training despite many epochs",
+      "D) High test accuracy after regularization"
+    ],
+    "answer": "B"
+  }
+]

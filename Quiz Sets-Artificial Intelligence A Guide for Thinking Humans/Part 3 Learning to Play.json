@@ -1,0 +1,902 @@
+[
+  {
+    "question": "What are the core components of a reinforcement learning setup?",
+    "options": [
+      "A) Dataset, labels, optimizer",
+      "B) Agent, environment, states, actions, rewards",
+      "C) Encoder, decoder, attention",
+      "D) Tokens, embeddings, prompts"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A policy in reinforcement learning is best described as:",
+    "options": [
+      "A) A function mapping states to actions or action probabilities",
+      "B) A record of all rewards received so far",
+      "C) The loss function used for training",
+      "D) The buffer that stores past experiences"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The return typically refers to:",
+    "options": [
+      "A) The immediate reward at the current time step",
+      "B) The discounted sum of future rewards",
+      "C) The number of steps to termination",
+      "D) The average of past actions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The state-value function Vπ(s) represents:",
+    "options": [
+      "A) The probability of taking each action in state s",
+      "B) The expected return from state s following policy π",
+      "C) The maximum reward achievable in one step",
+      "D) The entropy of the policy"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The action-value function Qπ(s, a) represents:",
+    "options": [
+      "A) The probability of transitioning to the next state",
+      "B) The expected return starting at state s, taking action a, then following π",
+      "C) The loss of the critic network",
+      "D) The average reward per episode"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The exploration–exploitation trade-off refers to:",
+    "options": [
+      "A) Balancing compute and memory usage",
+      "B) Choosing between trying new actions and using known good actions",
+      "C) Mixing supervised and unsupervised learning",
+      "D) Balancing training and validation data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "ε-greedy exploration chooses:",
+    "options": [
+      "A) The worst action with probability ε",
+      "B) A random action with probability ε, otherwise the current best",
+      "C) The best action with probability ε, otherwise random",
+      "D) Actions in round-robin order"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The Markov property implies that:",
+    "options": [
+      "A) The future is independent of the past given the present state",
+      "B) Rewards are always deterministic",
+      "C) Episodes must be infinite",
+      "D) States are always fully observable"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Model-free methods differ from model-based methods in that they:",
+    "options": [
+      "A) Learn a dynamics model and plan with it",
+      "B) Do not learn or use a transition model of the environment",
+      "C) Require full knowledge of transition probabilities",
+      "D) Cannot use function approximation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "On-policy methods like SARSA differ from off-policy methods like Q-learning because:",
+    "options": [
+      "A) On-policy methods learn about the policy being followed; off-policy learn about a different (target) policy",
+      "B) On-policy methods require models; off-policy do not",
+      "C) On-policy methods cannot explore",
+      "D) Off-policy methods do not use rewards"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Temporal-Difference (TD) learning combines ideas from:",
+    "options": [
+      "A) Dynamic programming and supervised learning on immediate labels",
+      "B) Monte Carlo returns and bootstrapping from value estimates",
+      "C) Unsupervised learning and clustering",
+      "D) Genetic algorithms and planning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Q-learning is:",
+    "options": [
+      "A) An on-policy algorithm that updates using actions actually taken",
+      "B) An off-policy algorithm that updates toward the greedy action value",
+      "C) A model-based planning approach",
+      "D) A purely supervised method for labeling images"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "SARSA updates the Q-value using:",
+    "options": [
+      "A) The next action chosen by the current policy",
+      "B) The maximum over next-state action values",
+      "C) A learned transition model",
+      "D) The average of all next actions"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The Bellman equation provides:",
+    "options": [
+      "A) A closed-form solution for optimal policies in all tasks",
+      "B) A recursive relation for value functions in terms of expected returns",
+      "C) A method for tokenizing text",
+      "D) A rule for setting the learning rate"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward shaping can be risky because it:",
+    "options": [
+      "A) Always slows learning",
+      "B) Can change the optimal policy if not potential-based",
+      "C) Removes the need for exploration",
+      "D) Eliminates the discount factor"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The discount factor γ close to 0 makes the agent:",
+    "options": [
+      "A) Focus on very long-term rewards",
+      "B) Ignore rewards entirely",
+      "C) Myopic, emphasizing immediate rewards",
+      "D) Deterministic in action selection"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "A deterministic policy:",
+    "options": [
+      "A) Outputs a probability distribution over actions",
+      "B) Chooses the same action for a given state",
+      "C) Uses random exploration at all times",
+      "D) Cannot be optimal"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Experience replay buffers are used to:",
+    "options": [
+      "A) Store episodes for offline evaluation only",
+      "B) Decorrelate updates by sampling past transitions",
+      "C) Remove the need for a target network",
+      "D) Ensure fully on-policy updates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Deep Q-Networks (DQN) approximate:",
+    "options": [
+      "A) The transition probabilities",
+      "B) The policy’s entropy",
+      "C) The action-value function with a neural network",
+      "D) The reward function only"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Target networks in DQN help by:",
+    "options": [
+      "A) Increasing exploration directly",
+      "B) Stabilizing learning via a slowly updated target for bootstrapping",
+      "C) Reducing the size of the replay buffer",
+      "D) Computing rewards from raw pixels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Double DQN is designed to reduce:",
+    "options": [
+      "A) Underestimation bias in value estimates",
+      "B) Overestimation bias in value estimates",
+      "C) The need for replay buffers",
+      "D) The number of actions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Actor–critic methods combine:",
+    "options": [
+      "A) A policy (actor) with a value function (critic)",
+      "B) A language model with a vision model",
+      "C) Two identical critics without an actor",
+      "D) Supervised and unsupervised models only"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Policy gradient methods directly:",
+    "options": [
+      "A) Learn a model of the environment",
+      "B) Maximize expected return by adjusting policy parameters",
+      "C) Compute exact optimal value functions",
+      "D) Remove the need for rewards"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The advantage function A(s, a) is commonly defined as:",
+    "options": [
+      "A) R − γ",
+      "B) Q(s, a) − V(s)",
+      "C) V(s) − Q(s, a)",
+      "D) π(a|s) − Q(s, a)"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Entropy regularization in policy optimization encourages:",
+    "options": [
+      "A) Lower variance in gradient estimates",
+      "B) More stochasticity to promote exploration",
+      "C) Deterministic greedy policies",
+      "D) Zero reward baselines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The credit assignment problem concerns:",
+    "options": [
+      "A) Mapping delayed rewards back to responsible actions/states",
+      "B) Assigning labels to supervised datasets",
+      "C) Allocating GPU memory to processes",
+      "D) Selecting between batch and online learning"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Partial observability (POMDP settings) often motivates:",
+    "options": [
+      "A) Removing memory from agents",
+      "B) Using recurrent or memory-based policies to retain information",
+      "C) Ignoring the Markov property",
+      "D) Fixing rewards to be constant"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward hacking indicates that agents may:",
+    "options": [
+      "A) Always achieve the intended behavior",
+      "B) Exploit the reward specification to achieve high return without desired outcomes",
+      "C) Require no evaluation",
+      "D) Never generalize across tasks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Sim-to-real transfer often uses domain randomization to:",
+    "options": [
+      "A) Reduce training data to a single scenario",
+      "B) Vary simulation parameters to improve robustness in the real world",
+      "C) Remove the need for sensors",
+      "D) Force deterministic policies"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety in RL can be promoted by:",
+    "options": [
+      "A) Ignoring constraints during training",
+      "B) Constrained optimization and conservative exploration strategies",
+      "C) Using only greedy action selection",
+      "D) Eliminating validation altogether"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a central goal of common-sense reasoning in AI?",
+    "options": [
+      "A) Maximizing GPU utilization",
+      "B) Enabling systems to make everyday inferences about the world",
+      "C) Removing all symbolic representations",
+      "D) Solving only board games"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The frame problem, in classic AI, concerns:",
+    "options": [
+      "A) How to render 3D scenes efficiently",
+      "B) Representing what changes and what stays the same after actions",
+      "C) Choosing the best neural network frame size",
+      "D) Detecting frames in video"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The symbol grounding problem highlights the difficulty of:",
+    "options": [
+      "A) Training models without GPUs",
+      "B) Connecting abstract symbols to percepts and actions in the real world",
+      "C) Converting text to speech",
+      "D) Tokenizing large corpora"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which representation encodes typical event sequences like 'enter restaurant → get seated → order'?",
+    "options": [
+      "A) Fourier transforms",
+      "B) Scripts (event schemas)",
+      "C) Hidden Markov noise models",
+      "D) Bloom filters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which concept describes action possibilities offered by the environment, such as 'a chair affords sitting'?",
+    "options": [
+      "A) Affordances",
+      "B) Regularization",
+      "C) Clipping",
+      "D) Quantization"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A knowledge graph primarily stores:",
+    "options": [
+      "A) Unordered lists of pixel intensities",
+      "B) Structured relations among entities (e.g., subject–predicate–object triples)",
+      "C) Only raw audio waveforms",
+      "D) GPU kernel traces"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is naive correlation often insufficient for robust reasoning?",
+    "options": [
+      "A) Correlation always implies causation",
+      "B) Correlations can reflect spurious patterns that fail under interventions",
+      "C) Correlations never change across domains",
+      "D) Correlations are equivalent to logical entailment"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "On Pearl’s 'ladder of causation', which rung corresponds to interventions ('do' operations)?",
+    "options": [
+      "A) Association (seeing)",
+      "B) Intervention (doing)",
+      "C) Counterfactuals (imagining)",
+      "D) Regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Counterfactual reasoning most directly asks:",
+    "options": [
+      "A) What co-occurred with the effect?",
+      "B) What would have happened under an alternative action or condition?",
+      "C) How to increase batch size?",
+      "D) Which tokenization reduces perplexity?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Abductive reasoning can be summarized as:",
+    "options": [
+      "A) Inference to the best explanation for observed data",
+      "B) Proof by contradiction only",
+      "C) Enumerating all possible worlds exhaustively",
+      "D) Deduction from universally true axioms"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which difficulty often limits large knowledge bases for common sense?",
+    "options": [
+      "A) Excess of perfect coverage",
+      "B) Brittleness and gaps in coverage of everyday facts",
+      "C) Inability to store any relations",
+      "D) Overreliance on continuous features"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Intuitive physics in AI aims to:",
+    "options": [
+      "A) Replace physics engines with spreadsheets",
+      "B) Model everyday expectations about objects, forces, and stability",
+      "C) Compute exact quantum states",
+      "D) Simulate only rigid bodies at infinite precision"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which task probes common-sense pronoun resolution with minimal syntactic cues?",
+    "options": [
+      "A) Byte-pair encoding",
+      "B) Winograd-style schemas",
+      "C) POS tagging",
+      "D) Lemmatization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why might hybrid systems (neural + symbolic) be attractive for common-sense reasoning?",
+    "options": [
+      "A) They remove the need for data",
+      "B) They can combine pattern learning with structured, explicit reasoning",
+      "C) They guarantee causality proofs",
+      "D) They never require supervision"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Structure-mapping theory (Gentner) focuses on:",
+    "options": [
+      "A) Mapping surface word overlap only",
+      "B) Aligning relational structure in analogical reasoning",
+      "C) Minimizing perplexity in language models",
+      "D) Maximizing pixel correlation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Systematic compositional generalization involves:",
+    "options": [
+      "A) Memorizing all training sentences",
+      "B) Applying rules to novel combinations of familiar parts",
+      "C) Removing syntax from language models",
+      "D) Ignoring order in sequences"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Commonsense causal reasoning crucially supports the ability to:",
+    "options": [
+      "A) Estimate GPU FLOPs",
+      "B) Predict the effects of actions and plan ahead",
+      "C) Normalize probability distributions",
+      "D) Tokenize multilingual text"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example best illustrates spurious correlation?",
+    "options": [
+      "A) Predicting 'cow' from presence of green pastures in the background",
+      "B) Using object parts to recognize the whole",
+      "C) Using causal graphs for interventions",
+      "D) Estimating counterfactuals via simulation"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Event schemas help machines by:",
+    "options": [
+      "A) Eliminating the need for perception",
+      "B) Providing expectations that guide interpretation of ambiguous scenes",
+      "C) Forcing models to ignore context",
+      "D) Reducing all reasoning to linear algebra"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A principal challenge for common sense in AI is:",
+    "options": [
+      "A) Lack of any available data",
+      "B) Bridging between low-level perception and high-level concepts/actions",
+      "C) Eliminating all symbols from models",
+      "D) Representing only geometry"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In causal graphs, a back-door path can introduce:",
+    "options": [
+      "A) More accurate interventions automatically",
+      "B) Confounding bias if not blocked/controlled",
+      "C) Stronger regularization guarantees",
+      "D) Perfect counterfactuals without assumptions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why are counterfactuals informative beyond correlations?",
+    "options": [
+      "A) They require no models of the world",
+      "B) They reason about alternate realities under interventions",
+      "C) They measure only token frequency",
+      "D) They equalize all domains"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reasoning about other agents’ beliefs and desires is sometimes called:",
+    "options": [
+      "A) Theory of mind",
+      "B) Theory of everything",
+      "C) Theory of tokens",
+      "D) Theory of frames"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which approach can help models generalize across domains by focusing on stable relations?",
+    "options": [
+      "A) Memorizing dataset-specific cues",
+      "B) Invariant risk minimization or causal representation learning",
+      "C) Ignoring interventions",
+      "D) Removing training data diversity"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A limitation of purely associative learning is that it:",
+    "options": [
+      "A) Excels at answering counterfactual questions",
+      "B) Lacks mechanisms for 'what-if' reasoning without extra structure",
+      "C) Always achieves systematic generalization",
+      "D) Avoids spurious correlations by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Mental simulation in AI for physical reasoning involves:",
+    "options": [
+      "A) Running a physics engine to predict outcomes under different actions",
+      "B) Ignoring object interactions",
+      "C) Compressing images only",
+      "D) Training with no supervision"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Knowledge conflicts in graphs (e.g., contradictory facts) are often handled by:",
+    "options": [
+      "A) Randomly discarding edges",
+      "B) Provenance tracking, confidence scores, or logical constraints",
+      "C) Removing all nodes with high degree",
+      "D) Assuming all facts are true"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Commonsense benchmarks frequently reveal that models:",
+    "options": [
+      "A) Are perfectly robust across settings",
+      "B) Perform well on narrow datasets yet fail on simple real-world variants",
+      "C) Are immune to annotation artifacts",
+      "D) Never exploit dataset biases"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key motivation for integrating perception, language, and action in embodied agents is to:",
+    "options": [
+      "A) Remove the need for sensors",
+      "B) Ground symbols via interaction and learn cause–effect relationships",
+      "C) Focus only on text corpora",
+      "D) Avoid planning altogether"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Causal discovery methods aim to:",
+    "options": [
+      "A) Estimate the number of clusters in data",
+      "B) Infer causal structure from observational and/or interventional data",
+      "C) Tokenize multilingual corpora",
+      "D) Optimize GPU kernels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does an Operational Design Domain (ODD) specify for an autonomous vehicle?",
+    "options": [
+      "A) The vehicle’s maximum horsepower",
+      "B) The conditions under which the system is designed to operate safely",
+      "C) The list of trained neural network layers",
+      "D) The legal ownership of the collected data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the main goal of sensor fusion in self-driving stacks?",
+    "options": [
+      "A) Reduce storage by compressing raw data",
+      "B) Combine complementary sensor signals to improve perception robustness",
+      "C) Replace cameras with LiDAR",
+      "D) Eliminate the need for localization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which is a typical advantage of LiDAR compared with monocular cameras?",
+    "options": [
+      "A) Direct depth measurements via time-of-flight",
+      "B) Better color fidelity",
+      "C) Superior reading of traffic signs",
+      "D) Immunity to fog and rain"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Localization in autonomous driving primarily provides:",
+    "options": [
+      "A) Object classifications for nearby vehicles",
+      "B) Precise ego-position and orientation relative to a map or world frame",
+      "C) End-to-end control commands",
+      "D) Cloud-based traffic predictions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common modular stack order is:",
+    "options": [
+      "A) Planning → Prediction → Perception",
+      "B) Perception → Prediction → Planning",
+      "C) Prediction → Planning → Perception",
+      "D) Control → Planning → Localization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key trade-off between modular and end-to-end approaches is that end-to-end systems:",
+    "options": [
+      "A) Are always more interpretable",
+      "B) May leverage rich supervision but can be harder to debug and validate",
+      "C) Never require large datasets",
+      "D) Eliminate the need for simulation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is the 'long tail' of rare events a major challenge?",
+    "options": [
+      "A) Rare events are easy to synthesize",
+      "B) They are underrepresented in data yet crucial for safety",
+      "C) They reduce the need for testing",
+      "D) They simplify policy learning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A limitation of 'disengagement rate' as a performance metric is that it:",
+    "options": [
+      "A) Is standardized across all jurisdictions",
+      "B) May not reflect scenario difficulty or safety margins",
+      "C) Directly measures collision risk",
+      "D) Replaces all other validation methods"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Running in 'shadow mode' generally means the system:",
+    "options": [
+      "A) Executes actions without recording data",
+      "B) Observes and makes predictions without controlling the vehicle",
+      "C) Is offline and not processing any inputs",
+      "D) Operates only at night"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Redundancy in sensors and compute is used to:",
+    "options": [
+      "A) Save energy during cruising",
+      "B) Provide fault tolerance and fail-operational behavior",
+      "C) Reduce model size",
+      "D) Avoid the need for HD maps"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Fail-safe vs. fail-operational designs mainly differ in that fail-operational:",
+    "options": [
+      "A) Immediately shuts the vehicle down",
+      "B) Maintains a minimum level of functionality to reach a safe state",
+      "C) Disables all sensors when an error is detected",
+      "D) Requires manual takeover for every warning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A practical weakness of high-definition maps is that they:",
+    "options": [
+      "A) Are immune to construction changes",
+      "B) Require continuous updates to reflect dynamic road conditions",
+      "C) Eliminate the need for perception models",
+      "D) Contain no lane-level detail"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Distribution shift in driving often arises from:",
+    "options": [
+      "A) Identical conditions across all routes",
+      "B) Changes in weather, lighting, and local driving behavior",
+      "C) Fixed traffic patterns",
+      "D) Using multiple sensors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Simulation is valuable because it can:",
+    "options": [
+      "A) Replace all real-world testing entirely",
+      "B) Generate diverse, controllable scenarios including dangerous edge cases",
+      "C) Guarantee regulatory approval",
+      "D) Eliminate labeling needs for perception"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A known issue with pure imitation learning for driving is:",
+    "options": [
+      "A) It never reaches human-level behavior",
+      "B) Covariate shift—small errors compound as the vehicle visits unseen states",
+      "C) It cannot use neural networks",
+      "D) It eliminates the need for control algorithms"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Vehicle-to-everything (V2X) communication can improve safety by:",
+    "options": [
+      "A) Streaming entertainment to passengers",
+      "B) Sharing intent and hazard information between vehicles and infrastructure",
+      "C) Replacing onboard sensors completely",
+      "D) Disabling traffic lights"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Handling occlusions in perception typically relies on:",
+    "options": [
+      "A) Ignoring partially visible objects",
+      "B) Temporal tracking and predictive models to maintain hypotheses",
+      "C) Only using 2D bounding boxes",
+      "D) Removing radar data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Prediction modules estimate:",
+    "options": [
+      "A) The vehicle’s VIN number",
+      "B) Future trajectories and intents of other road users",
+      "C) Tire wear rates",
+      "D) Optimal sensor placement on the roof"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Moral 'trolley problem' thought experiments are less central than:",
+    "options": [
+      "A) Choosing car color",
+      "B) Engineering mundane reliability and handling everyday edge cases",
+      "C) Selecting the best music playlist",
+      "D) Disabling ABS brakes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Accurate time synchronization across sensors is needed to:",
+    "options": [
+      "A) Reduce map size",
+      "B) Ensure consistent data association for fusion and tracking",
+      "C) Eliminate radar use",
+      "D) Disable GPS corrections"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Planning modules typically balance:",
+    "options": [
+      "A) Only maximum speed",
+      "B) Safety, legality, comfort, and efficiency within constraints",
+      "C) Tire pressure and battery temperature",
+      "D) Radio settings and seat position"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Accounting for model uncertainty helps planning by:",
+    "options": [
+      "A) Ignoring rare events",
+      "B) Enabling risk-aware decisions under ambiguous perceptions or predictions",
+      "C) Locking the steering angle",
+      "D) Disabling braking when unsure"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Adverse weather can degrade sensors; for example, heavy fog often:",
+    "options": [
+      "A) Improves camera range",
+      "B) Reduces LiDAR returns and camera visibility",
+      "C) Increases radar false negatives consistently",
+      "D) Eliminates the need for wipers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Map-based localization commonly targets:",
+    "options": [
+      "A) Country-level accuracy only",
+      "B) Lane-level accuracy using HD maps, GNSS/RTK, and onboard perception",
+      "C) Indoor-only navigation",
+      "D) Removing GPS entirely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A critique of end-to-end driving policies is that they can:",
+    "options": [
+      "A) Be trivially audited and verified",
+      "B) Lack interpretability and clear failure modes for safety cases",
+      "C) Remove the need for datasets",
+      "D) Guarantee causal understanding of traffic laws"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A minimal risk condition (MRC) refers to:",
+    "options": [
+      "A) The vehicle accelerating to clear an intersection",
+      "B) A safe fallback state such as pulling over and stopping when faults occur",
+      "C) Ignoring all warnings",
+      "D) Requiring immediate passenger takeover"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Over-the-air updates necessitate strong:",
+    "options": [
+      "A) Music streaming support",
+      "B) Validation, regression testing, and rollback strategies",
+      "C) Removal of all logs",
+      "D) Manual map editing by drivers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human factors matter because handovers can fail when:",
+    "options": [
+      "A) Drivers are perfectly attentive at all times",
+      "B) Mode confusion or delayed reaction undermines takeover requests",
+      "C) Vehicles include redundant compute",
+      "D) Maps are high-definition"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Functional safety efforts in automotive systems emphasize:",
+    "options": [
+      "A) Ignoring hazards to move fast",
+      "B) Hazard analysis, risk assessment, and systematic mitigations",
+      "C) Prioritizing entertainment features",
+      "D) Disabling diagnostics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "End-to-end evaluation beyond aggregate miles driven should include:",
+    "options": [
+      "A) Only average speed",
+      "B) Scenario coverage, critical event rates, and near-miss analysis",
+      "C) Number of cameras installed",
+      "D) Weather forecasts"
+    ],
+    "answer": "B"
+  }
+]

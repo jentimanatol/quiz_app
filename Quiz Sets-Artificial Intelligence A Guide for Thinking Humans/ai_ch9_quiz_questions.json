@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is a central goal of common-sense reasoning in AI?",
+    "options": [
+      "A) Maximizing GPU utilization",
+      "B) Enabling systems to make everyday inferences about the world",
+      "C) Removing all symbolic representations",
+      "D) Solving only board games"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The frame problem, in classic AI, concerns:",
+    "options": [
+      "A) How to render 3D scenes efficiently",
+      "B) Representing what changes and what stays the same after actions",
+      "C) Choosing the best neural network frame size",
+      "D) Detecting frames in video"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The symbol grounding problem highlights the difficulty of:",
+    "options": [
+      "A) Training models without GPUs",
+      "B) Connecting abstract symbols to percepts and actions in the real world",
+      "C) Converting text to speech",
+      "D) Tokenizing large corpora"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which representation encodes typical event sequences like 'enter restaurant → get seated → order'?",
+    "options": [
+      "A) Fourier transforms",
+      "B) Scripts (event schemas)",
+      "C) Hidden Markov noise models",
+      "D) Bloom filters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which concept describes action possibilities offered by the environment, such as 'a chair affords sitting'?",
+    "options": [
+      "A) Affordances",
+      "B) Regularization",
+      "C) Clipping",
+      "D) Quantization"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A knowledge graph primarily stores:",
+    "options": [
+      "A) Unordered lists of pixel intensities",
+      "B) Structured relations among entities (e.g., subject–predicate–object triples)",
+      "C) Only raw audio waveforms",
+      "D) GPU kernel traces"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is naive correlation often insufficient for robust reasoning?",
+    "options": [
+      "A) Correlation always implies causation",
+      "B) Correlations can reflect spurious patterns that fail under interventions",
+      "C) Correlations never change across domains",
+      "D) Correlations are equivalent to logical entailment"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "On Pearl’s 'ladder of causation', which rung corresponds to interventions ('do' operations)?",
+    "options": [
+      "A) Association (seeing)",
+      "B) Intervention (doing)",
+      "C) Counterfactuals (imagining)",
+      "D) Regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Counterfactual reasoning most directly asks:",
+    "options": [
+      "A) What co-occurred with the effect?",
+      "B) What would have happened under an alternative action or condition?",
+      "C) How to increase batch size?",
+      "D) Which tokenization reduces perplexity?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Abductive reasoning can be summarized as:",
+    "options": [
+      "A) Inference to the best explanation for observed data",
+      "B) Proof by contradiction only",
+      "C) Enumerating all possible worlds exhaustively",
+      "D) Deduction from universally true axioms"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which difficulty often limits large knowledge bases for common sense?",
+    "options": [
+      "A) Excess of perfect coverage",
+      "B) Brittleness and gaps in coverage of everyday facts",
+      "C) Inability to store any relations",
+      "D) Overreliance on continuous features"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Intuitive physics in AI aims to:",
+    "options": [
+      "A) Replace physics engines with spreadsheets",
+      "B) Model everyday expectations about objects, forces, and stability",
+      "C) Compute exact quantum states",
+      "D) Simulate only rigid bodies at infinite precision"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which task probes common-sense pronoun resolution with minimal syntactic cues?",
+    "options": [
+      "A) Byte-pair encoding",
+      "B) Winograd-style schemas",
+      "C) POS tagging",
+      "D) Lemmatization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why might hybrid systems (neural + symbolic) be attractive for common-sense reasoning?",
+    "options": [
+      "A) They remove the need for data",
+      "B) They can combine pattern learning with structured, explicit reasoning",
+      "C) They guarantee causality proofs",
+      "D) They never require supervision"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Structure-mapping theory (Gentner) focuses on:",
+    "options": [
+      "A) Mapping surface word overlap only",
+      "B) Aligning relational structure in analogical reasoning",
+      "C) Minimizing perplexity in language models",
+      "D) Maximizing pixel correlation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Systematic compositional generalization involves:",
+    "options": [
+      "A) Memorizing all training sentences",
+      "B) Applying rules to novel combinations of familiar parts",
+      "C) Removing syntax from language models",
+      "D) Ignoring order in sequences"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Commonsense causal reasoning crucially supports the ability to:",
+    "options": [
+      "A) Estimate GPU FLOPs",
+      "B) Predict the effects of actions and plan ahead",
+      "C) Normalize probability distributions",
+      "D) Tokenize multilingual text"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example best illustrates spurious correlation?",
+    "options": [
+      "A) Predicting 'cow' from presence of green pastures in the background",
+      "B) Using object parts to recognize the whole",
+      "C) Using causal graphs for interventions",
+      "D) Estimating counterfactuals via simulation"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Event schemas help machines by:",
+    "options": [
+      "A) Eliminating the need for perception",
+      "B) Providing expectations that guide interpretation of ambiguous scenes",
+      "C) Forcing models to ignore context",
+      "D) Reducing all reasoning to linear algebra"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A principal challenge for common sense in AI is:",
+    "options": [
+      "A) Lack of any available data",
+      "B) Bridging between low-level perception and high-level concepts/actions",
+      "C) Eliminating all symbols from models",
+      "D) Representing only geometry"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In causal graphs, a back-door path can introduce:",
+    "options": [
+      "A) More accurate interventions automatically",
+      "B) Confounding bias if not blocked/controlled",
+      "C) Stronger regularization guarantees",
+      "D) Perfect counterfactuals without assumptions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why are counterfactuals informative beyond correlations?",
+    "options": [
+      "A) They require no models of the world",
+      "B) They reason about alternate realities under interventions",
+      "C) They measure only token frequency",
+      "D) They equalize all domains"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reasoning about other agents’ beliefs and desires is sometimes called:",
+    "options": [
+      "A) Theory of mind",
+      "B) Theory of everything",
+      "C) Theory of tokens",
+      "D) Theory of frames"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which approach can help models generalize across domains by focusing on stable relations?",
+    "options": [
+      "A) Memorizing dataset-specific cues",
+      "B) Invariant risk minimization or causal representation learning",
+      "C) Ignoring interventions",
+      "D) Removing training data diversity"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A limitation of purely associative learning is that it:",
+    "options": [
+      "A) Excels at answering counterfactual questions",
+      "B) Lacks mechanisms for 'what-if' reasoning without extra structure",
+      "C) Always achieves systematic generalization",
+      "D) Avoids spurious correlations by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Mental simulation in AI for physical reasoning involves:",
+    "options": [
+      "A) Running a physics engine to predict outcomes under different actions",
+      "B) Ignoring object interactions",
+      "C) Compressing images only",
+      "D) Training with no supervision"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Knowledge conflicts in graphs (e.g., contradictory facts) are often handled by:",
+    "options": [
+      "A) Randomly discarding edges",
+      "B) Provenance tracking, confidence scores, or logical constraints",
+      "C) Removing all nodes with high degree",
+      "D) Assuming all facts are true"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Commonsense benchmarks frequently reveal that models:",
+    "options": [
+      "A) Are perfectly robust across settings",
+      "B) Perform well on narrow datasets yet fail on simple real-world variants",
+      "C) Are immune to annotation artifacts",
+      "D) Never exploit dataset biases"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key motivation for integrating perception, language, and action in embodied agents is to:",
+    "options": [
+      "A) Remove the need for sensors",
+      "B) Ground symbols via interaction and learn cause–effect relationships",
+      "C) Focus only on text corpora",
+      "D) Avoid planning altogether"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Causal discovery methods aim to:",
+    "options": [
+      "A) Estimate the number of clusters in data",
+      "B) Infer causal structure from observational and/or interventional data",
+      "C) Tokenize multilingual corpora",
+      "D) Optimize GPU kernels"
+    ],
+    "answer": "B"
+  }
+]

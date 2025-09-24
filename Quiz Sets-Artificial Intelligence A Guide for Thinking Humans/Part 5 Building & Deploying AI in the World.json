@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Which stance cautions against confident predictions of near‑term human‑level AI?",
+    "options": [
+      "A) Deterministic forecasting",
+      "B) Epistemic humility about timelines",
+      "C) Linear extrapolation of benchmarks",
+      "D) Hardware‑only determinism"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can progress on narrow benchmarks overstate real‑world capability?",
+    "options": [
+      "A) Benchmarks never measure anything",
+      "B) Systems may learn dataset‑specific shortcuts that don’t generalize",
+      "C) Real‑world tasks are identical to test sets",
+      "D) Benchmarks always include causal tests"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A prudent framing for AI’s near future emphasizes:",
+    "options": [
+      "A) Guaranteed AGI date announcements",
+      "B) Augmentation of human work and mixed outcomes across domains",
+      "C) Replacing all professions immediately",
+      "D) Stopping empirical evaluation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which idea summarizes the 'no free lunch' perspective for learning systems?",
+    "options": [
+      "A) A single model is optimal for all problems without assumptions",
+      "B) Without domain assumptions, no method dominates across all tasks",
+      "C) Larger models always win universally",
+      "D) Rule‑based systems dominate neural methods"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What risk follows from 'scaling solves it' optimism without guardrails?",
+    "options": [
+      "A) Automatic causal understanding",
+      "B) Neglect of safety, bias, and robustness problems",
+      "C) Elimination of distribution shift",
+      "D) Perfect calibration by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which factor most directly links AI progress to environmental and economic costs?",
+    "options": [
+      "A) Tokenization choices only",
+      "B) Compute, energy usage, and hardware supply chains",
+      "C) Choice of activation function only",
+      "D) Use of CSV files"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is evaluation on out‑of‑distribution data important for future‑proofing systems?",
+    "options": [
+      "A) It maximizes training accuracy",
+      "B) It probes robustness to shifts likely in deployment",
+      "C) It guarantees perfect fairness",
+      "D) It replaces all other testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human‑AI collaboration is strongest when systems:",
+    "options": [
+      "A) Hide uncertainty and rationales",
+      "B) Provide calibrated confidence and interpretable signals",
+      "C) Enforce fully automated decisions only",
+      "D) Remove user controls"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which policy lever supports responsible AI development?",
+    "options": [
+      "A) Prohibiting documentation",
+      "B) Impact assessments, auditability, and incident reporting",
+      "C) Eliminating red‑teaming",
+      "D) Ignoring critical infrastructure risks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key uncertainty for long‑term AI forecasting is that:",
+    "options": [
+      "A) Technological trajectories are linear and predictable",
+      "B) Research breakthroughs and bottlenecks are hard to anticipate",
+      "C) Benchmarks determine timelines exactly",
+      "D) Moore’s law guarantees progress forever"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which outcome is most consistent with historical 'hype cycles'?",
+    "options": [
+      "A) Smooth monotonic progress without setbacks",
+      "B) Periods of rapid optimism followed by retrenchment and steadier advances",
+      "C) Complete stagnation after each breakthrough",
+      "D) Instant general intelligence after any new dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why will domain expertise remain crucial even as AI improves?",
+    "options": [
+      "A) Experts are needed only to label data",
+      "B) Many tasks require context, judgment, and responsibility beyond pattern matching",
+      "C) AI systems forbid oversight",
+      "D) Expertise slows decisions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which question best probes whether systems 'understand' rather than merely imitate?",
+    "options": [
+      "A) Can the system memorize the training set?",
+      "B) Can it reason under interventions and novel constraints?",
+      "C) Can it use more parameters?",
+      "D) Can it compress logs?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A balanced view of automation’s labor impact highlights:",
+    "options": [
+      "A) Only displacement effects",
+      "B) Only new job creation",
+      "C) Both substitution and complementarity across tasks and skills",
+      "D) Guaranteed universal basic income"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "For safety‑critical uses, future evaluations should emphasize:",
+    "options": [
+      "A) Average‑case scores only",
+      "B) Tail risks, stress tests, and worst‑case analysis",
+      "C) Parameter count as the main metric",
+      "D) Training loss at epoch one"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why might 'emergent' abilities appear during scaling?",
+    "options": [
+      "A) Capabilities can transition sharply once capacity and data cross certain thresholds",
+      "B) Training becomes deterministic",
+      "C) Tokenization vanishes",
+      "D) Models stop needing optimization"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which governance practice helps reduce misuse risk while enabling research?",
+    "options": [
+      "A) Unrestricted model access",
+      "B) Tiered access with monitoring, rate limits, and purpose restrictions",
+      "C) Publishing private data",
+      "D) Removing user verification"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a pragmatic target for 'AI that we want'?",
+    "options": [
+      "A) Systems that maximize benchmark wins regardless of harm",
+      "B) Reliable, fair, interpretable tools aligned with human goals",
+      "C) Models that ignore uncertainty",
+      "D) Autonomous systems without oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which research direction aims to connect perception, language, and action?",
+    "options": [
+      "A) Static classification only",
+      "B) Embodied and interactive learning",
+      "C) Token sorting",
+      "D) Dictionary lookup"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is transparency about data sources increasingly important?",
+    "options": [
+      "A) It slows progress with no benefit",
+      "B) It supports consent, provenance, licensing, and bias analysis",
+      "C) It replaces testing",
+      "D) It removes the need for governance"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which pitfall can arise from human‑in‑the‑loop workflows if poorly designed?",
+    "options": [
+      "A) Perfect vigilance at all times",
+      "B) Overreliance on automation leading to complacency or rubber‑stamping",
+      "C) Elimination of bias",
+      "D) Instant causal insight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In forecasting impacts on education, a key opportunity is:",
+    "options": [
+      "A) One‑size‑fits‑all instruction only",
+      "B) Personalized tutoring and feedback with guardrails",
+      "C) Eliminating teachers",
+      "D) Removing assessment entirely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which kind of empirical evidence best supports claims of 'general' ability?",
+    "options": [
+      "A) One benchmark in a single domain",
+      "B) Robust performance across varied tasks, formats, and perturbations",
+      "C) Parameter count alone",
+      "D) A single demo video"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why do open questions about consciousness matter for AI policy?",
+    "options": [
+      "A) They determine FLOP budgets",
+      "B) They shape ethical treatment debates and public expectations",
+      "C) They remove the need for safety",
+      "D) They define tokenization rules"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A sensible default for deploying powerful models is to:",
+    "options": [
+      "A) Skip monitoring once launched",
+      "B) Log, audit, and iterate with staged rollouts and kill‑switches",
+      "C) Disable rate limits",
+      "D) Remove incident response plans"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is reproducibility a persistent challenge for frontier AI?",
+    "options": [
+      "A) Small datasets are trivial to replicate",
+      "B) Large‑scale training involves stochasticity, data opacity, and complex dependencies",
+      "C) Results never change across seeds",
+      "D) Hyperparameters are universal constants"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What balance should future regulation aim for?",
+    "options": [
+      "A) Maximal barriers to any innovation",
+      "B) Zero oversight regardless of risk",
+      "C) Risk‑proportionate safeguards with support for beneficial uses",
+      "D) Punishing documentation practices"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "A practical near‑term priority for many organizations is:",
+    "options": [
+      "A) Theoretical proofs of AGI",
+      "B) Building robust, well‑evaluated, auditable systems for real workflows",
+      "C) Eliminating interfaces",
+      "D) Avoiding domain experts"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best captures the long‑term outlook for AI?",
+    "options": [
+      "A) Certain utopia or doom is already decided",
+      "B) Outcomes depend on choices in research, deployment, governance, and culture",
+      "C) Only compute trends matter",
+      "D) Ethics is irrelevant to progress"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What evaluation habit reduces benchmark gaming over time?",
+    "options": [
+      "A) Publishing answer keys",
+      "B) Refreshing hidden test sets and using adversarial/perturbation suites",
+      "C) Fixing one public leaderboard forever",
+      "D) Banning stress tests"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In production ML, what is concept drift?",
+    "options": [
+      "A) A change in the model architecture",
+      "B) A change in the relationship between inputs and targets over time",
+      "C) Random seed variation across runs",
+      "D) A network delay during inference"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which deployment strategy exposes a small fraction of traffic to a new model first?",
+    "options": [
+      "A) Big bang release",
+      "B) Canary rollout",
+      "C) Blue/green data labeling",
+      "D) Shadow inference"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Shadow deployment is used to:",
+    "options": [
+      "A) Send model outputs directly to users",
+      "B) Run the new model alongside the old one without affecting users",
+      "C) Disable monitoring in production",
+      "D) Remove human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The main purpose of a model registry is to:",
+    "options": [
+      "A) Generate synthetic datasets",
+      "B) Track versions, lineage, and approvals for models",
+      "C) Replace version control for code",
+      "D) Host dashboards for business metrics only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which monitoring signal best detects distribution shift at input time?",
+    "options": [
+      "A) CPU temperature",
+      "B) Feature statistics and drift tests",
+      "C) Number of unit tests",
+      "D) Lines of code in the service"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A/B testing primarily evaluates:",
+    "options": [
+      "A) Training speed of two optimizers",
+      "B) Online performance differences between two model variants",
+      "C) GPU vs. CPU wattage",
+      "D) The number of layers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data lineage answers which question most directly?",
+    "options": [
+      "A) Who owns the cloud account?",
+      "B) Where did this data come from and how was it transformed?",
+      "C) What is the model latency?",
+      "D) How many labels are correct?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice improves reproducibility of training?",
+    "options": [
+      "A) Changing random seeds each epoch without logging",
+      "B) Pinning library versions and capturing exact configs and data snapshots",
+      "C) Deleting intermediate artifacts",
+      "D) Relying on default hyperparameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key risk of feedback loops after deployment is that systems may:",
+    "options": [
+      "A) Reduce latency automatically",
+      "B) Reinforce their own biases by influencing future data",
+      "C) Eliminate the need for monitoring",
+      "D) Become fully interpretable"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A feature store in MLOps is used for:",
+    "options": [
+      "A) Storing GPU drivers",
+      "B) Serving consistent, versioned features for training and inference",
+      "C) Hosting web dashboards",
+      "D) Managing CI/CD pipelines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What’s the main purpose of data validation checks in the pipeline?",
+    "options": [
+      "A) To compress datasets",
+      "B) To catch schema errors, missing values, and out-of-range statistics early",
+      "C) To enforce model cards",
+      "D) To schedule daily standups"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The privacy principle of data minimization states that systems should:",
+    "options": [
+      "A) Collect as much data as possible for future use",
+      "B) Collect only what is necessary for specified purposes",
+      "C) Delete logs immediately",
+      "D) Share data broadly across teams"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Differential privacy provides guarantees by:",
+    "options": [
+      "A) Encrypting stored data only",
+      "B) Bounding the contribution of any individual data point via noise mechanisms",
+      "C) Tokenizing all inputs",
+      "D) Using only public datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A Data Protection Impact Assessment (DPIA) is primarily used to:",
+    "options": [
+      "A) Optimize GPU usage",
+      "B) Systematically assess and mitigate privacy risks in high-risk processing",
+      "C) Replace all legal review",
+      "D) Choose a programming language"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which safeguard helps prevent prompt injection in LLM applications?",
+    "options": [
+      "A) Ignoring user input length",
+      "B) Isolating untrusted content, strict output schemas, and allow/deny lists",
+      "C) Removing all logs",
+      "D) Using only greedy decoding"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Red-team exercises for generative systems focus on:",
+    "options": [
+      "A) UI color themes",
+      "B) Actively probing for harmful, insecure, or policy-violating behavior",
+      "C) GPU overclocking",
+      "D) Only grammar checks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which metric is most appropriate for safety-critical evaluations beyond average accuracy?",
+    "options": [
+      "A) FLOPs used",
+      "B) Tail risk metrics and error severity distributions",
+      "C) Training loss only",
+      "D) Number of servers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model watermarks in generative AI are used to:",
+    "options": [
+      "A) Improve BLEU scores",
+      "B) Help identify model-generated content under certain conditions",
+      "C) Encrypt all outputs",
+      "D) Replace licensing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common pitfall when setting KPIs for an AI product is to:",
+    "options": [
+      "A) Align KPIs with user value and risk constraints",
+      "B) Optimize proxy metrics that don’t reflect actual utility or safety",
+      "C) Measure multi-objective trade-offs",
+      "D) Include guardrail metrics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Continuous evaluation in production should include:",
+    "options": [
+      "A) Only offline test sets",
+      "B) Online telemetry, labeled slices, and periodic red-team suites",
+      "C) Removal of dashboards",
+      "D) Manual spot checks only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Incident response runbooks should define:",
+    "options": [
+      "A) Only who built the model",
+      "B) Detection, escalation paths, containment, communication, and rollback steps",
+      "C) The color scheme for dashboards",
+      "D) GPU node names"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "License compliance matters because:",
+    "options": [
+      "A) It affects only code, never data",
+      "B) Violations can create legal and operational risk for models and datasets",
+      "C) It is optional for commercial use",
+      "D) It replaces privacy review"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which approach helps address label quality at scale?",
+    "options": [
+      "A) Skip audits to move fast",
+      "B) Use gold sets, consensus labeling, and targeted review of disagreement cases",
+      "C) Rely on a single annotator for speed",
+      "D) Hide task guidelines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why add a human fallback in high-stakes decisions?",
+    "options": [
+      "A) To remove accountability",
+      "B) To allow intervention when the model is uncertain or out-of-scope",
+      "C) To increase latency without benefit",
+      "D) To avoid logging"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data retention policies should:",
+    "options": [
+      "A) Keep everything forever",
+      "B) Define justified retention periods and secure deletion processes",
+      "C) Be written only after deployment",
+      "D) Apply to code but not data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model documentation (e.g., model cards) should include:",
+    "options": [
+      "A) Only the parameter count",
+      "B) Intended uses, limitations, evaluation across slices, and safety notes",
+      "C) Marketing slogans",
+      "D) Proprietary secrets only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice reduces vendor lock-in risk?",
+    "options": [
+      "A) Using proprietary APIs without abstraction",
+      "B) Portable interfaces, data export paths, and open standards where possible",
+      "C) Hardcoding credentials",
+      "D) Disabling backups"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to implement rate limits and abuse detection is to:",
+    "options": [
+      "A) Slow down all users equally",
+      "B) Mitigate DoS, scraping, and misuse while maintaining availability",
+      "C) Replace authentication",
+      "D) Remove monitoring"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best captures 'responsible AI' in operations?",
+    "options": [
+      "A) Accuracy-only goals",
+      "B) A lifecycle approach covering design, data, training, evaluation, deployment, and monitoring with governance",
+      "C) Ad hoc fixes after incidents",
+      "D) No documentation needed"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A sensible rollback strategy for new models is to:",
+    "options": [
+      "A) Delete the old model immediately",
+      "B) Keep a stable previous version ready and automate quick revert procedures",
+      "C) Always roll forward only",
+      "D) Disable alerting during rollout"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In clinical decision support, why is calibration crucial?",
+    "options": [
+      "A) It increases parameter count",
+      "B) Predicted probabilities should match observed outcome frequencies",
+      "C) It reduces dataset size",
+      "D) It guarantees causality"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A screening model with high sensitivity but low specificity will tend to:",
+    "options": [
+      "A) Miss many true cases",
+      "B) Produce many false positives",
+      "C) Have low recall",
+      "D) Reduce the need for follow‑up testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which validation step best supports safe medical deployment?",
+    "options": [
+      "A) One internal test set only",
+      "B) Prospective evaluation on real patients and external sites",
+      "C) Training accuracy above 99%",
+      "D) Using synthetic data exclusively"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Dataset shift in healthcare commonly arises when:",
+    "options": [
+      "A) Hospitals change imaging devices or patient populations",
+      "B) Models use the same training and test sets",
+      "C) Labels are noise‑free",
+      "D) No follow‑up occurs"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Why is explainability often required for legal decision support tools?",
+    "options": [
+      "A) It guarantees no bias",
+      "B) It supports accountability, due process, and contestability",
+      "C) It eliminates the need for evaluation",
+      "D) It removes human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "An educational tutoring system that gives personalized hints exemplifies:",
+    "options": [
+      "A) Human replacement by default",
+      "B) Human‑AI collaboration and augmentation",
+      "C) Unsupervised clustering",
+      "D) Purely generative art"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key privacy risk for student data is:",
+    "options": [
+      "A) Too many practice problems",
+      "B) Improper sharing or reuse of identifiable records without consent or safeguards",
+      "C) Low model accuracy",
+      "D) Using open‑source libraries"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In triage systems, threshold choice should be guided primarily by:",
+    "options": [
+      "A) Random seeds",
+      "B) Clinical utility trade‑offs (e.g., false‑negative vs false‑positive costs)",
+      "C) Parameter count",
+      "D) Model architecture name"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A fairness concern in recidivism risk tools is that they may:",
+    "options": [
+      "A) Always reduce disparities",
+      "B) Reflect and reinforce historical patterns affecting different groups",
+      "C) Require no validation",
+      "D) Remove judicial discretion automatically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Clinical safety cases for AI typically include:",
+    "options": [
+      "A) Entertainment features",
+      "B) Hazard analysis, mitigations, monitoring, and rollback procedures",
+      "C) Only parameter counts",
+      "D) UI color themes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "‘Human‑in‑the‑loop’ oversight in education helps because teachers can:",
+    "options": [
+      "A) Ignore model outputs entirely",
+      "B) Correct mistakes, add context, and adapt content for students",
+      "C) Turn off monitoring",
+      "D) Eliminate assessment"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A medical imaging model learns to detect a hospital’s watermark instead of pathology. This is:",
+    "options": [
+      "A) Robust generalization",
+      "B) Shortcut learning via spurious correlations",
+      "C) Proper regularization",
+      "D) Domain generalization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In legal contexts, due process concerns are raised if systems:",
+    "options": [
+      "A) Provide explanations and appeal mechanisms",
+      "B) Make consequential decisions without transparency or recourse",
+      "C) Use calibrated probabilities",
+      "D) Are open source"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A strong protocol for evaluating plagiarism‑detection tools includes:",
+    "options": [
+      "A) No testing on real submissions",
+      "B) Measuring false accusations and providing human review paths",
+      "C) Only counting unique n‑grams",
+      "D) Disabling appeals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Clinical risk scoring models should be checked for:",
+    "options": [
+      "A) Only AUC",
+      "B) Calibration, subgroup performance, and decision‑relevant thresholds",
+      "C) Tokenization speed",
+      "D) GPU temperature"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In education, a sensible use of generative tools for writing is:",
+    "options": [
+      "A) Submitting outputs as one’s own work without disclosure",
+      "B) Drafting and feedback with attribution and instructor‑approved policies",
+      "C) Avoiding citations entirely",
+      "D) Bypassing learning objectives"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to log decisions in legal‑tech systems is to:",
+    "options": [
+      "A) Reduce transparency",
+      "B) Enable audits and accountability trails",
+      "C) Increase latency only",
+      "D) Delete evidence of errors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can cross‑site validation matter for clinical models?",
+    "options": [
+      "A) It proves causality",
+      "B) Performance may vary across hospitals, devices, and populations",
+      "C) It reduces class imbalance automatically",
+      "D) It replaces human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In classroom analytics, an ethical safeguard is to:",
+    "options": [
+      "A) Track students continuously without purpose limits",
+      "B) Collect the minimal data needed and provide opt‑outs where feasible",
+      "C) Disable consent dialogs",
+      "D) Share raw data with third parties by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A legal decision aid should be framed as:",
+    "options": [
+      "A) An infallible oracle",
+      "B) A tool that informs human judgment, not replaces it",
+      "C) A replacement for courts",
+      "D) A way to remove appeals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A patient‑facing chatbot for symptom advice should include:",
+    "options": [
+      "A) No disclaimers",
+      "B) Clear scope limits, uncertainty cues, and escalation to clinical care when needed",
+      "C) Hidden monitoring only",
+      "D) No guardrails on sensitive topics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common metric pair for binary risk tools in law and healthcare is:",
+    "options": [
+      "A) BLEU and ROUGE",
+      "B) Precision and recall (or sensitivity)",
+      "C) PSNR and SSIM",
+      "D) Perplexity and bits‑per‑byte"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A governance requirement for high‑risk deployments often includes:",
+    "options": [
+      "A) No documentation",
+      "B) Impact assessments, incident reporting, and role‑based access controls",
+      "C) Anonymous admin accounts",
+      "D) Unlimited data retention"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is class imbalance common in medical datasets?",
+    "options": [
+      "A) Most conditions are extremely prevalent",
+      "B) Many target conditions are rare relative to negatives",
+      "C) Labelers prefer negative cases",
+      "D) Imaging always balances classes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A pitfall of automating grading solely via models is that it can:",
+    "options": [
+      "A) Always improve fairness",
+      "B) Miss context, creativity, and diverse expressions of mastery",
+      "C) Guarantee better learning outcomes",
+      "D) Remove teacher workload completely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Legal‑tech NLP systems should be evaluated on:",
+    "options": [
+      "A) Only synthetic contracts",
+      "B) Domain‑specific corpora and edge cases such as negations and exceptions",
+      "C) Random internet text only",
+      "D) UI ease alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In clinical AI, a safe default when the model is uncertain is to:",
+    "options": [
+      "A) Auto‑discharge",
+      "B) Escalate to human review or request additional tests",
+      "C) Ignore the case",
+      "D) Overwrite patient records"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "For student support chatbots, a key guardrail is to:",
+    "options": [
+      "A) Provide medical or legal advice outside scope",
+      "B) Route sensitive or crisis content to appropriate human services",
+      "C) Disable logging",
+      "D) Always use creative writing style"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A principled deployment of AI in public services should include:",
+    "options": [
+      "A) Secret criteria and no appeals",
+      "B) Transparency, avenues for challenge, and independent audits",
+      "C) Elimination of documentation",
+      "D) Hardcoded decisions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is continual monitoring necessary post‑launch in these domains?",
+    "options": [
+      "A) Data and behavior shift; ongoing checks catch performance and fairness regressions",
+      "B) It replaces testing",
+      "C) It guarantees zero incidents",
+      "D) It reduces compute costs only"
+    ],
+    "answer": "A"
+  }
+]

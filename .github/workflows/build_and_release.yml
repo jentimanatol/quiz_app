@@ -1,0 +1,82 @@
+name: Build and Release EXE
+
+on:
+  push:
+    tags:
+      - 'v*.*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yt-dlp pyinstaller matplotlib seaborn pillow PyQt5
+
+      - name: Download UPX binary
+        run: |
+          Invoke-WebRequest https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-win64.zip -OutFile upx.zip
+          Expand-Archive upx.zip -DestinationPath .
+          echo "UPX extracted."
+
+      - name: Verify icon file exists
+        run: |
+          if (Test-Path "assets\app_icon_256×256.ico") {
+            echo "Icon file found: assets\app_icon_256×256.ico"
+            Get-Item "assets\app_icon_256×256.ico" | Select-Object Name, Length, LastWriteTime
+          } else {
+            echo "Warning: Icon file not found at assets\app_icon_256×256.ico"
+            echo "Available files in assets folder:"
+            if (Test-Path "assets") {
+              Get-ChildItem "assets" -Recurse
+            } else {
+              echo "Assets folder not found"
+            }
+          }
+
+      - name: Build executable with PyInstaller and UPX
+        run: |
+          pyinstaller --noconfirm --onefile --windowed `
+            --icon=assets/app_icon_256×256.ico `
+            --name iconTolkitApp `
+            --add-data "assets;assets" `
+            --add-data "assets/app_icon_32×32.ico;assets" `
+            iconTolkitApp.py `
+            --upx-dir upx-4.2.1-win64
+
+      - name: Verify executable was created
+        run: |
+          if (Test-Path "dist\iconTolkitApp.exe") {
+            echo "Executable created successfully"
+            Get-Item "dist\iconTolkitApp.exe" | Select-Object Name, Length, LastWriteTime
+          } else {
+            echo "Error: Executable was not created"
+            exit 1
+          }
+
+      - name: Rename executable with version
+        run: |
+          Copy-Item "dist\iconTolkitApp.exe" "dist\iconTolkitApp_${{ github.ref_name }}.exe"
+
+      - name: Create ZIP archive
+        run: |
+          Compress-Archive -Path "dist\iconTolkitApp_${{ github.ref_name }}.exe" -DestinationPath "iconTolkitApp_${{ github.ref_name }}.zip"
+
+      - name: Upload to GitHub Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/iconTolkitApp_${{ github.ref_name }}.exe
+            iconTolkitApp_${{ github.ref_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
