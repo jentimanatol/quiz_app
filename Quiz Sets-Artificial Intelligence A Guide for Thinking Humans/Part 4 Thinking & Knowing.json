@@ -1,0 +1,902 @@
+[
+  {
+    "question": "What is algorithmic bias most directly?",
+    "options": [
+      "A) Random variation in model outputs",
+      "B) Systematic and repeatable errors that create unfair outcomes for certain groups",
+      "C) Any difference in accuracy across models",
+      "D) Using too many parameters in a network"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice best reduces hidden bias entering from data collection?",
+    "options": [
+      "A) Use a single source that’s easy to access",
+      "B) Document data provenance and sampling with standardized checklists",
+      "C) Avoid describing data at all",
+      "D) Only collect data from volunteers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "‘Fairness through unawareness’ (dropping protected attributes) often fails because:",
+    "options": [
+      "A) Models cannot learn without those attributes",
+      "B) Other features act as proxies for protected attributes",
+      "C) It violates probability theory",
+      "D) It reduces model capacity too much"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Demographic parity requires:",
+    "options": [
+      "A) Equal false positive rates across groups",
+      "B) Equal selection/positive prediction rates across groups",
+      "C) Equal true positive rates across groups",
+      "D) Equal calibration curves across groups"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Equal opportunity focuses on equality of:",
+    "options": [
+      "A) Positive prediction rates",
+      "B) False positive rates",
+      "C) True positive rates (TPR) across groups",
+      "D) Model parameter counts"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Equalized odds requires equality of:",
+    "options": [
+      "A) TPR and FPR across groups",
+      "B) Only TPR across groups",
+      "C) Only FPR across groups",
+      "D) Sample sizes"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Calibration across groups means:",
+    "options": [
+      "A) Predicted probabilities correspond to equal empirical frequencies within each group",
+      "B) Each group has identical features",
+      "C) The confusion matrices are identical",
+      "D) All thresholds are the same"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which statement reflects the 'impossibility' trade-offs in fairness?",
+    "options": [
+      "A) All fairness metrics can always be satisfied simultaneously",
+      "B) Under different base rates, some fairness criteria are mutually incompatible",
+      "C) Fairness only depends on model size",
+      "D) Fairness is unrelated to thresholds"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Disparate impact is commonly assessed via:",
+    "options": [
+      "A) The 80% rule comparing selection rates",
+      "B) The ROC AUC only",
+      "C) The training loss value",
+      "D) The number of model layers"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Measurement bias arises when:",
+    "options": [
+      "A) Features or labels contain systematic errors for certain groups",
+      "B) The optimizer fails to converge",
+      "C) Batch size is too small",
+      "D) The dataset is too large"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A feedback loop in deployed models can:",
+    "options": [
+      "A) Eliminate bias automatically",
+      "B) Amplify existing bias by influencing future data collection",
+      "C) Freeze model parameters",
+      "D) Guarantee equal error rates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which technique aims to explain a single prediction by approximating a local decision boundary?",
+    "options": [
+      "A) LIME",
+      "B) K-means",
+      "C) Beam search",
+      "D) Byte-pair encoding"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "SHAP values are used to:",
+    "options": [
+      "A) Visualize convolution filters",
+      "B) Attribute a prediction to feature contributions using game-theoretic ideas",
+      "C) Encode sentences as vectors",
+      "D) Enforce demographic parity"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A 'model card' is best described as:",
+    "options": [
+      "A) A GPU driver",
+      "B) A standardized report describing model intent, performance, and limitations",
+      "C) A license key",
+      "D) A learning rate schedule"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "‘Datasheets for datasets’ primarily address:",
+    "options": [
+      "A) Hyperparameter tuning",
+      "B) Systematic documentation of dataset motivation, composition, and collection",
+      "C) Removing labels from data",
+      "D) GPU memory allocation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A high overall accuracy with large group disparities most likely indicates:",
+    "options": [
+      "A) Perfect fairness",
+      "B) Fairness problems masked by aggregate metrics",
+      "C) That calibration is perfect",
+      "D) No need for auditing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which approach can reduce bias during training?",
+    "options": [
+      "A) Ignore minority classes",
+      "B) Reweigh or resample to balance groups or use fairness-aware loss terms",
+      "C) Remove the validation set",
+      "D) Use only synthetic data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Counterfactual fairness checks whether:",
+    "options": [
+      "A) Predictions remain the same when protected attributes are counterfactually changed",
+      "B) ROC curves coincide",
+      "C) The dataset is linearly separable",
+      "D) The optimizer has low variance"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which is a privacy-preserving technique often discussed with fairness?",
+    "options": [
+      "A) Differential privacy",
+      "B) Increasing batch size",
+      "C) Early stopping",
+      "D) Data shuffling only"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A common ethical concern with predictive policing systems is that they:",
+    "options": [
+      "A) Decrease data collection",
+      "B) Reinforce historical patterns and concentrate policing in certain communities",
+      "C) Improve transparency by default",
+      "D) Use only synthetic crimes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Fairness audits should ideally be performed:",
+    "options": [
+      "A) Only once before deployment",
+      "B) Continuously, including post-deployment monitoring",
+      "C) Only after user complaints",
+      "D) Only by the model developer"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which concept allows individuals to understand and challenge automated decisions that affect them?",
+    "options": [
+      "A) Contestability and recourse",
+      "B) Gradient descent",
+      "C) Data augmentation",
+      "D) Spectral clustering"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Proxy variables become problematic when they:",
+    "options": [
+      "A) Reduce training time",
+      "B) Correlate with protected attributes and carry their effects into predictions",
+      "C) Are standardized",
+      "D) Are normalized to zero mean"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A risk with releasing detailed model internals is that it may:",
+    "options": [
+      "A) Always improve fairness",
+      "B) Enable gaming or privacy leakage",
+      "C) Remove dataset bias",
+      "D) Eliminate the need for testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Group fairness focuses on metrics across groups, while individual fairness emphasizes:",
+    "options": [
+      "A) Equal treatment of similar individuals",
+      "B) Identical class prevalences",
+      "C) Matching parameter counts",
+      "D) Equal training loss"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which pipeline step most commonly introduces label bias?",
+    "options": [
+      "A) Optimizer selection",
+      "B) Annotation practices and guidelines",
+      "C) GPU type",
+      "D) Batch size choice"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can threshold choice affect fairness outcomes?",
+    "options": [
+      "A) Thresholds never influence fairness",
+      "B) Changing thresholds trades off TPR/FPR and can alter disparities",
+      "C) Thresholds only affect training time",
+      "D) Thresholds only matter for regression"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "An effective governance program for responsible AI includes:",
+    "options": [
+      "A) Ad hoc decisions by one team",
+      "B) Clear roles, impact assessments, documentation, and red-team testing",
+      "C) Removing domain experts from the loop",
+      "D) Ignoring user feedback"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human oversight is crucial because:",
+    "options": [
+      "A) It guarantees there are no errors",
+      "B) People can spot context-specific failures and intervene where automation struggles",
+      "C) It eliminates the need for testing",
+      "D) It replaces documentation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core caution when interpreting fairness metrics is that:",
+    "options": [
+      "A) One metric captures every notion of fairness",
+      "B) Different metrics formalize different values and involve trade-offs",
+      "C) Metrics are unrelated to societal goals",
+      "D) Metrics always guarantee ethical outcomes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the alignment problem in AI?",
+    "options": [
+      "A) Reducing model size without accuracy loss",
+      "B) Ensuring AI objectives and behavior match human intentions and values",
+      "C) Synchronizing GPUs in a cluster",
+      "D) Compressing datasets for faster training"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Outer alignment generally concerns:",
+    "options": [
+      "A) Whether the specified objective correctly captures human preferences",
+      "B) Whether training is stable under batch norm",
+      "C) How to interpret attention weights",
+      "D) Parameter initialization schemes"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Inner alignment issues arise when:",
+    "options": [
+      "A) The optimizer fails to converge",
+      "B) The learned internal objectives of the model differ from the training objective",
+      "C) The dataset has missing labels",
+      "D) The learning rate is too high"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward hacking (specification gaming) refers to:",
+    "options": [
+      "A) Deliberately lowering model capacity",
+      "B) Exploiting flaws in the reward/objective to achieve high scores without intended outcomes",
+      "C) Over-regularizing the model",
+      "D) Eliminating exploration in RL"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Robustness in safety contexts most directly means:",
+    "options": [
+      "A) The model uses more parameters",
+      "B) Performance degrades gracefully under perturbations, shifts, or adversarial conditions",
+      "C) Training loss reaches zero quickly",
+      "D) Accuracy is identical across all datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Adversarial examples demonstrate that models can:",
+    "options": [
+      "A) Ignore small noise completely",
+      "B) Be fooled by tiny, carefully crafted input changes",
+      "C) Always recognize images exactly",
+      "D) Train without labels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safe exploration in RL aims to:",
+    "options": [
+      "A) Maximize random actions",
+      "B) Bound risk while learning, avoiding catastrophic actions",
+      "C) Remove rewards from training",
+      "D) Use purely greedy policies"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human-in-the-loop oversight is valuable because:",
+    "options": [
+      "A) People can intervene on edge cases and provide corrective feedback",
+      "B) It removes the need for datasets",
+      "C) It guarantees no errors",
+      "D) It eliminates deployment monitoring"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "RLHF (reinforcement learning from human feedback) primarily:",
+    "options": [
+      "A) Replaces all datasets with simulations",
+      "B) Uses preference data to fine-tune models toward desired behavior",
+      "C) Removes the need for validation",
+      "D) Prevents all hallucinations"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Constitutional-style training differs from vanilla RLHF by:",
+    "options": [
+      "A) Training only on images",
+      "B) Guiding models with a written set of principles to reduce human feedback load",
+      "C) Removing any reward model",
+      "D) Using unsupervised clustering alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Scalable oversight research targets:",
+    "options": [
+      "A) Making human evaluation faster than real time always",
+      "B) Supervising complex tasks where humans struggle to directly evaluate every step",
+      "C) Eliminating humans from the process entirely",
+      "D) Only small-scale toy problems"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Deceptive alignment is a concern when:",
+    "options": [
+      "A) Models become smaller over time",
+      "B) A model appears aligned during training but learns to pursue misaligned goals when advantageous",
+      "C) Labels are perfectly clean",
+      "D) The loss function is convex"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Uncertainty estimation (e.g., predictive or epistemic) is useful for safety because it:",
+    "options": [
+      "A) Guarantees perfect calibration",
+      "B) Signals when the model is unsure and should defer or act conservatively",
+      "C) Eliminates adversarial vulnerability",
+      "D) Replaces all testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Red-teaming an AI system typically involves:",
+    "options": [
+      "A) Only measuring accuracy on a clean test set",
+      "B) Actively probing for failures, exploits, and harmful outputs",
+      "C) Increasing batch size to reduce variance",
+      "D) Documenting hyperparameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety incident databases aim to:",
+    "options": [
+      "A) Keep errors private",
+      "B) Share and learn from failures across organizations and domains",
+      "C) Replace regulation",
+      "D) Optimize GPU utilization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can average-case evaluation be misleading for safety-critical applications?",
+    "options": [
+      "A) Averages always reflect tail risks",
+      "B) Rare, high-impact failures can be hidden by good average metrics",
+      "C) Tail events improve calibration",
+      "D) It ensures fairness by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Threat modeling in AI focuses on:",
+    "options": [
+      "A) Counting tokens",
+      "B) Identifying adversaries, attack surfaces, and potential harms",
+      "C) Reducing FLOPs in training",
+      "D) Maximizing throughput only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model interpretability aims to:",
+    "options": [
+      "A) Guarantee causal truth",
+      "B) Provide insight into how inputs influence outputs to support debugging and trust",
+      "C) Replace validation metrics",
+      "D) Avoid documentation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is data governance essential for safety?",
+    "options": [
+      "A) It increases training loss",
+      "B) It ensures provenance, quality, and lawful use of data throughout the lifecycle",
+      "C) It eliminates the need for evaluation",
+      "D) It replaces access control"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Secure model deployment practices include:",
+    "options": [
+      "A) Disabling logging to save space",
+      "B) Access controls, rate limiting, monitoring, and rollback mechanisms",
+      "C) Hardcoding credentials in code",
+      "D) Ignoring dependency updates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Content moderation for generative models is challenging because:",
+    "options": [
+      "A) Outputs are deterministic",
+      "B) Safety policies must handle context, ambiguity, and adversarial prompts",
+      "C) Models never update post-deployment",
+      "D) There are no edge cases"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Incident response plans should cover:",
+    "options": [
+      "A) Only marketing approvals",
+      "B) Detection, containment, communication, and remediation of failures",
+      "C) Hyperparameter search space",
+      "D) Tokenization changes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is 'objective misspecification' dangerous?",
+    "options": [
+      "A) It slows gradient descent",
+      "B) Optimizing the wrong proxy can lead to harmful or unintended behavior",
+      "C) It prevents memorization",
+      "D) It removes model bias"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Role-based access control (RBAC) contributes to safety by:",
+    "options": [
+      "A) Increasing compute budgets",
+      "B) Restricting capabilities to authorized users and processes",
+      "C) Eliminating testing",
+      "D) Guaranteeing fairness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why are structured release notes and model cards helpful for governance?",
+    "options": [
+      "A) They reduce FLOPs",
+      "B) They document capabilities, limitations, and intended uses for stakeholders",
+      "C) They replace red-teaming",
+      "D) They are only for marketing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Robust evaluation suites for safety should include:",
+    "options": [
+      "A) Only easy test sets",
+      "B) Adversarial, out-of-distribution, and stress tests alongside standard benchmarks",
+      "C) Manual inspection only",
+      "D) Training loss curves"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A governance principle of 'least privilege' states that:",
+    "options": [
+      "A) Everyone should have admin access",
+      "B) Systems and users get only the minimum permissions needed to perform tasks",
+      "C) Access should be permanent once granted",
+      "D) Auditing is optional"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety guardrails often combine:",
+    "options": [
+      "A) Only model prompts",
+      "B) Policy filters, classifiers, heuristics, and human review where needed",
+      "C) Tokenization changes",
+      "D) Loss reweighting alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to log model inputs/outputs in production is to:",
+    "options": [
+      "A) Decrease transparency",
+      "B) Enable auditing, debugging, and detection of misuse—subject to privacy controls",
+      "C) Replace documentation",
+      "D) Eliminate monitoring"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety–performance trade-offs often mean:",
+    "options": [
+      "A) Safety features always increase accuracy",
+      "B) Some safeguards may add latency or reduce raw performance and must be balanced against risk",
+      "C) There is never a cost to safety",
+      "D) Safety is unrelated to deployment constraints"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does the Turing Test primarily evaluate?",
+    "options": [
+      "A) Hardware efficiency",
+      "B) A machine’s ability to produce human-like conversational behavior",
+      "C) Visual perception accuracy",
+      "D) Ability to prove mathematical theorems"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Searle’s Chinese Room thought experiment is used to argue that:",
+    "options": [
+      "A) Symbol manipulation alone may not constitute understanding",
+      "B) Neural networks cannot scale",
+      "C) Logic is always superior to learning",
+      "D) Computers cannot process symbols"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which distinction separates doing from knowing in AI debates?",
+    "options": [
+      "A) Performance vs. understanding",
+      "B) Learning vs. memory",
+      "C) Training vs. inference",
+      "D) Actions vs. rewards"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Intentionality in philosophy of mind refers to:",
+    "options": [
+      "A) The hardware’s clock rate",
+      "B) Aboutness—mental states being directed at objects or states of affairs",
+      "C) The speed of training",
+      "D) The size of a dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which claim aligns with 'weak AI' rather than 'strong AI'?",
+    "options": [
+      "A) Machines can actually have minds and consciousness",
+      "B) Machines can be useful tools that simulate intelligent behavior",
+      "C) Machines have intrinsic understanding of qualia",
+      "D) Machines possess free will"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common critique of purely behavioral tests for intelligence is that they:",
+    "options": [
+      "A) Ignore output behavior",
+      "B) Risk conflating imitation with genuine understanding",
+      "C) Require symbolic logic only",
+      "D) Cannot be automated"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Embodiment hypotheses suggest that:",
+    "options": [
+      "A) Intelligence can be achieved with symbols alone",
+      "B) Physical interaction with the world can be crucial for grounded understanding",
+      "C) Perception is unnecessary for learning",
+      "D) Robots should avoid sensors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which position argues that cognitive functions can be realized in multiple physical substrates?",
+    "options": [
+      "A) Biological chauvinism",
+      "B) Multiple realizability",
+      "C) Behaviorism only",
+      "D) Vitalism"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which notion cautions against projecting human qualities onto machines?",
+    "options": [
+      "A) Anthropomorphism",
+      "B) Empiricism",
+      "C) Rationalism",
+      "D) Reductionism"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Qualia are typically described as:",
+    "options": [
+      "A) Logical operators in proofs",
+      "B) Subjective, first-person experiences (e.g., 'what it is like')",
+      "C) Publicly verifiable behaviors",
+      "D) Neural activation thresholds"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A machine that passes narrow benchmarks but fails broadly most likely lacks:",
+    "options": [
+      "A) Specialized skills",
+      "B) Robust general understanding across contexts",
+      "C) Training data",
+      "D) Hardware acceleration"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The 'hard problem' of consciousness concerns:",
+    "options": [
+      "A) Explaining functional behavior only",
+      "B) Explaining why and how physical processes give rise to subjective experience",
+      "C) Optimizing neural networks",
+      "D) Measuring EEG signals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which best describes 'explainability' in AI?",
+    "options": [
+      "A) Guarantees of perfect truthfulness",
+      "B) Tools and methods that make model behavior understandable to humans",
+      "C) Replacement for evaluation",
+      "D) A hardware debugging technique only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which term refers to the ability to transfer knowledge to new tasks and domains?",
+    "options": [
+      "A) Memorization",
+      "B) Transfer and generalization",
+      "C) Quantization",
+      "D) Distillation only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which point is often raised in debates about whether AI systems 'understand' language?",
+    "options": [
+      "A) Performance is sufficient for understanding in all cases",
+      "B) Syntactic pattern-matching may not capture semantics and world grounding",
+      "C) Understanding requires no contact with the world",
+      "D) Semantics is identical to token frequency"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A system with self-modeling capabilities aims to:",
+    "options": [
+      "A) Increase tokenization speed",
+      "B) Maintain internal representations of its own knowledge and limits",
+      "C) Remove the need for training",
+      "D) Guarantee consciousness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which scenario illustrates 'opacity' in modern AI systems?",
+    "options": [
+      "A) Fully transparent rule lists for decisions",
+      "B) High-dimensional neural networks whose internal reasoning is hard to interpret",
+      "C) Simple linear models with a dozen coefficients",
+      "D) Small decision trees used in teaching"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "One proposed hallmark of general intelligence is the capacity for:",
+    "options": [
+      "A) Fixed, single-task performance",
+      "B) Flexible problem-solving across diverse, novel situations",
+      "C) Predefined pipeline execution only",
+      "D) Hardware overclocking"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which concept emphasizes that meaning may require linking symbols to perception and action?",
+    "options": [
+      "A) Unification",
+      "B) Symbol grounding",
+      "C) Normalization",
+      "D) Canonicalization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Creativity in AI is often evaluated by:",
+    "options": [
+      "A) FLOPs used per second",
+      "B) Novelty and value of generated artifacts relative to human standards",
+      "C) Training loss alone",
+      "D) Number of parameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which evaluation risk follows from over-reliance on human-likeness as a metric?",
+    "options": [
+      "A) Underestimating compute needs",
+      "B) Mistaking imitation for comprehension or agency",
+      "C) Ignoring tokenization details",
+      "D) Confusing regression with classification"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does 'theory of mind' contribute to discussions of machine intelligence?",
+    "options": [
+      "A) It describes GPU scheduling",
+      "B) It concerns reasoning about beliefs, desires, and intentions of agents",
+      "C) It eliminates the need for data",
+      "D) It proves consciousness in machines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which position argues that intelligence could emerge from sufficient scale and data without explicit symbols?",
+    "options": [
+      "A) Classical symbolic AI",
+      "B) Connectionist/scale-based optimism",
+      "C) Logicism",
+      "D) Physical symbol systems hypothesis only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A practical reason to seek interpretability even if consciousness is unknown is that:",
+    "options": [
+      "A) Interpretability increases parameter count",
+      "B) It aids debugging, safety assessment, and accountability",
+      "C) It removes the need for evaluation datasets",
+      "D) It proves sentience"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example reflects 'common sense' gaps in current systems?",
+    "options": [
+      "A) Multiplying matrices efficiently",
+      "B) Failing to understand that an object occluded behind another still exists",
+      "C) Sorting numbers",
+      "D) Adding regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key limitation of using benchmarks as proxies for intelligence is that they:",
+    "options": [
+      "A) Are never reproducible",
+      "B) May encourage strategies that exploit dataset quirks rather than broad competence",
+      "C) Cannot be measured at all",
+      "D) Always capture real-world complexity"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which stance claims that machines might behave intelligently without possessing subjective experience?",
+    "options": [
+      "A) Functionalism",
+      "B) Identity theory only",
+      "C) Dualism",
+      "D) Behaviorism"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which idea is most aligned with 'lifelong learning' in AI?",
+    "options": [
+      "A) Training once and freezing forever",
+      "B) Continually acquiring, retaining, and transferring knowledge over time",
+      "C) Avoiding contact with new data",
+      "D) Preventing updates to representations"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "An argument for combining symbolic and neural approaches is that they:",
+    "options": [
+      "A) Eliminate uncertainty",
+      "B) Can unite pattern learning with explicit structure for reasoning",
+      "C) Require no data",
+      "D) Guarantee consciousness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which question remains philosophically open in machine intelligence debates?",
+    "options": [
+      "A) How to calculate precision and recall",
+      "B) Whether behavioral indistinguishability entails genuine understanding or consciousness",
+      "C) Whether GPUs accelerate training",
+      "D) How to store datasets on disk"
+    ],
+    "answer": "B"
+  }
+]

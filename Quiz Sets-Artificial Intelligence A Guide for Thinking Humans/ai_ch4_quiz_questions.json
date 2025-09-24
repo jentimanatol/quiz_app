@@ -1,0 +1,302 @@
+[
+  {
+    "question": "In computer vision, the Five Ws—'Who, What, When, Where, Why'—primarily frame what?",
+    "options": [
+      "A) The five stages of training a neural network",
+      "B) A taxonomy of visual understanding tasks",
+      "C) The main types of robotic actuators",
+      "D) The steps of scientific peer review"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which task most closely matches the 'Who' question?",
+    "options": [
+      "A) Object classification",
+      "B) Face or identity recognition",
+      "C) Event boundary detection",
+      "D) Scene depth estimation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The 'What' question most directly corresponds to:",
+    "options": [
+      "A) Object classification (what category is present)",
+      "B) Optical flow estimation (how pixels move)",
+      "C) Pose estimation (body keypoints)",
+      "D) Sensor calibration"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The 'Where' question typically involves:",
+    "options": [
+      "A) Determining lighting conditions only",
+      "B) Localizing objects and understanding scene layout",
+      "C) Compressing images for transmission",
+      "D) Removing adversarial noise"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The 'When' question in vision emphasizes:",
+    "options": [
+      "A) Hardware clock synchronization for cameras",
+      "B) Temporal and event understanding over time",
+      "C) Batch size selection during training",
+      "D) The year a dataset was collected"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is the 'Why' question often the hardest among the Five Ws?",
+    "options": [
+      "A) It requires high-resolution sensors",
+      "B) It depends on causal and commonsense reasoning beyond pixels",
+      "C) It is strictly an unsupervised learning problem",
+      "D) It only appears in synthetic benchmarks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which historical anecdote showed early optimism about solving vision quickly?",
+    "options": [
+      "A) The invention of the Turing Test",
+      "B) The 1966 'Summer Vision Project' for undergraduates",
+      "C) The creation of the first GPU",
+      "D) The launch of ImageNet"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best contrasts human visual understanding with current AI systems?",
+    "options": [
+      "A) Humans rely exclusively on edges and textures",
+      "B) Humans effortlessly integrate context and commonsense to interpret scenes",
+      "C) Humans require millions of labeled images for basic recognition",
+      "D) Humans are unaffected by visual illusions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example illustrates a 'shortcut' learned by a vision model?",
+    "options": [
+      "A) Using snow in the background to predict 'wolf' vs 'husky'",
+      "B) Using batch normalization to stabilize training",
+      "C) Using dropout for regularization",
+      "D) Using model pruning to reduce size"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which task most directly addresses 'Who' in an image?",
+    "options": [
+      "A) Semantic segmentation",
+      "B) Optical character recognition",
+      "C) Face recognition or re-identification",
+      "D) Stereo depth estimation"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What is a core challenge in mapping pixels to meaning?",
+    "options": [
+      "A) It can be solved by a single linear classifier",
+      "B) Visual understanding often requires background knowledge not present in the image",
+      "C) It only depends on GPU memory size",
+      "D) The mapping is fixed across all cultures"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which task aligns most with the 'Where' question?",
+    "options": [
+      "A) Predicting training loss after one epoch",
+      "B) Estimating the number of layers in a network",
+      "C) Determining bounding boxes or spatial relations among objects",
+      "D) Measuring the carbon footprint of training"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Why can high accuracy on a dataset be misleading?",
+    "options": [
+      "A) Accuracy cannot be computed reliably",
+      "B) Models may exploit dataset-specific artifacts rather than genuine understanding",
+      "C) Datasets never contain enough classes",
+      "D) Licensing restrictions hide errors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which problem commonly undermines model performance in new environments?",
+    "options": [
+      "A) Deterministic training",
+      "B) Distribution shift between training and deployment",
+      "C) Overabundance of labeled data",
+      "D) Excessive interpretability"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "How do classification and localization differ?",
+    "options": [
+      "A) Classification predicts categories; localization identifies positions/regions",
+      "B) Localization is unsupervised while classification is supervised",
+      "C) Classification needs video; localization needs text captions",
+      "D) Localization is rarely used in practice"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which example best fits a 'When' task?",
+    "options": [
+      "A) Distinguishing dawn from dusk based on lighting cues",
+      "B) Detecting text in an image",
+      "C) Estimating camera intrinsics",
+      "D) Counting objects on a table"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Why is context crucial for robust recognition?",
+    "options": [
+      "A) Objects never appear without consistent backgrounds",
+      "B) Context provides constraints that help disambiguate similar-looking objects and scenes",
+      "C) Context allows models to ignore objects entirely",
+      "D) Context is only relevant for synthetic datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is a typical 'What' benchmark task?",
+    "options": [
+      "A) Image classification into object categories",
+      "B) Estimating camera intrinsics",
+      "C) Calibrating display gamma",
+      "D) Scheduling GPU jobs"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Why can people answer 'Why' questions about images more readily than current models?",
+    "options": [
+      "A) People memorize all possible object configurations",
+      "B) People possess rich commonsense and causal models of the world",
+      "C) People use exclusively bottom-up processing",
+      "D) People ignore temporal information"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which difficulty often affects visual datasets and labels?",
+    "options": [
+      "A) Inability to store images on disk",
+      "B) Annotator disagreement and ambiguity of categories",
+      "C) Lack of any public datasets",
+      "D) Universal agreement on visual taxonomies"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which scenario exemplifies the 'Where' question?",
+    "options": [
+      "A) Inferring that a photo was taken at an airport from visual cues",
+      "B) Determining the species of a bird",
+      "C) Recognizing a famous person’s face",
+      "D) Explaining why a glass shattered"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "What does the Five Ws framing suggest about visual understanding?",
+    "options": [
+      "A) It is solved by pixel-level edge detection alone",
+      "B) It involves multiple intertwined subproblems beyond simple labeling",
+      "C) It is purely symbolic rules applied to images",
+      "D) It relies only on unsupervised learning methods"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a common limitation when models learn dataset shortcuts?",
+    "options": [
+      "A) They become too slow to be useful",
+      "B) They fail to generalize when superficial cues change",
+      "C) They use too much labeled data",
+      "D) They overfit only to synthetic images"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which kind of reasoning is especially important to answer 'Why' in images?",
+    "options": [
+      "A) Frequency-domain filtering",
+      "B) Causal and narrative reasoning about events",
+      "C) GPU scheduling heuristics",
+      "D) Numerical optimization of loss functions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example best captures a 'When' task in video understanding?",
+    "options": [
+      "A) Identifying the moment a goal is scored in a soccer match",
+      "B) Detecting the presence of a ball",
+      "C) Estimating the camera brand",
+      "D) Classifying the stadium type"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which factor often causes models to fail outside the lab?",
+    "options": [
+      "A) Excessive regularization",
+      "B) Changes in lighting, viewpoint, or background",
+      "C) Too much compute",
+      "D) Too many training epochs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "'Who' tasks can extend beyond faces to include:",
+    "options": [
+      "A) Identifying camera models",
+      "B) Re-identifying people across different cameras or times",
+      "C) Measuring shutter speed",
+      "D) Detecting JPEG compression levels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a key message of the Five Ws framework for vision?",
+    "options": [
+      "A) Vision is solved by simple linear models",
+      "B) True understanding integrates recognition, context, time, place, and causality",
+      "C) More labeled data alone guarantees human-level performance",
+      "D) Vision is unrelated to common sense"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which critique best fits many current vision systems?",
+    "options": [
+      "A) Benchmarks automatically imply human-level understanding",
+      "B) Systems often lack robust, general, commonsense interpretation of images",
+      "C) Hardware speed is the only barrier to human-level perception",
+      "D) The Five Ws are obsolete"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which term describes models that latch onto background cues instead of object features?",
+    "options": [
+      "A) Data leakage",
+      "B) Spurious correlations",
+      "C) Hardware latency",
+      "D) Deterministic sampling"
+    ],
+    "answer": "B"
+  }
+]

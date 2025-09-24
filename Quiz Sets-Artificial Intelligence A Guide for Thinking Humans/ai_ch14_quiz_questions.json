@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which stance cautions against confident predictions of near‑term human‑level AI?",
+    "options": [
+      "A) Deterministic forecasting",
+      "B) Epistemic humility about timelines",
+      "C) Linear extrapolation of benchmarks",
+      "D) Hardware‑only determinism"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can progress on narrow benchmarks overstate real‑world capability?",
+    "options": [
+      "A) Benchmarks never measure anything",
+      "B) Systems may learn dataset‑specific shortcuts that don’t generalize",
+      "C) Real‑world tasks are identical to test sets",
+      "D) Benchmarks always include causal tests"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A prudent framing for AI’s near future emphasizes:",
+    "options": [
+      "A) Guaranteed AGI date announcements",
+      "B) Augmentation of human work and mixed outcomes across domains",
+      "C) Replacing all professions immediately",
+      "D) Stopping empirical evaluation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which idea summarizes the 'no free lunch' perspective for learning systems?",
+    "options": [
+      "A) A single model is optimal for all problems without assumptions",
+      "B) Without domain assumptions, no method dominates across all tasks",
+      "C) Larger models always win universally",
+      "D) Rule‑based systems dominate neural methods"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What risk follows from 'scaling solves it' optimism without guardrails?",
+    "options": [
+      "A) Automatic causal understanding",
+      "B) Neglect of safety, bias, and robustness problems",
+      "C) Elimination of distribution shift",
+      "D) Perfect calibration by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which factor most directly links AI progress to environmental and economic costs?",
+    "options": [
+      "A) Tokenization choices only",
+      "B) Compute, energy usage, and hardware supply chains",
+      "C) Choice of activation function only",
+      "D) Use of CSV files"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is evaluation on out‑of‑distribution data important for future‑proofing systems?",
+    "options": [
+      "A) It maximizes training accuracy",
+      "B) It probes robustness to shifts likely in deployment",
+      "C) It guarantees perfect fairness",
+      "D) It replaces all other testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human‑AI collaboration is strongest when systems:",
+    "options": [
+      "A) Hide uncertainty and rationales",
+      "B) Provide calibrated confidence and interpretable signals",
+      "C) Enforce fully automated decisions only",
+      "D) Remove user controls"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which policy lever supports responsible AI development?",
+    "options": [
+      "A) Prohibiting documentation",
+      "B) Impact assessments, auditability, and incident reporting",
+      "C) Eliminating red‑teaming",
+      "D) Ignoring critical infrastructure risks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key uncertainty for long‑term AI forecasting is that:",
+    "options": [
+      "A) Technological trajectories are linear and predictable",
+      "B) Research breakthroughs and bottlenecks are hard to anticipate",
+      "C) Benchmarks determine timelines exactly",
+      "D) Moore’s law guarantees progress forever"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which outcome is most consistent with historical 'hype cycles'?",
+    "options": [
+      "A) Smooth monotonic progress without setbacks",
+      "B) Periods of rapid optimism followed by retrenchment and steadier advances",
+      "C) Complete stagnation after each breakthrough",
+      "D) Instant general intelligence after any new dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why will domain expertise remain crucial even as AI improves?",
+    "options": [
+      "A) Experts are needed only to label data",
+      "B) Many tasks require context, judgment, and responsibility beyond pattern matching",
+      "C) AI systems forbid oversight",
+      "D) Expertise slows decisions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which question best probes whether systems 'understand' rather than merely imitate?",
+    "options": [
+      "A) Can the system memorize the training set?",
+      "B) Can it reason under interventions and novel constraints?",
+      "C) Can it use more parameters?",
+      "D) Can it compress logs?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A balanced view of automation’s labor impact highlights:",
+    "options": [
+      "A) Only displacement effects",
+      "B) Only new job creation",
+      "C) Both substitution and complementarity across tasks and skills",
+      "D) Guaranteed universal basic income"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "For safety‑critical uses, future evaluations should emphasize:",
+    "options": [
+      "A) Average‑case scores only",
+      "B) Tail risks, stress tests, and worst‑case analysis",
+      "C) Parameter count as the main metric",
+      "D) Training loss at epoch one"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why might 'emergent' abilities appear during scaling?",
+    "options": [
+      "A) Capabilities can transition sharply once capacity and data cross certain thresholds",
+      "B) Training becomes deterministic",
+      "C) Tokenization vanishes",
+      "D) Models stop needing optimization"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which governance practice helps reduce misuse risk while enabling research?",
+    "options": [
+      "A) Unrestricted model access",
+      "B) Tiered access with monitoring, rate limits, and purpose restrictions",
+      "C) Publishing private data",
+      "D) Removing user verification"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is a pragmatic target for 'AI that we want'?",
+    "options": [
+      "A) Systems that maximize benchmark wins regardless of harm",
+      "B) Reliable, fair, interpretable tools aligned with human goals",
+      "C) Models that ignore uncertainty",
+      "D) Autonomous systems without oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which research direction aims to connect perception, language, and action?",
+    "options": [
+      "A) Static classification only",
+      "B) Embodied and interactive learning",
+      "C) Token sorting",
+      "D) Dictionary lookup"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is transparency about data sources increasingly important?",
+    "options": [
+      "A) It slows progress with no benefit",
+      "B) It supports consent, provenance, licensing, and bias analysis",
+      "C) It replaces testing",
+      "D) It removes the need for governance"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which pitfall can arise from human‑in‑the‑loop workflows if poorly designed?",
+    "options": [
+      "A) Perfect vigilance at all times",
+      "B) Overreliance on automation leading to complacency or rubber‑stamping",
+      "C) Elimination of bias",
+      "D) Instant causal insight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In forecasting impacts on education, a key opportunity is:",
+    "options": [
+      "A) One‑size‑fits‑all instruction only",
+      "B) Personalized tutoring and feedback with guardrails",
+      "C) Eliminating teachers",
+      "D) Removing assessment entirely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which kind of empirical evidence best supports claims of 'general' ability?",
+    "options": [
+      "A) One benchmark in a single domain",
+      "B) Robust performance across varied tasks, formats, and perturbations",
+      "C) Parameter count alone",
+      "D) A single demo video"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why do open questions about consciousness matter for AI policy?",
+    "options": [
+      "A) They determine FLOP budgets",
+      "B) They shape ethical treatment debates and public expectations",
+      "C) They remove the need for safety",
+      "D) They define tokenization rules"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A sensible default for deploying powerful models is to:",
+    "options": [
+      "A) Skip monitoring once launched",
+      "B) Log, audit, and iterate with staged rollouts and kill‑switches",
+      "C) Disable rate limits",
+      "D) Remove incident response plans"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is reproducibility a persistent challenge for frontier AI?",
+    "options": [
+      "A) Small datasets are trivial to replicate",
+      "B) Large‑scale training involves stochasticity, data opacity, and complex dependencies",
+      "C) Results never change across seeds",
+      "D) Hyperparameters are universal constants"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What balance should future regulation aim for?",
+    "options": [
+      "A) Maximal barriers to any innovation",
+      "B) Zero oversight regardless of risk",
+      "C) Risk‑proportionate safeguards with support for beneficial uses",
+      "D) Punishing documentation practices"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "A practical near‑term priority for many organizations is:",
+    "options": [
+      "A) Theoretical proofs of AGI",
+      "B) Building robust, well‑evaluated, auditable systems for real workflows",
+      "C) Eliminating interfaces",
+      "D) Avoiding domain experts"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best captures the long‑term outlook for AI?",
+    "options": [
+      "A) Certain utopia or doom is already decided",
+      "B) Outcomes depend on choices in research, deployment, governance, and culture",
+      "C) Only compute trends matter",
+      "D) Ethics is irrelevant to progress"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What evaluation habit reduces benchmark gaming over time?",
+    "options": [
+      "A) Publishing answer keys",
+      "B) Refreshing hidden test sets and using adversarial/perturbation suites",
+      "C) Fixing one public leaderboard forever",
+      "D) Banning stress tests"
+    ],
+    "answer": "B"
+  }
+]

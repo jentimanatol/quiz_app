@@ -1,0 +1,96 @@
+name: Build and Release EXE
+
+on:
+  push:
+    tags:
+      - 'v*.*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          pip install yt-dlp pyinstaller matplotlib seaborn pillow PyQt5
+
+      - name: Download UPX binary
+        shell: pwsh
+        run: |
+          Invoke-WebRequest https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-win64.zip -OutFile upx.zip
+          Expand-Archive upx.zip -DestinationPath . -Force
+          echo "UPX extracted."
+          Get-ChildItem -Recurse -Filter upx*.exe
+
+      - name: Verify icon file exists
+        shell: pwsh
+        run: |
+          if (Test-Path "assets\app_icon_256x256.ico") {
+            echo "Icon file found: assets\app_icon_256x256.ico"
+            Get-Item "assets\app_icon_256x256.ico" | Select-Object Name, Length, LastWriteTime
+          } else {
+            echo "Warning: Icon file not found at assets\app_icon_256x256.ico"
+            echo "Available files in assets folder:"
+            if (Test-Path "assets") {
+              Get-ChildItem "assets" -Recurse
+            } else {
+              echo "Assets folder not found"
+            }
+          }
+
+      - name: Build executable with PyInstaller and UPX
+        shell: pwsh
+        run: |
+          pyinstaller --noconfirm --onefile --windowed `
+            --icon=assets/app_icon_256x256.ico `
+            --name quiz_app `
+            --add-data "assets;assets" `
+            --add-data "assets/app_icon_32x32.ico;assets" `
+            quiz_app.py `
+            --upx-dir upx-4.2.1-win64
+
+      - name: Verify executable was created
+        shell: pwsh
+        run: |
+          if (Test-Path "dist\quiz_app.exe") {
+            echo "Executable created successfully"
+            Get-Item "dist\quiz_app.exe" | Select-Object Name, Length, LastWriteTime
+          } else {
+            echo "Error: Executable was not created"
+            exit 1
+          }
+
+      - name: Rename executable with version
+        shell: pwsh
+        run: |
+          Copy-Item "dist\quiz_app.exe" "dist\quiz_app_${{ github.ref_name }}.exe" -Force
+          Get-Item "dist\quiz_app_${{ github.ref_name }}.exe" | Select-Object Name, Length, LastWriteTime
+
+      - name: Create ZIP archive
+        shell: pwsh
+        run: |
+          Compress-Archive -Path "dist\quiz_app_${{ github.ref_name }}.exe" -DestinationPath "quiz_app_${{ github.ref_name }}.zip" -Force
+          Get-ChildItem -Recurse
+
+      - name: Upload to GitHub Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/quiz_app_${{ github.ref_name }}.exe
+            quiz_app_${{ github.ref_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
