@@ -1,0 +1,872 @@
+[
+  {
+    "question": "What was a key limitation of early AI systems like the Logic Theorist?",
+    "options": [
+      "A) They lacked access to GPUs",
+      "B) They relied on symbolic reasoning and struggled with real-world complexity",
+      "C) They were neural networks with too many layers",
+      "D) They used only unsupervised learning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Who organized the Dartmouth Conference and is often called the 'father of AI'?",
+    "options": [
+      "A) Alan Turing",
+      "B) John McCarthy",
+      "C) Marvin Minsky",
+      "D) Claude Shannon"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What was the primary goal of many early AI researchers?",
+    "options": [
+      "A) Build general-purpose systems capable of human-like reasoning",
+      "B) Focus solely on speech recognition",
+      "C) Create narrow tools for statistics only",
+      "D) Replace mathematics with heuristics"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which approach dominated AI in the 1950s–1960s?",
+    "options": [
+      "A) Connectionism",
+      "B) Symbolic AI (rule-based systems)",
+      "C) Evolutionary robotics",
+      "D) Reinforcement learning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What major challenge did symbolic AI systems face?",
+    "options": [
+      "A) They required huge image datasets",
+      "B) They struggled with common-sense knowledge and open-ended contexts",
+      "C) They could not perform logical inference",
+      "D) They only ran on analog computers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What was the Mechanical Turk?",
+    "options": [
+      "A) A genuine autonomous chess robot",
+      "B) A chess-playing machine secretly operated by a hidden human",
+      "C) An early internet platform for crowdsourcing",
+      "D) A robotic factory arm"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key early assumption about intelligence in machines was that it could be achieved by:",
+    "options": [
+      "A) Tuning random seeds",
+      "B) Explicit rules and symbol manipulation",
+      "C) Massive unlabeled data only",
+      "D) Optical hardware"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why did many early forecasts for general AI prove too optimistic?",
+    "options": [
+      "A) Researchers underestimated the complexity of human intelligence",
+      "B) Computers got slower",
+      "C) Humans refused to label data",
+      "D) Logic was abandoned completely"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "ELIZA (Weizenbaum) illustrated that:",
+    "options": [
+      "A) Simple pattern matching can simulate conversation",
+      "B) Only deep networks can chat",
+      "C) Parsing is unnecessary",
+      "D) Symbolic systems cannot manipulate text"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "SHRDLU (Winograd) showed that symbolic systems could:",
+    "options": [
+      "A) Control industrial robots in real factories",
+      "B) Understand and act in a constrained blocks-world",
+      "C) Learn from unlabeled images",
+      "D) Translate between dozens of languages"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The Turing Test evaluates:",
+    "options": [
+      "A) Hardware throughput",
+      "B) Whether a machine’s conversation is indistinguishable from a human’s",
+      "C) Image classification accuracy",
+      "D) Logical completeness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which critique highlights that performance in a test may not equal true understanding?",
+    "options": [
+      "A) Hebb’s rule",
+      "B) Searle’s Chinese Room",
+      "C) Bayes’ rule",
+      "D) Bellman optimality"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "AI 'winters' were periods characterized by:",
+    "options": [
+      "A) Surging funding and optimism",
+      "B) Reduced funding and disillusionment after unmet promises",
+      "C) Massive benchmark improvements",
+      "D) Exclusive focus on robotics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Frames and scripts were introduced to provide:",
+    "options": [
+      "A) GPU acceleration",
+      "B) Structured representations of stereotyped situations",
+      "C) Neural attention",
+      "D) Probabilistic inference only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A persistent obstacle for early AI systems in the real world was:",
+    "options": [
+      "A) Lack of linear algebra",
+      "B) Combinatorial explosion and brittle rule coverage",
+      "C) Too many sensors",
+      "D) Excess labeled data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The physical symbol systems hypothesis claimed that:",
+    "options": [
+      "A) Only neural nets can think",
+      "B) Symbol manipulation suffices for general intelligence",
+      "C) Sensors are unnecessary",
+      "D) Statistics replaces logic"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which pair reflects classic GOFAI techniques?",
+    "options": [
+      "A) Backpropagation and dropout",
+      "B) Search and logic-based reasoning",
+      "C) Batch norm and ReLUs",
+      "D) Convolutions and pooling"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A lesson from early AI failure modes is that:",
+    "options": [
+      "A) Narrow success doesn’t guarantee broad competence",
+      "B) Benchmarks always capture common sense",
+      "C) More rules always fix brittleness",
+      "D) Natural language is easy"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A key difference between toy domains and the real world is that toy domains:",
+    "options": [
+      "A) Have limitless uncertainty",
+      "B) Are highly constrained with limited entities and relations",
+      "C) Require online learning",
+      "D) Demand continuous-time control"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The frame problem concerns:",
+    "options": [
+      "A) Video frame rates",
+      "B) Representing what changes and what stays the same after actions",
+      "C) GPU memory frames",
+      "D) Camera calibration"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Symbol grounding highlights the challenge of:",
+    "options": [
+      "A) Mapping symbols to real-world perception and action",
+      "B) Finding minima in loss surfaces",
+      "C) Encoding pixels as bytes",
+      "D) Scheduling training jobs"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Marvin Minsky and Seymour Papert’s critique of early perceptrons led to:",
+    "options": [
+      "A) Increased enthusiasm for neural nets immediately",
+      "B) Reduced interest in perceptrons for a time",
+      "C) The end of symbolic AI",
+      "D) Abandoning logic programming"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "One reason toy chatbots mislead observers is that:",
+    "options": [
+      "A) They always reason causally",
+      "B) Surface fluency can mask shallow understanding",
+      "C) They use too many rules",
+      "D) They cannot use patterns"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A major driver of later AI revivals (after early phases) was:",
+    "options": [
+      "A) Decreased compute power",
+      "B) Larger datasets and faster hardware",
+      "C) Removal of math requirements",
+      "D) Fewer researchers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A practical takeaway from early AI history is to:",
+    "options": [
+      "A) Avoid evaluation",
+      "B) Be cautious about over-generalizing from demos",
+      "C) Ignore domain complexity",
+      "D) Use only rules"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which classic program performed theorem proving via heuristics?",
+    "options": [
+      "A) DENDRAL",
+      "B) Logic Theorist",
+      "C) ELIZA",
+      "D) SHRDLU"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "DENDRAL and MYCIN are notable because they:",
+    "options": [
+      "A) Used deep CNNs",
+      "B) Were expert systems targeting specific domains",
+      "C) Played Go at superhuman level",
+      "D) Used reinforcement learning exclusively"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A general reason expert systems hit limits was that:",
+    "options": [
+      "A) Rules were easy to maintain indefinitely",
+      "B) Capturing and updating tacit expert knowledge is difficult",
+      "C) There was too much labeled data",
+      "D) They were probabilistic by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "One historical lesson for present-day AI is that progress often:",
+    "options": [
+      "A) Follows linear, predictable paths",
+      "B) Comes in bursts with setbacks and course corrections",
+      "C) Avoids new paradigms",
+      "D) Eliminates evaluation debates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What inspired the design of artificial neural networks?",
+    "options": [
+      "A) Database schemas",
+      "B) Biological neurons and networks",
+      "C) Planetary motion",
+      "D) Compiler theory"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A perceptron is best described as:",
+    "options": [
+      "A) A single artificial neuron",
+      "B) A full deep network",
+      "C) An unsupervised clustering algorithm",
+      "D) A tree-based model"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Main limitation of a single-layer perceptron:",
+    "options": [
+      "A) Cannot train on labeled data",
+      "B) Learns only linearly separable patterns",
+      "C) Requires infinite data",
+      "D) Uses too much compute"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Multi-layer networks overcome the perceptron’s limits by:",
+    "options": [
+      "A) Reducing parameters to zero",
+      "B) Learning hierarchical nonlinear features",
+      "C) Removing activation functions",
+      "D) Using only linear layers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Backpropagation is used to:",
+    "options": [
+      "A) Visualize features",
+      "B) Compute gradients to update weights and minimize loss",
+      "C) Select features automatically",
+      "D) Normalize inputs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Deep learning refers to:",
+    "options": [
+      "A) Linear regression with many features",
+      "B) Neural nets with many layers learning hierarchical representations",
+      "C) Decision trees only",
+      "D) Unsupervised clustering only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key reason for recent ML progress is the combination of:",
+    "options": [
+      "A) Smaller datasets and slower hardware",
+      "B) More compute, large datasets, and better algorithms",
+      "C) Less data and fewer benchmarks",
+      "D) Only manual feature engineering"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "CNNs are primarily suited for:",
+    "options": [
+      "A) Image and spatial data",
+      "B) Stock ledgers",
+      "C) Only audio waveforms",
+      "D) Sorting algorithms"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "RNNs are primarily suited for:",
+    "options": [
+      "A) Independent identically distributed data only",
+      "B) Sequential data with temporal dependencies",
+      "C) Static images exclusively",
+      "D) Graphs with fixed edges"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Common supervised learning pipeline includes:",
+    "options": [
+      "A) Label data → train → validate → test",
+      "B) Train → delete data → deploy",
+      "C) Test only",
+      "D) Deploy before training"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Overfitting occurs when a model:",
+    "options": [
+      "A) Generalizes well to new data",
+      "B) Memorizes training data but fails on unseen data",
+      "C) Has too few parameters",
+      "D) Uses regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A validation set is used to:",
+    "options": [
+      "A) Train weights",
+      "B) Tune hyperparameters and select models",
+      "C) Provide final unbiased evaluation",
+      "D) Store logs"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Regularization mainly aims to:",
+    "options": [
+      "A) Increase variance",
+      "B) Reduce overfitting and improve generalization",
+      "C) Guarantee zero error",
+      "D) Remove nonlinearities"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Gradient descent updates parameters to:",
+    "options": [
+      "A) Maximize loss",
+      "B) Minimize a loss function using gradients",
+      "C) Randomize outputs",
+      "D) Match training labels exactly every step"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data augmentation in vision tasks is used to:",
+    "options": [
+      "A) Reduce dataset variety",
+      "B) Increase effective data diversity and reduce overfitting",
+      "C) Remove labels",
+      "D) Slow convergence intentionally"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Activation functions like ReLU introduce:",
+    "options": [
+      "A) Linearity",
+      "B) Nonlinearity enabling complex decision boundaries",
+      "C) Weight decay",
+      "D) Pooling"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Precision and recall are most relevant for:",
+    "options": [
+      "A) Regression tasks",
+      "B) Classification with class imbalance or asymmetric costs",
+      "C) Clustering only",
+      "D) Dimensionality reduction"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Cross-validation helps by:",
+    "options": [
+      "A) Eliminating the need for a test set",
+      "B) Estimating generalization across different splits",
+      "C) Training without labels",
+      "D) Speeding up inference"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A confusion matrix summarizes:",
+    "options": [
+      "A) Only true positives",
+      "B) Counts of correct and incorrect predictions by class",
+      "C) Feature importances",
+      "D) Parameter values"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Dropout is a technique that:",
+    "options": [
+      "A) Adds more layers",
+      "B) Randomly disables units during training to reduce co-adaptation",
+      "C) Guarantees better accuracy",
+      "D) Removes need for data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why do deeper models often perform better (to a point)?",
+    "options": [
+      "A) They have fewer parameters",
+      "B) They capture hierarchical structures and complex functions",
+      "C) They avoid nonlinearity",
+      "D) They never overfit"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Top-1 vs Top-5 accuracy (e.g., ImageNet) differ by:",
+    "options": [
+      "A) Number of training epochs",
+      "B) Whether the correct class must be the highest probability or within top five",
+      "C) Optimizer choice",
+      "D) Batch size"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "AUC-ROC measures:",
+    "options": [
+      "A) Parameter count",
+      "B) Tradeoff between TPR and FPR across thresholds",
+      "C) Memory usage",
+      "D) Training time"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Learning rate too large can cause:",
+    "options": [
+      "A) Faster guaranteed convergence",
+      "B) Divergence or oscillations during training",
+      "C) Perfect calibration",
+      "D) No effect"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Batch normalization primarily helps by:",
+    "options": [
+      "A) Reducing internal covariate shift and stabilizing training",
+      "B) Increasing label noise",
+      "C) Disabling gradients",
+      "D) Removing activations"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Early stopping halts training when:",
+    "options": [
+      "A) Training loss increases",
+      "B) Validation performance stops improving",
+      "C) Test accuracy peaks",
+      "D) GPU usage is high"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Transfer learning means:",
+    "options": [
+      "A) Copying data between disks",
+      "B) Using knowledge from one task/domain to improve another",
+      "C) Only changing batch size",
+      "D) Ignoring pretraining"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can class imbalance be problematic?",
+    "options": [
+      "A) It simplifies loss surfaces",
+      "B) Accuracy can be misleading; minority classes may be ignored",
+      "C) It guarantees better precision",
+      "D) It improves recall automatically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Generalization refers to:",
+    "options": [
+      "A) Performance on the training set",
+      "B) Performance on unseen data from the same or similar distribution",
+      "C) GPU utilization",
+      "D) Code efficiency"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Supervised learning requires:",
+    "options": [
+      "A) Labeled examples mapping inputs to outputs",
+      "B) Only unlabeled data",
+      "C) No objective function",
+      "D) Manual rules for every case"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Unsupervised learning typically aims to:",
+    "options": [
+      "A) Predict labels exactly",
+      "B) Discover structure such as clusters or latent factors",
+      "C) Optimize human feedback directly",
+      "D) Perform rule-based reasoning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reinforcement learning involves:",
+    "options": [
+      "A) Labels for every step",
+      "B) Agents maximizing cumulative rewards via interaction",
+      "C) Only offline batch processing",
+      "D) No exploration"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A train/validation/test split helps to:",
+    "options": [
+      "A) Reduce disk space",
+      "B) Tune hyperparameters without biasing the final evaluation",
+      "C) Remove the need for labels",
+      "D) Increase overfitting"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Feature scaling often:",
+    "options": [
+      "A) Worsens convergence",
+      "B) Improves optimization stability and speed",
+      "C) Eliminates the need for batching",
+      "D) Replaces activation functions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data leakage occurs when:",
+    "options": [
+      "A) Validation information influences training or feature fitting",
+      "B) GPU memory overflows",
+      "C) Hyperparameters are logged",
+      "D) Batches are shuffled"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which metric is most informative with class imbalance?",
+    "options": [
+      "A) Overall accuracy alone",
+      "B) Precision, recall, and F1-score",
+      "C) Training loss only",
+      "D) Wall clock time"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Calibration means that:",
+    "options": [
+      "A) Probabilities align with observed frequencies",
+      "B) Confusion matrices are identical",
+      "C) ROC curves match exactly",
+      "D) The model never makes errors"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Learning curves (performance vs. data size) are useful because they:",
+    "options": [
+      "A) Predict training time exactly",
+      "B) Indicate whether more data is likely to help",
+      "C) Replace validation sets",
+      "D) Eliminate hyperparameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Cross-entropy loss is commonly used for:",
+    "options": [
+      "A) Regression",
+      "B) Classification with probabilistic outputs",
+      "C) Clustering",
+      "D) Dimensionality reduction"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Mean squared error (MSE) is typically used for:",
+    "options": [
+      "A) Binary classification",
+      "B) Regression tasks",
+      "C) Tokenization",
+      "D) Ranking only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Hyperparameters are:",
+    "options": [
+      "A) Learned automatically by gradient descent",
+      "B) Chosen via validation or search (e.g., learning rate, depth)",
+      "C) The same as weights",
+      "D) Irrelevant to performance"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A model with high bias and low variance tends to:",
+    "options": [
+      "A) Underfit with systematic errors",
+      "B) Overfit with noisy predictions",
+      "C) Perfectly generalize",
+      "D) Memorize outliers only"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "A model with low bias and high variance tends to:",
+    "options": [
+      "A) Underfit",
+      "B) Overfit",
+      "C) Show perfect calibration",
+      "D) Ignore data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Regular train/val/test discipline is important because:",
+    "options": [
+      "A) It prevents plotting",
+      "B) It reduces evaluation bias and helps detect overfitting",
+      "C) It increases memory usage",
+      "D) It eliminates randomness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "AUC-PR (average precision) is especially informative when:",
+    "options": [
+      "A) Classes are balanced",
+      "B) Positive class is rare",
+      "C) Labels are continuous",
+      "D) Predictions are deterministic"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key danger of optimizing only for a proxy metric is that:",
+    "options": [
+      "A) All metrics improve together",
+      "B) The system may game the proxy without delivering true value",
+      "C) It guarantees fairness",
+      "D) It simplifies deployment"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "K-fold cross-validation primarily:",
+    "options": [
+      "A) Speeds up inference",
+      "B) Provides more robust estimates by rotating validation folds",
+      "C) Eliminates the need for a test set",
+      "D) Changes labels automatically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Early stopping is triggered by:",
+    "options": [
+      "A) Validation metric plateauing or worsening",
+      "B) High GPU utilization",
+      "C) Low batch size",
+      "D) Fixed number of epochs regardless"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Data augmentation generally aims to:",
+    "options": [
+      "A) Reduce diversity",
+      "B) Improve robustness to small input variations",
+      "C) Increase label noise",
+      "D) Lower recall"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is a held-out test set important?",
+    "options": [
+      "A) It tunes hyperparameters",
+      "B) It gives an unbiased estimate after all choices are fixed",
+      "C) It speeds up training",
+      "D) It replaces monitoring"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Distribution shift means:",
+    "options": [
+      "A) Training and deployment data distributions differ",
+      "B) Labels are always wrong",
+      "C) Loss is convex",
+      "D) Evaluation is impossible"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Data provenance tracking helps ensure:",
+    "options": [
+      "A) Unknown sources",
+      "B) Traceability of where data came from and how it was processed",
+      "C) Random sampling only",
+      "D) No documentation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can accuracy alone be misleading?",
+    "options": [
+      "A) It always equals recall",
+      "B) It ignores class imbalance and error costs",
+      "C) It is equivalent to AUC",
+      "D) It measures calibration"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A proper evaluation report should include:",
+    "options": [
+      "A) Only the best metric",
+      "B) Multiple metrics, confidence intervals, and disaggregated performance",
+      "C) No methodology",
+      "D) Only training curves"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Confounding in evaluation can occur when:",
+    "options": [
+      "A) The test set correlates with artifacts unrelated to the true task",
+      "B) Labels are invisible",
+      "C) GPUs are slow",
+      "D) The model is linear"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "When a model’s predictions must be trustworthy to users, teams should also consider:",
+    "options": [
+      "A) Interpretability and uncertainty estimates",
+      "B) More parameters only",
+      "C) Removing monitoring",
+      "D) Hiding documentation"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Baseline models are useful because they:",
+    "options": [
+      "A) Are always best",
+      "B) Provide reference performance to beat and sanity-check pipelines",
+      "C) Replace ablations",
+      "D) Eliminate need for features"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Learning rate schedules (e.g., decay) are used to:",
+    "options": [
+      "A) Increase loss",
+      "B) Improve convergence dynamics over training",
+      "C) Randomize labels",
+      "D) Fix batch size"
+    ],
+    "answer": "B"
+  }
+]

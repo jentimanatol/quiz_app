@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What are the core components of a reinforcement learning setup?",
+    "options": [
+      "A) Dataset, labels, optimizer",
+      "B) Agent, environment, states, actions, rewards",
+      "C) Encoder, decoder, attention",
+      "D) Tokens, embeddings, prompts"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A policy in reinforcement learning is best described as:",
+    "options": [
+      "A) A function mapping states to actions or action probabilities",
+      "B) A record of all rewards received so far",
+      "C) The loss function used for training",
+      "D) The buffer that stores past experiences"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The return typically refers to:",
+    "options": [
+      "A) The immediate reward at the current time step",
+      "B) The discounted sum of future rewards",
+      "C) The number of steps to termination",
+      "D) The average of past actions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The state-value function Vπ(s) represents:",
+    "options": [
+      "A) The probability of taking each action in state s",
+      "B) The expected return from state s following policy π",
+      "C) The maximum reward achievable in one step",
+      "D) The entropy of the policy"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The action-value function Qπ(s, a) represents:",
+    "options": [
+      "A) The probability of transitioning to the next state",
+      "B) The expected return starting at state s, taking action a, then following π",
+      "C) The loss of the critic network",
+      "D) The average reward per episode"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The exploration–exploitation trade-off refers to:",
+    "options": [
+      "A) Balancing compute and memory usage",
+      "B) Choosing between trying new actions and using known good actions",
+      "C) Mixing supervised and unsupervised learning",
+      "D) Balancing training and validation data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "ε-greedy exploration chooses:",
+    "options": [
+      "A) The worst action with probability ε",
+      "B) A random action with probability ε, otherwise the current best",
+      "C) The best action with probability ε, otherwise random",
+      "D) Actions in round-robin order"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The Markov property implies that:",
+    "options": [
+      "A) The future is independent of the past given the present state",
+      "B) Rewards are always deterministic",
+      "C) Episodes must be infinite",
+      "D) States are always fully observable"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Model-free methods differ from model-based methods in that they:",
+    "options": [
+      "A) Learn a dynamics model and plan with it",
+      "B) Do not learn or use a transition model of the environment",
+      "C) Require full knowledge of transition probabilities",
+      "D) Cannot use function approximation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "On-policy methods like SARSA differ from off-policy methods like Q-learning because:",
+    "options": [
+      "A) On-policy methods learn about the policy being followed; off-policy learn about a different (target) policy",
+      "B) On-policy methods require models; off-policy do not",
+      "C) On-policy methods cannot explore",
+      "D) Off-policy methods do not use rewards"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Temporal-Difference (TD) learning combines ideas from:",
+    "options": [
+      "A) Dynamic programming and supervised learning on immediate labels",
+      "B) Monte Carlo returns and bootstrapping from value estimates",
+      "C) Unsupervised learning and clustering",
+      "D) Genetic algorithms and planning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Q-learning is:",
+    "options": [
+      "A) An on-policy algorithm that updates using actions actually taken",
+      "B) An off-policy algorithm that updates toward the greedy action value",
+      "C) A model-based planning approach",
+      "D) A purely supervised method for labeling images"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "SARSA updates the Q-value using:",
+    "options": [
+      "A) The next action chosen by the current policy",
+      "B) The maximum over next-state action values",
+      "C) A learned transition model",
+      "D) The average of all next actions"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The Bellman equation provides:",
+    "options": [
+      "A) A closed-form solution for optimal policies in all tasks",
+      "B) A recursive relation for value functions in terms of expected returns",
+      "C) A method for tokenizing text",
+      "D) A rule for setting the learning rate"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward shaping can be risky because it:",
+    "options": [
+      "A) Always slows learning",
+      "B) Can change the optimal policy if not potential-based",
+      "C) Removes the need for exploration",
+      "D) Eliminates the discount factor"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The discount factor γ close to 0 makes the agent:",
+    "options": [
+      "A) Focus on very long-term rewards",
+      "B) Ignore rewards entirely",
+      "C) Myopic, emphasizing immediate rewards",
+      "D) Deterministic in action selection"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "A deterministic policy:",
+    "options": [
+      "A) Outputs a probability distribution over actions",
+      "B) Chooses the same action for a given state",
+      "C) Uses random exploration at all times",
+      "D) Cannot be optimal"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Experience replay buffers are used to:",
+    "options": [
+      "A) Store episodes for offline evaluation only",
+      "B) Decorrelate updates by sampling past transitions",
+      "C) Remove the need for a target network",
+      "D) Ensure fully on-policy updates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Deep Q-Networks (DQN) approximate:",
+    "options": [
+      "A) The transition probabilities",
+      "B) The policy’s entropy",
+      "C) The action-value function with a neural network",
+      "D) The reward function only"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Target networks in DQN help by:",
+    "options": [
+      "A) Increasing exploration directly",
+      "B) Stabilizing learning via a slowly updated target for bootstrapping",
+      "C) Reducing the size of the replay buffer",
+      "D) Computing rewards from raw pixels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Double DQN is designed to reduce:",
+    "options": [
+      "A) Underestimation bias in value estimates",
+      "B) Overestimation bias in value estimates",
+      "C) The need for replay buffers",
+      "D) The number of actions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Actor–critic methods combine:",
+    "options": [
+      "A) A policy (actor) with a value function (critic)",
+      "B) A language model with a vision model",
+      "C) Two identical critics without an actor",
+      "D) Supervised and unsupervised models only"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Policy gradient methods directly:",
+    "options": [
+      "A) Learn a model of the environment",
+      "B) Maximize expected return by adjusting policy parameters",
+      "C) Compute exact optimal value functions",
+      "D) Remove the need for rewards"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The advantage function A(s, a) is commonly defined as:",
+    "options": [
+      "A) R − γ",
+      "B) Q(s, a) − V(s)",
+      "C) V(s) − Q(s, a)",
+      "D) π(a|s) − Q(s, a)"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Entropy regularization in policy optimization encourages:",
+    "options": [
+      "A) Lower variance in gradient estimates",
+      "B) More stochasticity to promote exploration",
+      "C) Deterministic greedy policies",
+      "D) Zero reward baselines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The credit assignment problem concerns:",
+    "options": [
+      "A) Mapping delayed rewards back to responsible actions/states",
+      "B) Assigning labels to supervised datasets",
+      "C) Allocating GPU memory to processes",
+      "D) Selecting between batch and online learning"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Partial observability (POMDP settings) often motivates:",
+    "options": [
+      "A) Removing memory from agents",
+      "B) Using recurrent or memory-based policies to retain information",
+      "C) Ignoring the Markov property",
+      "D) Fixing rewards to be constant"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward hacking indicates that agents may:",
+    "options": [
+      "A) Always achieve the intended behavior",
+      "B) Exploit the reward specification to achieve high return without desired outcomes",
+      "C) Require no evaluation",
+      "D) Never generalize across tasks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Sim-to-real transfer often uses domain randomization to:",
+    "options": [
+      "A) Reduce training data to a single scenario",
+      "B) Vary simulation parameters to improve robustness in the real world",
+      "C) Remove the need for sensors",
+      "D) Force deterministic policies"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety in RL can be promoted by:",
+    "options": [
+      "A) Ignoring constraints during training",
+      "B) Constrained optimization and conservative exploration strategies",
+      "C) Using only greedy action selection",
+      "D) Eliminating validation altogether"
+    ],
+    "answer": "B"
+  }
+]

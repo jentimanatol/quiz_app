@@ -1,0 +1,302 @@
+[
+  {
+    "question": "In production ML, what is concept drift?",
+    "options": [
+      "A) A change in the model architecture",
+      "B) A change in the relationship between inputs and targets over time",
+      "C) Random seed variation across runs",
+      "D) A network delay during inference"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which deployment strategy exposes a small fraction of traffic to a new model first?",
+    "options": [
+      "A) Big bang release",
+      "B) Canary rollout",
+      "C) Blue/green data labeling",
+      "D) Shadow inference"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Shadow deployment is used to:",
+    "options": [
+      "A) Send model outputs directly to users",
+      "B) Run the new model alongside the old one without affecting users",
+      "C) Disable monitoring in production",
+      "D) Remove human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The main purpose of a model registry is to:",
+    "options": [
+      "A) Generate synthetic datasets",
+      "B) Track versions, lineage, and approvals for models",
+      "C) Replace version control for code",
+      "D) Host dashboards for business metrics only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which monitoring signal best detects distribution shift at input time?",
+    "options": [
+      "A) CPU temperature",
+      "B) Feature statistics and drift tests",
+      "C) Number of unit tests",
+      "D) Lines of code in the service"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A/B testing primarily evaluates:",
+    "options": [
+      "A) Training speed of two optimizers",
+      "B) Online performance differences between two model variants",
+      "C) GPU vs. CPU wattage",
+      "D) The number of layers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data lineage answers which question most directly?",
+    "options": [
+      "A) Who owns the cloud account?",
+      "B) Where did this data come from and how was it transformed?",
+      "C) What is the model latency?",
+      "D) How many labels are correct?"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice improves reproducibility of training?",
+    "options": [
+      "A) Changing random seeds each epoch without logging",
+      "B) Pinning library versions and capturing exact configs and data snapshots",
+      "C) Deleting intermediate artifacts",
+      "D) Relying on default hyperparameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key risk of feedback loops after deployment is that systems may:",
+    "options": [
+      "A) Reduce latency automatically",
+      "B) Reinforce their own biases by influencing future data",
+      "C) Eliminate the need for monitoring",
+      "D) Become fully interpretable"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A feature store in MLOps is used for:",
+    "options": [
+      "A) Storing GPU drivers",
+      "B) Serving consistent, versioned features for training and inference",
+      "C) Hosting web dashboards",
+      "D) Managing CI/CD pipelines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What’s the main purpose of data validation checks in the pipeline?",
+    "options": [
+      "A) To compress datasets",
+      "B) To catch schema errors, missing values, and out-of-range statistics early",
+      "C) To enforce model cards",
+      "D) To schedule daily standups"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The privacy principle of data minimization states that systems should:",
+    "options": [
+      "A) Collect as much data as possible for future use",
+      "B) Collect only what is necessary for specified purposes",
+      "C) Delete logs immediately",
+      "D) Share data broadly across teams"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Differential privacy provides guarantees by:",
+    "options": [
+      "A) Encrypting stored data only",
+      "B) Bounding the contribution of any individual data point via noise mechanisms",
+      "C) Tokenizing all inputs",
+      "D) Using only public datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A Data Protection Impact Assessment (DPIA) is primarily used to:",
+    "options": [
+      "A) Optimize GPU usage",
+      "B) Systematically assess and mitigate privacy risks in high-risk processing",
+      "C) Replace all legal review",
+      "D) Choose a programming language"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which safeguard helps prevent prompt injection in LLM applications?",
+    "options": [
+      "A) Ignoring user input length",
+      "B) Isolating untrusted content, strict output schemas, and allow/deny lists",
+      "C) Removing all logs",
+      "D) Using only greedy decoding"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Red-team exercises for generative systems focus on:",
+    "options": [
+      "A) UI color themes",
+      "B) Actively probing for harmful, insecure, or policy-violating behavior",
+      "C) GPU overclocking",
+      "D) Only grammar checks"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which metric is most appropriate for safety-critical evaluations beyond average accuracy?",
+    "options": [
+      "A) FLOPs used",
+      "B) Tail risk metrics and error severity distributions",
+      "C) Training loss only",
+      "D) Number of servers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model watermarks in generative AI are used to:",
+    "options": [
+      "A) Improve BLEU scores",
+      "B) Help identify model-generated content under certain conditions",
+      "C) Encrypt all outputs",
+      "D) Replace licensing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common pitfall when setting KPIs for an AI product is to:",
+    "options": [
+      "A) Align KPIs with user value and risk constraints",
+      "B) Optimize proxy metrics that don’t reflect actual utility or safety",
+      "C) Measure multi-objective trade-offs",
+      "D) Include guardrail metrics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Continuous evaluation in production should include:",
+    "options": [
+      "A) Only offline test sets",
+      "B) Online telemetry, labeled slices, and periodic red-team suites",
+      "C) Removal of dashboards",
+      "D) Manual spot checks only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Incident response runbooks should define:",
+    "options": [
+      "A) Only who built the model",
+      "B) Detection, escalation paths, containment, communication, and rollback steps",
+      "C) The color scheme for dashboards",
+      "D) GPU node names"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "License compliance matters because:",
+    "options": [
+      "A) It affects only code, never data",
+      "B) Violations can create legal and operational risk for models and datasets",
+      "C) It is optional for commercial use",
+      "D) It replaces privacy review"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which approach helps address label quality at scale?",
+    "options": [
+      "A) Skip audits to move fast",
+      "B) Use gold sets, consensus labeling, and targeted review of disagreement cases",
+      "C) Rely on a single annotator for speed",
+      "D) Hide task guidelines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why add a human fallback in high-stakes decisions?",
+    "options": [
+      "A) To remove accountability",
+      "B) To allow intervention when the model is uncertain or out-of-scope",
+      "C) To increase latency without benefit",
+      "D) To avoid logging"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Data retention policies should:",
+    "options": [
+      "A) Keep everything forever",
+      "B) Define justified retention periods and secure deletion processes",
+      "C) Be written only after deployment",
+      "D) Apply to code but not data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model documentation (e.g., model cards) should include:",
+    "options": [
+      "A) Only the parameter count",
+      "B) Intended uses, limitations, evaluation across slices, and safety notes",
+      "C) Marketing slogans",
+      "D) Proprietary secrets only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which practice reduces vendor lock-in risk?",
+    "options": [
+      "A) Using proprietary APIs without abstraction",
+      "B) Portable interfaces, data export paths, and open standards where possible",
+      "C) Hardcoding credentials",
+      "D) Disabling backups"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to implement rate limits and abuse detection is to:",
+    "options": [
+      "A) Slow down all users equally",
+      "B) Mitigate DoS, scraping, and misuse while maintaining availability",
+      "C) Replace authentication",
+      "D) Remove monitoring"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which statement best captures 'responsible AI' in operations?",
+    "options": [
+      "A) Accuracy-only goals",
+      "B) A lifecycle approach covering design, data, training, evaluation, deployment, and monitoring with governance",
+      "C) Ad hoc fixes after incidents",
+      "D) No documentation needed"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A sensible rollback strategy for new models is to:",
+    "options": [
+      "A) Delete the old model immediately",
+      "B) Keep a stable previous version ready and automate quick revert procedures",
+      "C) Always roll forward only",
+      "D) Disable alerting during rollout"
+    ],
+    "answer": "B"
+  }
+]

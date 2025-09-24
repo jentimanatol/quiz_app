@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What does the Turing Test primarily evaluate?",
+    "options": [
+      "A) Hardware efficiency",
+      "B) A machine’s ability to produce human-like conversational behavior",
+      "C) Visual perception accuracy",
+      "D) Ability to prove mathematical theorems"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Searle’s Chinese Room thought experiment is used to argue that:",
+    "options": [
+      "A) Symbol manipulation alone may not constitute understanding",
+      "B) Neural networks cannot scale",
+      "C) Logic is always superior to learning",
+      "D) Computers cannot process symbols"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which distinction separates doing from knowing in AI debates?",
+    "options": [
+      "A) Performance vs. understanding",
+      "B) Learning vs. memory",
+      "C) Training vs. inference",
+      "D) Actions vs. rewards"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Intentionality in philosophy of mind refers to:",
+    "options": [
+      "A) The hardware’s clock rate",
+      "B) Aboutness—mental states being directed at objects or states of affairs",
+      "C) The speed of training",
+      "D) The size of a dataset"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which claim aligns with 'weak AI' rather than 'strong AI'?",
+    "options": [
+      "A) Machines can actually have minds and consciousness",
+      "B) Machines can be useful tools that simulate intelligent behavior",
+      "C) Machines have intrinsic understanding of qualia",
+      "D) Machines possess free will"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common critique of purely behavioral tests for intelligence is that they:",
+    "options": [
+      "A) Ignore output behavior",
+      "B) Risk conflating imitation with genuine understanding",
+      "C) Require symbolic logic only",
+      "D) Cannot be automated"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Embodiment hypotheses suggest that:",
+    "options": [
+      "A) Intelligence can be achieved with symbols alone",
+      "B) Physical interaction with the world can be crucial for grounded understanding",
+      "C) Perception is unnecessary for learning",
+      "D) Robots should avoid sensors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which position argues that cognitive functions can be realized in multiple physical substrates?",
+    "options": [
+      "A) Biological chauvinism",
+      "B) Multiple realizability",
+      "C) Behaviorism only",
+      "D) Vitalism"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which notion cautions against projecting human qualities onto machines?",
+    "options": [
+      "A) Anthropomorphism",
+      "B) Empiricism",
+      "C) Rationalism",
+      "D) Reductionism"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Qualia are typically described as:",
+    "options": [
+      "A) Logical operators in proofs",
+      "B) Subjective, first-person experiences (e.g., 'what it is like')",
+      "C) Publicly verifiable behaviors",
+      "D) Neural activation thresholds"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A machine that passes narrow benchmarks but fails broadly most likely lacks:",
+    "options": [
+      "A) Specialized skills",
+      "B) Robust general understanding across contexts",
+      "C) Training data",
+      "D) Hardware acceleration"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The 'hard problem' of consciousness concerns:",
+    "options": [
+      "A) Explaining functional behavior only",
+      "B) Explaining why and how physical processes give rise to subjective experience",
+      "C) Optimizing neural networks",
+      "D) Measuring EEG signals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which best describes 'explainability' in AI?",
+    "options": [
+      "A) Guarantees of perfect truthfulness",
+      "B) Tools and methods that make model behavior understandable to humans",
+      "C) Replacement for evaluation",
+      "D) A hardware debugging technique only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which term refers to the ability to transfer knowledge to new tasks and domains?",
+    "options": [
+      "A) Memorization",
+      "B) Transfer and generalization",
+      "C) Quantization",
+      "D) Distillation only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which point is often raised in debates about whether AI systems 'understand' language?",
+    "options": [
+      "A) Performance is sufficient for understanding in all cases",
+      "B) Syntactic pattern-matching may not capture semantics and world grounding",
+      "C) Understanding requires no contact with the world",
+      "D) Semantics is identical to token frequency"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A system with self-modeling capabilities aims to:",
+    "options": [
+      "A) Increase tokenization speed",
+      "B) Maintain internal representations of its own knowledge and limits",
+      "C) Remove the need for training",
+      "D) Guarantee consciousness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which scenario illustrates 'opacity' in modern AI systems?",
+    "options": [
+      "A) Fully transparent rule lists for decisions",
+      "B) High-dimensional neural networks whose internal reasoning is hard to interpret",
+      "C) Simple linear models with a dozen coefficients",
+      "D) Small decision trees used in teaching"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "One proposed hallmark of general intelligence is the capacity for:",
+    "options": [
+      "A) Fixed, single-task performance",
+      "B) Flexible problem-solving across diverse, novel situations",
+      "C) Predefined pipeline execution only",
+      "D) Hardware overclocking"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which concept emphasizes that meaning may require linking symbols to perception and action?",
+    "options": [
+      "A) Unification",
+      "B) Symbol grounding",
+      "C) Normalization",
+      "D) Canonicalization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Creativity in AI is often evaluated by:",
+    "options": [
+      "A) FLOPs used per second",
+      "B) Novelty and value of generated artifacts relative to human standards",
+      "C) Training loss alone",
+      "D) Number of parameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which evaluation risk follows from over-reliance on human-likeness as a metric?",
+    "options": [
+      "A) Underestimating compute needs",
+      "B) Mistaking imitation for comprehension or agency",
+      "C) Ignoring tokenization details",
+      "D) Confusing regression with classification"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does 'theory of mind' contribute to discussions of machine intelligence?",
+    "options": [
+      "A) It describes GPU scheduling",
+      "B) It concerns reasoning about beliefs, desires, and intentions of agents",
+      "C) It eliminates the need for data",
+      "D) It proves consciousness in machines"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which position argues that intelligence could emerge from sufficient scale and data without explicit symbols?",
+    "options": [
+      "A) Classical symbolic AI",
+      "B) Connectionist/scale-based optimism",
+      "C) Logicism",
+      "D) Physical symbol systems hypothesis only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A practical reason to seek interpretability even if consciousness is unknown is that:",
+    "options": [
+      "A) Interpretability increases parameter count",
+      "B) It aids debugging, safety assessment, and accountability",
+      "C) It removes the need for evaluation datasets",
+      "D) It proves sentience"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which example reflects 'common sense' gaps in current systems?",
+    "options": [
+      "A) Multiplying matrices efficiently",
+      "B) Failing to understand that an object occluded behind another still exists",
+      "C) Sorting numbers",
+      "D) Adding regularization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key limitation of using benchmarks as proxies for intelligence is that they:",
+    "options": [
+      "A) Are never reproducible",
+      "B) May encourage strategies that exploit dataset quirks rather than broad competence",
+      "C) Cannot be measured at all",
+      "D) Always capture real-world complexity"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which stance claims that machines might behave intelligently without possessing subjective experience?",
+    "options": [
+      "A) Functionalism",
+      "B) Identity theory only",
+      "C) Dualism",
+      "D) Behaviorism"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which idea is most aligned with 'lifelong learning' in AI?",
+    "options": [
+      "A) Training once and freezing forever",
+      "B) Continually acquiring, retaining, and transferring knowledge over time",
+      "C) Avoiding contact with new data",
+      "D) Preventing updates to representations"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "An argument for combining symbolic and neural approaches is that they:",
+    "options": [
+      "A) Eliminate uncertainty",
+      "B) Can unite pattern learning with explicit structure for reasoning",
+      "C) Require no data",
+      "D) Guarantee consciousness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which question remains philosophically open in machine intelligence debates?",
+    "options": [
+      "A) How to calculate precision and recall",
+      "B) Whether behavioral indistinguishability entails genuine understanding or consciousness",
+      "C) Whether GPUs accelerate training",
+      "D) How to store datasets on disk"
+    ],
+    "answer": "B"
+  }
+]

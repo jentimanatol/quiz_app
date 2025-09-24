@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What does an Operational Design Domain (ODD) specify for an autonomous vehicle?",
+    "options": [
+      "A) The vehicle’s maximum horsepower",
+      "B) The conditions under which the system is designed to operate safely",
+      "C) The list of trained neural network layers",
+      "D) The legal ownership of the collected data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the main goal of sensor fusion in self-driving stacks?",
+    "options": [
+      "A) Reduce storage by compressing raw data",
+      "B) Combine complementary sensor signals to improve perception robustness",
+      "C) Replace cameras with LiDAR",
+      "D) Eliminate the need for localization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which is a typical advantage of LiDAR compared with monocular cameras?",
+    "options": [
+      "A) Direct depth measurements via time-of-flight",
+      "B) Better color fidelity",
+      "C) Superior reading of traffic signs",
+      "D) Immunity to fog and rain"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Localization in autonomous driving primarily provides:",
+    "options": [
+      "A) Object classifications for nearby vehicles",
+      "B) Precise ego-position and orientation relative to a map or world frame",
+      "C) End-to-end control commands",
+      "D) Cloud-based traffic predictions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common modular stack order is:",
+    "options": [
+      "A) Planning → Prediction → Perception",
+      "B) Perception → Prediction → Planning",
+      "C) Prediction → Planning → Perception",
+      "D) Control → Planning → Localization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key trade-off between modular and end-to-end approaches is that end-to-end systems:",
+    "options": [
+      "A) Are always more interpretable",
+      "B) May leverage rich supervision but can be harder to debug and validate",
+      "C) Never require large datasets",
+      "D) Eliminate the need for simulation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is the 'long tail' of rare events a major challenge?",
+    "options": [
+      "A) Rare events are easy to synthesize",
+      "B) They are underrepresented in data yet crucial for safety",
+      "C) They reduce the need for testing",
+      "D) They simplify policy learning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A limitation of 'disengagement rate' as a performance metric is that it:",
+    "options": [
+      "A) Is standardized across all jurisdictions",
+      "B) May not reflect scenario difficulty or safety margins",
+      "C) Directly measures collision risk",
+      "D) Replaces all other validation methods"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Running in 'shadow mode' generally means the system:",
+    "options": [
+      "A) Executes actions without recording data",
+      "B) Observes and makes predictions without controlling the vehicle",
+      "C) Is offline and not processing any inputs",
+      "D) Operates only at night"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Redundancy in sensors and compute is used to:",
+    "options": [
+      "A) Save energy during cruising",
+      "B) Provide fault tolerance and fail-operational behavior",
+      "C) Reduce model size",
+      "D) Avoid the need for HD maps"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Fail-safe vs. fail-operational designs mainly differ in that fail-operational:",
+    "options": [
+      "A) Immediately shuts the vehicle down",
+      "B) Maintains a minimum level of functionality to reach a safe state",
+      "C) Disables all sensors when an error is detected",
+      "D) Requires manual takeover for every warning"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A practical weakness of high-definition maps is that they:",
+    "options": [
+      "A) Are immune to construction changes",
+      "B) Require continuous updates to reflect dynamic road conditions",
+      "C) Eliminate the need for perception models",
+      "D) Contain no lane-level detail"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Distribution shift in driving often arises from:",
+    "options": [
+      "A) Identical conditions across all routes",
+      "B) Changes in weather, lighting, and local driving behavior",
+      "C) Fixed traffic patterns",
+      "D) Using multiple sensors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Simulation is valuable because it can:",
+    "options": [
+      "A) Replace all real-world testing entirely",
+      "B) Generate diverse, controllable scenarios including dangerous edge cases",
+      "C) Guarantee regulatory approval",
+      "D) Eliminate labeling needs for perception"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A known issue with pure imitation learning for driving is:",
+    "options": [
+      "A) It never reaches human-level behavior",
+      "B) Covariate shift—small errors compound as the vehicle visits unseen states",
+      "C) It cannot use neural networks",
+      "D) It eliminates the need for control algorithms"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Vehicle-to-everything (V2X) communication can improve safety by:",
+    "options": [
+      "A) Streaming entertainment to passengers",
+      "B) Sharing intent and hazard information between vehicles and infrastructure",
+      "C) Replacing onboard sensors completely",
+      "D) Disabling traffic lights"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Handling occlusions in perception typically relies on:",
+    "options": [
+      "A) Ignoring partially visible objects",
+      "B) Temporal tracking and predictive models to maintain hypotheses",
+      "C) Only using 2D bounding boxes",
+      "D) Removing radar data"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Prediction modules estimate:",
+    "options": [
+      "A) The vehicle’s VIN number",
+      "B) Future trajectories and intents of other road users",
+      "C) Tire wear rates",
+      "D) Optimal sensor placement on the roof"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Moral 'trolley problem' thought experiments are less central than:",
+    "options": [
+      "A) Choosing car color",
+      "B) Engineering mundane reliability and handling everyday edge cases",
+      "C) Selecting the best music playlist",
+      "D) Disabling ABS brakes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Accurate time synchronization across sensors is needed to:",
+    "options": [
+      "A) Reduce map size",
+      "B) Ensure consistent data association for fusion and tracking",
+      "C) Eliminate radar use",
+      "D) Disable GPS corrections"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Planning modules typically balance:",
+    "options": [
+      "A) Only maximum speed",
+      "B) Safety, legality, comfort, and efficiency within constraints",
+      "C) Tire pressure and battery temperature",
+      "D) Radio settings and seat position"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Accounting for model uncertainty helps planning by:",
+    "options": [
+      "A) Ignoring rare events",
+      "B) Enabling risk-aware decisions under ambiguous perceptions or predictions",
+      "C) Locking the steering angle",
+      "D) Disabling braking when unsure"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Adverse weather can degrade sensors; for example, heavy fog often:",
+    "options": [
+      "A) Improves camera range",
+      "B) Reduces LiDAR returns and camera visibility",
+      "C) Increases radar false negatives consistently",
+      "D) Eliminates the need for wipers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Map-based localization commonly targets:",
+    "options": [
+      "A) Country-level accuracy only",
+      "B) Lane-level accuracy using HD maps, GNSS/RTK, and onboard perception",
+      "C) Indoor-only navigation",
+      "D) Removing GPS entirely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A critique of end-to-end driving policies is that they can:",
+    "options": [
+      "A) Be trivially audited and verified",
+      "B) Lack interpretability and clear failure modes for safety cases",
+      "C) Remove the need for datasets",
+      "D) Guarantee causal understanding of traffic laws"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A minimal risk condition (MRC) refers to:",
+    "options": [
+      "A) The vehicle accelerating to clear an intersection",
+      "B) A safe fallback state such as pulling over and stopping when faults occur",
+      "C) Ignoring all warnings",
+      "D) Requiring immediate passenger takeover"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Over-the-air updates necessitate strong:",
+    "options": [
+      "A) Music streaming support",
+      "B) Validation, regression testing, and rollback strategies",
+      "C) Removal of all logs",
+      "D) Manual map editing by drivers"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human factors matter because handovers can fail when:",
+    "options": [
+      "A) Drivers are perfectly attentive at all times",
+      "B) Mode confusion or delayed reaction undermines takeover requests",
+      "C) Vehicles include redundant compute",
+      "D) Maps are high-definition"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Functional safety efforts in automotive systems emphasize:",
+    "options": [
+      "A) Ignoring hazards to move fast",
+      "B) Hazard analysis, risk assessment, and systematic mitigations",
+      "C) Prioritizing entertainment features",
+      "D) Disabling diagnostics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "End-to-end evaluation beyond aggregate miles driven should include:",
+    "options": [
+      "A) Only average speed",
+      "B) Scenario coverage, critical event rates, and near-miss analysis",
+      "C) Number of cameras installed",
+      "D) Weather forecasts"
+    ],
+    "answer": "B"
+  }
+]

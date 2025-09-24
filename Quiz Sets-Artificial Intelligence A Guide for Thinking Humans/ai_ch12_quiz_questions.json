@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the alignment problem in AI?",
+    "options": [
+      "A) Reducing model size without accuracy loss",
+      "B) Ensuring AI objectives and behavior match human intentions and values",
+      "C) Synchronizing GPUs in a cluster",
+      "D) Compressing datasets for faster training"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Outer alignment generally concerns:",
+    "options": [
+      "A) Whether the specified objective correctly captures human preferences",
+      "B) Whether training is stable under batch norm",
+      "C) How to interpret attention weights",
+      "D) Parameter initialization schemes"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Inner alignment issues arise when:",
+    "options": [
+      "A) The optimizer fails to converge",
+      "B) The learned internal objectives of the model differ from the training objective",
+      "C) The dataset has missing labels",
+      "D) The learning rate is too high"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Reward hacking (specification gaming) refers to:",
+    "options": [
+      "A) Deliberately lowering model capacity",
+      "B) Exploiting flaws in the reward/objective to achieve high scores without intended outcomes",
+      "C) Over-regularizing the model",
+      "D) Eliminating exploration in RL"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Robustness in safety contexts most directly means:",
+    "options": [
+      "A) The model uses more parameters",
+      "B) Performance degrades gracefully under perturbations, shifts, or adversarial conditions",
+      "C) Training loss reaches zero quickly",
+      "D) Accuracy is identical across all datasets"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Adversarial examples demonstrate that models can:",
+    "options": [
+      "A) Ignore small noise completely",
+      "B) Be fooled by tiny, carefully crafted input changes",
+      "C) Always recognize images exactly",
+      "D) Train without labels"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safe exploration in RL aims to:",
+    "options": [
+      "A) Maximize random actions",
+      "B) Bound risk while learning, avoiding catastrophic actions",
+      "C) Remove rewards from training",
+      "D) Use purely greedy policies"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Human-in-the-loop oversight is valuable because:",
+    "options": [
+      "A) People can intervene on edge cases and provide corrective feedback",
+      "B) It removes the need for datasets",
+      "C) It guarantees no errors",
+      "D) It eliminates deployment monitoring"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "RLHF (reinforcement learning from human feedback) primarily:",
+    "options": [
+      "A) Replaces all datasets with simulations",
+      "B) Uses preference data to fine-tune models toward desired behavior",
+      "C) Removes the need for validation",
+      "D) Prevents all hallucinations"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Constitutional-style training differs from vanilla RLHF by:",
+    "options": [
+      "A) Training only on images",
+      "B) Guiding models with a written set of principles to reduce human feedback load",
+      "C) Removing any reward model",
+      "D) Using unsupervised clustering alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Scalable oversight research targets:",
+    "options": [
+      "A) Making human evaluation faster than real time always",
+      "B) Supervising complex tasks where humans struggle to directly evaluate every step",
+      "C) Eliminating humans from the process entirely",
+      "D) Only small-scale toy problems"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Deceptive alignment is a concern when:",
+    "options": [
+      "A) Models become smaller over time",
+      "B) A model appears aligned during training but learns to pursue misaligned goals when advantageous",
+      "C) Labels are perfectly clean",
+      "D) The loss function is convex"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Uncertainty estimation (e.g., predictive or epistemic) is useful for safety because it:",
+    "options": [
+      "A) Guarantees perfect calibration",
+      "B) Signals when the model is unsure and should defer or act conservatively",
+      "C) Eliminates adversarial vulnerability",
+      "D) Replaces all testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Red-teaming an AI system typically involves:",
+    "options": [
+      "A) Only measuring accuracy on a clean test set",
+      "B) Actively probing for failures, exploits, and harmful outputs",
+      "C) Increasing batch size to reduce variance",
+      "D) Documenting hyperparameters"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety incident databases aim to:",
+    "options": [
+      "A) Keep errors private",
+      "B) Share and learn from failures across organizations and domains",
+      "C) Replace regulation",
+      "D) Optimize GPU utilization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can average-case evaluation be misleading for safety-critical applications?",
+    "options": [
+      "A) Averages always reflect tail risks",
+      "B) Rare, high-impact failures can be hidden by good average metrics",
+      "C) Tail events improve calibration",
+      "D) It ensures fairness by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Threat modeling in AI focuses on:",
+    "options": [
+      "A) Counting tokens",
+      "B) Identifying adversaries, attack surfaces, and potential harms",
+      "C) Reducing FLOPs in training",
+      "D) Maximizing throughput only"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Model interpretability aims to:",
+    "options": [
+      "A) Guarantee causal truth",
+      "B) Provide insight into how inputs influence outputs to support debugging and trust",
+      "C) Replace validation metrics",
+      "D) Avoid documentation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is data governance essential for safety?",
+    "options": [
+      "A) It increases training loss",
+      "B) It ensures provenance, quality, and lawful use of data throughout the lifecycle",
+      "C) It eliminates the need for evaluation",
+      "D) It replaces access control"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Secure model deployment practices include:",
+    "options": [
+      "A) Disabling logging to save space",
+      "B) Access controls, rate limiting, monitoring, and rollback mechanisms",
+      "C) Hardcoding credentials in code",
+      "D) Ignoring dependency updates"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Content moderation for generative models is challenging because:",
+    "options": [
+      "A) Outputs are deterministic",
+      "B) Safety policies must handle context, ambiguity, and adversarial prompts",
+      "C) Models never update post-deployment",
+      "D) There are no edge cases"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Incident response plans should cover:",
+    "options": [
+      "A) Only marketing approvals",
+      "B) Detection, containment, communication, and remediation of failures",
+      "C) Hyperparameter search space",
+      "D) Tokenization changes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is 'objective misspecification' dangerous?",
+    "options": [
+      "A) It slows gradient descent",
+      "B) Optimizing the wrong proxy can lead to harmful or unintended behavior",
+      "C) It prevents memorization",
+      "D) It removes model bias"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Role-based access control (RBAC) contributes to safety by:",
+    "options": [
+      "A) Increasing compute budgets",
+      "B) Restricting capabilities to authorized users and processes",
+      "C) Eliminating testing",
+      "D) Guaranteeing fairness"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why are structured release notes and model cards helpful for governance?",
+    "options": [
+      "A) They reduce FLOPs",
+      "B) They document capabilities, limitations, and intended uses for stakeholders",
+      "C) They replace red-teaming",
+      "D) They are only for marketing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Robust evaluation suites for safety should include:",
+    "options": [
+      "A) Only easy test sets",
+      "B) Adversarial, out-of-distribution, and stress tests alongside standard benchmarks",
+      "C) Manual inspection only",
+      "D) Training loss curves"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A governance principle of 'least privilege' states that:",
+    "options": [
+      "A) Everyone should have admin access",
+      "B) Systems and users get only the minimum permissions needed to perform tasks",
+      "C) Access should be permanent once granted",
+      "D) Auditing is optional"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety guardrails often combine:",
+    "options": [
+      "A) Only model prompts",
+      "B) Policy filters, classifiers, heuristics, and human review where needed",
+      "C) Tokenization changes",
+      "D) Loss reweighting alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to log model inputs/outputs in production is to:",
+    "options": [
+      "A) Decrease transparency",
+      "B) Enable auditing, debugging, and detection of misuse—subject to privacy controls",
+      "C) Replace documentation",
+      "D) Eliminate monitoring"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Safety–performance trade-offs often mean:",
+    "options": [
+      "A) Safety features always increase accuracy",
+      "B) Some safeguards may add latency or reduce raw performance and must be balanced against risk",
+      "C) There is never a cost to safety",
+      "D) Safety is unrelated to deployment constraints"
+    ],
+    "answer": "B"
+  }
+]

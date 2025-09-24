@@ -1,0 +1,302 @@
+[
+  {
+    "question": "In clinical decision support, why is calibration crucial?",
+    "options": [
+      "A) It increases parameter count",
+      "B) Predicted probabilities should match observed outcome frequencies",
+      "C) It reduces dataset size",
+      "D) It guarantees causality"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A screening model with high sensitivity but low specificity will tend to:",
+    "options": [
+      "A) Miss many true cases",
+      "B) Produce many false positives",
+      "C) Have low recall",
+      "D) Reduce the need for follow‑up testing"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which validation step best supports safe medical deployment?",
+    "options": [
+      "A) One internal test set only",
+      "B) Prospective evaluation on real patients and external sites",
+      "C) Training accuracy above 99%",
+      "D) Using synthetic data exclusively"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Dataset shift in healthcare commonly arises when:",
+    "options": [
+      "A) Hospitals change imaging devices or patient populations",
+      "B) Models use the same training and test sets",
+      "C) Labels are noise‑free",
+      "D) No follow‑up occurs"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Why is explainability often required for legal decision support tools?",
+    "options": [
+      "A) It guarantees no bias",
+      "B) It supports accountability, due process, and contestability",
+      "C) It eliminates the need for evaluation",
+      "D) It removes human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "An educational tutoring system that gives personalized hints exemplifies:",
+    "options": [
+      "A) Human replacement by default",
+      "B) Human‑AI collaboration and augmentation",
+      "C) Unsupervised clustering",
+      "D) Purely generative art"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A key privacy risk for student data is:",
+    "options": [
+      "A) Too many practice problems",
+      "B) Improper sharing or reuse of identifiable records without consent or safeguards",
+      "C) Low model accuracy",
+      "D) Using open‑source libraries"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In triage systems, threshold choice should be guided primarily by:",
+    "options": [
+      "A) Random seeds",
+      "B) Clinical utility trade‑offs (e.g., false‑negative vs false‑positive costs)",
+      "C) Parameter count",
+      "D) Model architecture name"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A fairness concern in recidivism risk tools is that they may:",
+    "options": [
+      "A) Always reduce disparities",
+      "B) Reflect and reinforce historical patterns affecting different groups",
+      "C) Require no validation",
+      "D) Remove judicial discretion automatically"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Clinical safety cases for AI typically include:",
+    "options": [
+      "A) Entertainment features",
+      "B) Hazard analysis, mitigations, monitoring, and rollback procedures",
+      "C) Only parameter counts",
+      "D) UI color themes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "‘Human‑in‑the‑loop’ oversight in education helps because teachers can:",
+    "options": [
+      "A) Ignore model outputs entirely",
+      "B) Correct mistakes, add context, and adapt content for students",
+      "C) Turn off monitoring",
+      "D) Eliminate assessment"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A medical imaging model learns to detect a hospital’s watermark instead of pathology. This is:",
+    "options": [
+      "A) Robust generalization",
+      "B) Shortcut learning via spurious correlations",
+      "C) Proper regularization",
+      "D) Domain generalization"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In legal contexts, due process concerns are raised if systems:",
+    "options": [
+      "A) Provide explanations and appeal mechanisms",
+      "B) Make consequential decisions without transparency or recourse",
+      "C) Use calibrated probabilities",
+      "D) Are open source"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A strong protocol for evaluating plagiarism‑detection tools includes:",
+    "options": [
+      "A) No testing on real submissions",
+      "B) Measuring false accusations and providing human review paths",
+      "C) Only counting unique n‑grams",
+      "D) Disabling appeals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Clinical risk scoring models should be checked for:",
+    "options": [
+      "A) Only AUC",
+      "B) Calibration, subgroup performance, and decision‑relevant thresholds",
+      "C) Tokenization speed",
+      "D) GPU temperature"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In education, a sensible use of generative tools for writing is:",
+    "options": [
+      "A) Submitting outputs as one’s own work without disclosure",
+      "B) Drafting and feedback with attribution and instructor‑approved policies",
+      "C) Avoiding citations entirely",
+      "D) Bypassing learning objectives"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A core reason to log decisions in legal‑tech systems is to:",
+    "options": [
+      "A) Reduce transparency",
+      "B) Enable audits and accountability trails",
+      "C) Increase latency only",
+      "D) Delete evidence of errors"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why can cross‑site validation matter for clinical models?",
+    "options": [
+      "A) It proves causality",
+      "B) Performance may vary across hospitals, devices, and populations",
+      "C) It reduces class imbalance automatically",
+      "D) It replaces human oversight"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In classroom analytics, an ethical safeguard is to:",
+    "options": [
+      "A) Track students continuously without purpose limits",
+      "B) Collect the minimal data needed and provide opt‑outs where feasible",
+      "C) Disable consent dialogs",
+      "D) Share raw data with third parties by default"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A legal decision aid should be framed as:",
+    "options": [
+      "A) An infallible oracle",
+      "B) A tool that informs human judgment, not replaces it",
+      "C) A replacement for courts",
+      "D) A way to remove appeals"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A patient‑facing chatbot for symptom advice should include:",
+    "options": [
+      "A) No disclaimers",
+      "B) Clear scope limits, uncertainty cues, and escalation to clinical care when needed",
+      "C) Hidden monitoring only",
+      "D) No guardrails on sensitive topics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A common metric pair for binary risk tools in law and healthcare is:",
+    "options": [
+      "A) BLEU and ROUGE",
+      "B) Precision and recall (or sensitivity)",
+      "C) PSNR and SSIM",
+      "D) Perplexity and bits‑per‑byte"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A governance requirement for high‑risk deployments often includes:",
+    "options": [
+      "A) No documentation",
+      "B) Impact assessments, incident reporting, and role‑based access controls",
+      "C) Anonymous admin accounts",
+      "D) Unlimited data retention"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is class imbalance common in medical datasets?",
+    "options": [
+      "A) Most conditions are extremely prevalent",
+      "B) Many target conditions are rare relative to negatives",
+      "C) Labelers prefer negative cases",
+      "D) Imaging always balances classes"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A pitfall of automating grading solely via models is that it can:",
+    "options": [
+      "A) Always improve fairness",
+      "B) Miss context, creativity, and diverse expressions of mastery",
+      "C) Guarantee better learning outcomes",
+      "D) Remove teacher workload completely"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Legal‑tech NLP systems should be evaluated on:",
+    "options": [
+      "A) Only synthetic contracts",
+      "B) Domain‑specific corpora and edge cases such as negations and exceptions",
+      "C) Random internet text only",
+      "D) UI ease alone"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In clinical AI, a safe default when the model is uncertain is to:",
+    "options": [
+      "A) Auto‑discharge",
+      "B) Escalate to human review or request additional tests",
+      "C) Ignore the case",
+      "D) Overwrite patient records"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "For student support chatbots, a key guardrail is to:",
+    "options": [
+      "A) Provide medical or legal advice outside scope",
+      "B) Route sensitive or crisis content to appropriate human services",
+      "C) Disable logging",
+      "D) Always use creative writing style"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "A principled deployment of AI in public services should include:",
+    "options": [
+      "A) Secret criteria and no appeals",
+      "B) Transparency, avenues for challenge, and independent audits",
+      "C) Elimination of documentation",
+      "D) Hardcoded decisions"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Why is continual monitoring necessary post‑launch in these domains?",
+    "options": [
+      "A) Data and behavior shift; ongoing checks catch performance and fairness regressions",
+      "B) It replaces testing",
+      "C) It guarantees zero incidents",
+      "D) It reduces compute costs only"
+    ],
+    "answer": "A"
+  }
+]
