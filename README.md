@@ -43,7 +43,9 @@ Each item has **one question**, **four options**, and a **single-letter** correc
   }
 ]
 ```
+## 🖼️ Screenshot
 
+![AI Quiz App Screenshot](assets/Screenshot.png)
 ---
 
 ## 📜 License & Attribution
