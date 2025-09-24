@@ -4,6 +4,9 @@ A lightweight desktop app for practicing multiple‑choice questions (MCQs) base
 Built with **Python + Tkinter**, bundled for Windows via GitHub Actions, and compatible with macOS/Linux when run from source.
 
 
+## 🚀 Latest Release
+
+[AI Quiz App v1.2](https://github.com/jentimanatol/quiz_app/releases/tag/v1.2) is now available!
 ## ✨ Features
 
 - **Open JSON**: Load any quiz set that matches the simple schema below.
