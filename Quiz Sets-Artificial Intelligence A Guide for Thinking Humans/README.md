@@ -55,5 +55,5 @@ Each question is a single object with **four options** and a single‑letter cor
 
  MIT for code, and CC BY‑NC for content.
 
- ## By 
- Anatolie Jentimir 2025
+ _Not protected by copyright, may be used for its intended purpose._  
+_Author: Anatolie Jentimir._

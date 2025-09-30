@@ -49,6 +49,7 @@ Each item has **one question**, **four options**, and a **single-letter** correc
 ## 🖼️ Screenshot
 
 ![AI Quiz App Screenshot](assets/Screenshot.png)
+![AI Quiz App Screenshot](assets/Screenshot2.png)
 ---
 
 ## 📜 License & Attribution
@@ -62,3 +63,6 @@ Each item has **one question**, **four options**, and a **single-letter** correc
 
 
 Happy studying! 🎓🤖
+
+_Not protected by copyright, may be used for its intended purpose._  
+_Author: Anatolie Jentimir._
