@@ -1,0 +1,206 @@
+[
+  {
+    "question": "1) ________ is the branch of computer science that creates computer systems that can perform tasks we associate with humans.",
+    "options": [
+      "A. Intellectual property",
+      "B. Internet of things",
+      "C. Artificial intelligence",
+      "D. Robotics"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "2) Which of the following is NOT a branch of AI research, currently?",
+    "options": [
+      "A. Perception",
+      "B. Knowledge representation",
+      "C. Natural Language Processing",
+      "D. Calculation"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "3) Unsupervised learning is when ________.",
+    "options": [
+      "A. a system develops a knowledge base and uses it efficiently",
+      "B. a system can recognize a truck by being given many examples of a truck",
+      "C. you teach Siri to recognize your voice by reading to it",
+      "D. a system can look at data on its own and build rules for deciding what it's seeing"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "4) A ________ is a series of questions used to determine whether the respondent is human or machine.",
+    "options": [
+      "A. knowledge base",
+      "B. Natural Language Processing system",
+      "C. perception system",
+      "D. Turing test"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "5) Which of the following concepts is a computer system improving abilities by continued exposure to data?",
+    "options": [
+      "A. Embodied agents",
+      "B. Machine learning",
+      "C. Social media",
+      "D. Artificial intelligence"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "6) Amazon uses ________ to suggest products similar to products you have purchased.",
+    "options": [
+      "A. facial recognition",
+      "B. natural language processing",
+      "C. a recommendation engine",
+      "D. unsupervised learning"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "7) An embodied agent is a ________.",
+    "options": [
+      "A. image recognition software package",
+      "B. very small CPU",
+      "C. robot which looks and acts like a human",
+      "D. optical character recognition system"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "8) A program that interacts with another piece of software as if it were a human user is known as a ________.",
+    "options": [
+      "A. algorithm",
+      "B. bot",
+      "C. perception engine",
+      "D. embodied agent"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "9) The ability to collect and combine sensory data and then construct information from it is ________.",
+    "options": [
+      "A. perception",
+      "B. intelligence",
+      "C. natural language",
+      "D. automated learning"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "10) Which of the following is a type of artificial intelligence that does not need to be specifically programmed, but rather can learn from exposure to, and analysis of, data?",
+    "options": [
+      "A. Knowledge representation",
+      "B. Machine learning",
+      "C. Supervised learning",
+      "D. Computer forensics"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "11) encoding information about the world in a format for AI to use",
+    "options": [
+      "A. bot",
+      "B. perception",
+      "C. knowledge representation",
+      "D. computer forensics",
+      "E. Turing test"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "12) a way to decide whether a computer system has achieved intelligence",
+    "options": [
+      "A. Turing test",
+      "B. perception",
+      "C. knowledge representation",
+      "D. computer forensics",
+      "E. bot"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "13) analyzes computer systems to collect legal evidence",
+    "options": [
+      "A. Turing test",
+      "B. computer forensics",
+      "C. bot",
+      "D. perception",
+      "E. knowledge representation"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "14) program that interacts with a piece of software as if it were human",
+    "options": [
+      "A. computer forensics",
+      "B. Turing test",
+      "C. knowledge representation",
+      "D. perception",
+      "E. bot"
+    ],
+    "answer": "E"
+  },
+  {
+    "question": "15) collecting and combining sensory data and constructing information from it",
+    "options": [
+      "A. computer forensics",
+      "B. Turing test",
+      "C. perception",
+      "D. knowledge representation",
+      "E. bot"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "16) Which search method takes less memory?",
+    "options": [
+      "A. Linear Search",
+      "B. Optimal search",
+      "C. Depth-First Search",
+      "D. Breadth-First search"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "17) Artificial Intelligence is about_____.",
+    "options": [
+      "A. Playing a game on Computer",
+      "B. Programming on Machine with your Own Intelligence",
+      "C. Putting your intelligence in Machine",
+      "D. Making a machine Intelligent"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "18) What is Artificial intelligence?",
+    "options": [
+      "A. Playing a Game",
+      "B. Making a Machine intelligent",
+      "C. Programming with your own intelligence",
+      "D. Putting your intelligence into Computer"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "19) Advances in the field of Computer Vision make which of the following possible?",
+    "options": [
+      "A. Real-time transcription",
+      "B. Detecting fraudulent transactions",
+      "C. On-demand online tutors",
+      "D. Detecting cancerous moles in skin images"
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "20) What is the role that philosophy plays in AI?",
+    "options": [
+      "A. Provide guidance on ethical considerations",
+      "B. Determine viable learning models and measure performance",
+      "C. Determine the application in software and hardware"
+    ],
+    "answer": "A"
+  }
+]
