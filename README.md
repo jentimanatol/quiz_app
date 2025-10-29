@@ -5,8 +5,8 @@ Built with **Python + Tkinter**, bundled for Windows via GitHub Actions, and com
 
 
 ## 🚀 Latest Release
-
-[AI Quiz App v1.2](https://github.com/jentimanatol/quiz_app/releases/tag/v1.2) is now available!
+[AI Quiz App v1.3](https://github.com/jentimanatol/quiz_app/releases/tag/v1.3) is now available!
+[AI Quiz App v1.2](https://github.com/jentimanatol/quiz_app/releases/tag/v1.2) Late version
 ## ✨ Features
 
 - **Open JSON**: Load any quiz set that matches the simple schema below.
