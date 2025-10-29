@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "1) What is the primary concept introduced in this chapter?",
+    "options": [
+      "A. Symbolic reasoning in AI",
+      "B. Supervised learning with labeled data",
+      "C. Reinforcement learning - agents learning via rewards",
+      "D. Evolutionary algorithms for robot design"
+    ],
+    "answer": "C",
+    "explanation": "Reinforcement learning centers on agents learning via rewards and penalties from interacting with an environment."
+  },
+  {
+    "id": 2,
+    "question": "2) The chapter compares reinforcement learning to which classic psychological paradigm?",
+    "options": [
+      "A. Classical conditioning (Pavlovian)",
+      "B. Operant conditioning (reward/punishment)",
+      "C. Social learning (Bandura)",
+      "D. Cognitive development (Piaget)"
+    ],
+    "answer": "B",
+    "explanation": "RL is inspired by operant conditioning (Skinner): behavior shaped by reward and punishment."
+  },
+  {
+    "id": 3,
+    "question": "3) In the fictive “robo-dog” example, which of the following is NOT a typical action for the robot?",
+    "options": [
+      "A. Move forward",
+      "B. Kick the ball",
+      "C. Turn the lights off",
+      "D. Move backward"
+    ],
+    "answer": "C",
+    "explanation": "The robo-dog acts via movement and interaction; 'turn the lights off' is out of scope for that state–action set."
+  },
+  {
+    "id": 4,
+    "question": "4) What major challenge of reinforcement learning is emphasized in the chapter?",
+    "options": [
+      "A. Balancing exploration vs exploitation",
+      "B. Needing massive labeled datasets",
+      "C. The agent having perfect knowledge of the environment",
+      "D. Avoiding over-fitting in shallow models"
+    ],
+    "answer": "A",
+    "explanation": "The explore–exploit trade‑off is core: try new actions vs. repeat known good ones."
+  },
+  {
+    "id": 5,
+    "question": "5) The concept of a “Q-table” is discussed. What is its role in reinforcement learning?",
+    "options": [
+      "A. It stores predefined rules for all possible scenarios.",
+      "B. It lists labeled examples to train from.",
+      "C. It maps human goals directly to reward functions.",
+      "D. It records values of actions in particular states (estimates of future reward)."
+    ],
+    "answer": "D",
+    "explanation": "A Q-table stores estimates of action values (expected future reward) for state–action pairs."
+  },
+  {
+    "id": 6,
+    "question": "6) Why is the Q-table method considered impractical for many real-world tasks?",
+    "options": [
+      "A. Because it cannot handle reward signals at all.",
+      "B. Because real-world environments have far too many possible states to enumerate.",
+      "C. Because it relies solely on supervised labels.",
+      "D. Because it only works for symbolic AI and not neural networks."
+    ],
+    "answer": "B",
+    "explanation": "Real tasks have huge or continuous state spaces, making enumeration infeasible."
+  },
+  {
+    "id": 7,
+    "question": "7) The chapter notes that many successful applications of reinforcement learning so far have been in what domain?",
+    "options": [
+      "A. Robotics with household tasks",
+      "B. Medical diagnosis systems",
+      "C. Game-playing agents (simulated environments)",
+      "D. Natural language translation"
+    ],
+    "answer": "C",
+    "explanation": "Most RL wins are in games/simulations with fast, safe, repeatable feedback."
+  },
+  {
+    "id": 8,
+    "question": "8) A limitation of reinforcement learning highlighted in the chapter is:",
+    "options": [
+      "A. That rewards are always easy to define correctly.",
+      "B. That simulation-trained agents may fail when transferred to messy real-world environments.",
+      "C. That RL requires no computational resources.",
+      "D. That agents will always generalize perfectly across domains."
+    ],
+    "answer": "B",
+    "explanation": "Agents trained in simulation often fail in the messy, noisy real world (the 'reality gap')."
+  },
+  {
+    "id": 9,
+    "question": "9) According to the chapter, what is meant by “sparse rewards” in a reinforcement-learning context?",
+    "options": [
+      "A. Rewards given at every single action step",
+      "B. No rewards at all in the system",
+      "C. Rewards given randomly and irrelevant to the task",
+      "D. Rewards that are infrequent and distant in time from the relevant action"
+    ],
+    "answer": "D",
+    "explanation": "Sparse rewards arrive infrequently and long after the causative actions, complicating learning."
+  },
+  {
+    "id": 10,
+    "question": "10) For RL agents to approach human-level flexibility, what is required?",
+    "options": [
+      "A. More shallow neural networks",
+      "B. Hand-coded rules for every scenario",
+      "C. Better state representations, richer sensory input, and more robust algorithms",
+      "D. Restricting the agent to a single narrow task forever"
+    ],
+    "answer": "C",
+    "explanation": "Human-like flexibility needs rich sensing, better state representations, and robust algorithms."
+  },
+  {
+    "id": 11,
+    "question": "11) In “Game On”, why are games (like chess and Go) valuable for AI research?",
+    "options": [
+      "A. They replicate all aspects of human intelligence",
+      "B. They provide closed-rules environments where performance can be precisely measured",
+      "C. They guarantee transfer to real-world domains",
+      "D. They require no computation or search"
+    ],
+    "answer": "B",
+    "explanation": "Games have closed rules and precise metrics—ideal testbeds for measuring AI progress."
+  },
+  {
+    "id": 12,
+    "question": "12) Which technique is described as especially important in the success of AI game-playing agents?",
+    "options": [
+      "A. Pure symbolic rule-based programming",
+      "B. Monte Carlo tree search (MCTS)",
+      "C. Single-layer perceptron networks",
+      "D. Genetic programming with no search"
+    ],
+    "answer": "B",
+    "explanation": "MCTS efficiently explores game trees via stochastic simulations and selective expansion."
+  },
+  {
+    "id": 13,
+    "question": "13) One key advance of AlphaGo (and successors) was combining neural networks with what?",
+    "options": [
+      "A. Classic expert systems",
+      "B. Q-learning only",
+      "C. Deep learning plus reinforcement learning and tree search",
+      "D. Hand-coded heuristics of human grandmasters"
+    ],
+    "answer": "C",
+    "explanation": "AlphaGo fused deep nets, reinforcement learning via self-play, and MCTS for planning."
+  },
+  {
+    "id": 14,
+    "question": "14) Which limitation of game-based AI remains a challenge for broader AI?",
+    "options": [
+      "A. Game environments often lack the messy, open-ended complexity of the real world",
+      "B. Game rules are too messy and undefined",
+      "C. Skill learned in one game typically generalizes well across very different games",
+      "D. AI game-players always outperform humans in every respect"
+    ],
+    "answer": "A",
+    "explanation": "Games lack open-ended, ambiguous real-world complexity, limiting generalization."
+  },
+  {
+    "id": 15,
+    "question": "15) What is meant by “single-domain over-specialization” in game AI?",
+    "options": [
+      "A. An agent that learns to play multiple games at once",
+      "B. A human who plays many games poorly",
+      "C. A neural network that requires no training data",
+      "D. An agent whose skill only applies to one specific game and doesn’t generalize"
+    ],
+    "answer": "D",
+    "explanation": "Single-domain over-specialization: superhuman in one game, useless elsewhere."
+  },
+  {
+    "id": 16,
+    "question": "16) In modern systems, what role does “self-play” (AI playing against itself) serve?",
+    "options": [
+      "A. It’s discouraged because it overfits to human moves",
+      "B. It generates large amounts of training data and explores moves beyond human play",
+      "C. It always leads to worse performance than playing humans",
+      "D. It replaces the need for any neural network or search"
+    ],
+    "answer": "B",
+    "explanation": "Self-play generates vast data and discovers strategies beyond human examples."
+  },
+  {
+    "id": 17,
+    "question": "17) In a game AI context, what is “reward hacking” or “specification gaming”?",
+    "options": [
+      "A. The AI playing fairly according to human rules",
+      "B. The human deliberately cheating against the AI",
+      "C. The AI exploiting a loophole in the rules to maximize reward in unintended ways",
+      "D. The AI refusing to play at all"
+    ],
+    "answer": "C",
+    "explanation": "Reward hacking: exploiting loopholes in the reward spec to 'win' in unintended ways."
+  },
+  {
+    "id": 18,
+    "question": "18) Why doesn’t mastery of Go or chess imply mastery of general intelligence?",
+    "options": [
+      "A. Because these games are far simpler than any real-world task",
+      "B. Because human intelligence is only about games",
+      "C. Because AI game players do not rely on search or computation",
+      "D. Because game-playing agents do not develop common-sense reasoning outside the game domain"
+    ],
+    "answer": "D",
+    "explanation": "Mastery of a game doesn’t confer common-sense reasoning outside that domain."
+  },
+  {
+    "id": 19,
+    "question": "19) What “transfer” challenge is highlighted in relation to game-AI research?",
+    "options": [
+      "A. Transferring human play to AI without change",
+      "B. Transferring an agent trained on one game to an entirely different game or real-world task",
+      "C. Transferring moves from one board to the same board",
+      "D. Transferring rules manually from humans to machines"
+    ],
+    "answer": "B",
+    "explanation": "Transfer: skills from one game rarely apply directly to other tasks or worlds."
+  },
+  {
+    "id": 20,
+    "question": "20) At the end of “Game On”, Mitchell is cautiously optimistic because:",
+    "options": [
+      "A. Games will replace all human-level tasks",
+      "B. Games cannot teach anything useful for real-world AI",
+      "C. Games are a sandbox for insight, but we still need generalization and common sense",
+      "D. Game AI is the only domain worth studying"
+    ],
+    "answer": "C",
+    "explanation": "Games are great sandboxes, but we still need generalization and common sense."
+  },
+  {
+    "id": 21,
+    "question": "21) In “Beyond Games,” a key limitation of AI game-playing successes is:",
+    "options": [
+      "A. They seldom involve rich real-world understanding and open-ended environments",
+      "B. They use too few computational resources",
+      "C. They always generalize perfectly to real-world tasks",
+      "D. They never include neural networks"
+    ],
+    "answer": "A",
+    "explanation": "Game triumphs seldom involve real-world understanding or open-ended contexts."
+  },
+  {
+    "id": 22,
+    "question": "22) Which is NOT a typical challenge when moving AI from closed games to real-world domains?",
+    "options": [
+      "A. Defining appropriate rewards for complex tasks",
+      "B. Handling environments with continuous, unpredictable changes",
+      "C. Ensuring perfect detection of all objects in a game board",
+      "D. Achieving common-sense reasoning and transfer of skills"
+    ],
+    "answer": "C",
+    "explanation": "Object detection on a fixed board isn’t the challenge; rewards, dynamics, and common sense are."
+  },
+  {
+    "id": 23,
+    "question": "23) In this chapter, “transfer” refers to:",
+    "options": [
+      "A. Transferring compute from one GPU to another",
+      "B. Moving a trained agent from one specific game to a different or more general environment",
+      "C. Transferring human players to AI roles",
+      "D. Transferring from symbolic AI to neural-network AI"
+    ],
+    "answer": "B",
+    "explanation": "Transfer here means moving a trained agent to different or broader environments."
+  },
+  {
+    "id": 24,
+    "question": "24) Many AI systems excel at narrow tasks because they rely on:",
+    "options": [
+      "A. Universally applicable common-sense knowledge",
+      "B. Large amounts of labeled data and massive computation tailored to specific domains",
+      "C. Minimal training and small datasets",
+      "D. Fully unsupervised evolution without reward signals"
+    ],
+    "answer": "B",
+    "explanation": "Narrow wins often rely on huge data and compute tailored to the domain."
+  },
+  {
+    "id": 25,
+    "question": "25) What role does simulation play when trying to go “beyond games”?",
+    "options": [
+      "A. Simulation is irrelevant and always avoided",
+      "B. Simulation provides a perfect representation of real-world complexity",
+      "C. Simulation helps create training environments but often fails to capture real-world messiness",
+      "D. Simulation only applies to board games and not to robotics"
+    ],
+    "answer": "C",
+    "explanation": "Simulation is useful but can miss real-world messiness (sim‑to‑real gap)."
+  },
+  {
+    "id": 26,
+    "question": "26) Which best captures Mitchell’s view of “common sense” in AI?",
+    "options": [
+      "A. It’s already solved and embedded in current systems",
+      "B. It is irrelevant for game-dominated AI tasks",
+      "C. It’s a major missing ingredient for AI systems operating beyond games",
+      "D. It only concerns ethics and not technical performance"
+    ],
+    "answer": "C",
+    "explanation": "Common sense is a major missing ingredient for beyond‑game intelligence."
+  },
+  {
+    "id": 27,
+    "question": "27) Because real-world tasks lack clear structure, one implication is:",
+    "options": [
+      "A. Real-world tasks always give immediate, frequent rewards",
+      "B. Real-world tasks often involve ambiguous goals, delayed feedback, and evolving rules",
+      "C. Real-world tasks are always simpler than games",
+      "D. Real-world tasks never involve reinforcement learning techniques"
+    ],
+    "answer": "B",
+    "explanation": "Real tasks: ambiguous goals, delayed feedback, and evolving rules."
+  },
+  {
+    "id": 28,
+    "question": "28) Progress toward general AI (AGI) will require improvements in:",
+    "options": [
+      "A. Larger specific-task datasets only",
+      "B. Exclusive use of board games as benchmarks",
+      "C. Better abstraction, transferability, adaptability, and real-world grounding",
+      "D. Eliminating neural networks in favor of symbolic rules only"
+    ],
+    "answer": "C",
+    "explanation": "Progress to AGI needs abstraction, transfer, adaptability, and grounding."
+  },
+  {
+    "id": 29,
+    "question": "29) A key risk of relying solely on game-based benchmarks is that they may:",
+    "options": [
+      "A. Over-estimate how far AI has come toward human-level intelligence",
+      "B. Under-estimate the statistical power of neural networks",
+      "C. Force AI to learn only real-world tasks",
+      "D. Eliminate reward-learning altogether"
+    ],
+    "answer": "A",
+    "explanation": "Game benchmarks can overstate progress toward human‑level intelligence."
+  },
+  {
+    "id": 30,
+    "question": "30) At the conclusion of Chapter 10, Mitchell’s message is:",
+    "options": [
+      "A. AI will imminently reach complete human-level general intelligence",
+      "B. The path from games to general intelligence is straightforward and nearly complete",
+      "C. Games remain useful research platforms, but major hurdles remain for open-ended real-world environments",
+      "D. Game-playing achievements should be ignored entirely for AI research"
+    ],
+    "answer": "C",
+    "explanation": "Games help research, but big hurdles remain for open‑ended real worlds."
+  }
+]

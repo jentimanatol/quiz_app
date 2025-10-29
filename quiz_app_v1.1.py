@@ -212,20 +212,6 @@ class QuizApp(tk.Tk):
             display = "Answer: (unknown)"
         self.answer_var.set(display)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # ---------- Data loading ----------
     def open_json(self):
         file_path = filedialog.askopenfilename(
@@ -234,13 +220,14 @@ class QuizApp(tk.Tk):
         )
         if not file_path:
             return
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if not isinstance(data, list):
+                raise ValueError("JSON root should be a list of question objects.")
 
-        def _parse_questions_list(items):
-            """Parse a list[dict] of question objects into the app's internal format."""
             parsed = []
-            for item in items:
-                if not isinstance(item, dict):
-                    continue
+            for item in data:
                 if "question" not in item or "answer" not in item:
                     continue
                 qtext = str(item["question"]).strip()
@@ -252,7 +239,6 @@ class QuizApp(tk.Tk):
                     disp = []
                     for i, opt in enumerate(item["options"][:4]):
                         t = str(opt).strip()
-                        # Ensure "A) " prefix exists for clean display
                         if t.upper().startswith(f"{LETTER_CHOICES[i]})"):
                             disp.append(t)
                         else:
@@ -262,193 +248,32 @@ class QuizApp(tk.Tk):
                 parsed.append({
                     "question": qtext,
                     "answer_letter": correct_letter,
-                    "options": display_options,
-                    # Optional fields are ignored by UI for now, but kept if present:
-                    "explanation": item.get("explanation", "")
+                    "options": display_options
                 })
-            return parsed
-
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-
-            # ---- Flexible loader: list OR dict ----
-            metadata_title = None
-            set_learning = None
-            set_slides = None
-
-            if isinstance(data, list):
-                parsed = _parse_questions_list(data)
-                # Default quiz name = file basename
-                base = os.path.basename(file_path)
-                name, _ = os.path.splitext(base)
-                quiz_title = name
-            elif isinstance(data, dict):
-                # Try v2 shape: { metadata, config, questions }
-                questions = data.get("questions")
-                if not isinstance(questions, list):
-                    raise ValueError("JSON root is an object but no valid 'questions' array was found.")
-                parsed = _parse_questions_list(questions)
-
-                # Metadata-driven title (fallback to filename)
-                md = data.get("metadata", {})
-                if isinstance(md, dict):
-                    metadata_title = md.get("title")
-
-                base = os.path.basename(file_path)
-                name, _ = os.path.splitext(base)
-                quiz_title = metadata_title or name
-
-                # Optional config toggles
-                cfg = data.get("config", {})
-                if isinstance(cfg, dict):
-                    lm = cfg.get("learning_mode", {})
-                    if isinstance(lm, dict):
-                        if isinstance(lm.get("instant_feedback"), bool):
-                            set_learning = lm["instant_feedback"]
-                    sm = cfg.get("slides_mode", {})
-                    if isinstance(sm, dict):
-                        if isinstance(sm.get("enabled"), bool):
-                            set_slides = sm["enabled"]
-            else:
-                raise ValueError("Unsupported JSON structure. Expect a list of questions or an object with a 'questions' array.")
 
             if not parsed:
-                raise ValueError("No valid questions found. Each question must include 'question', 'answer', and 4 'options'.")
+                raise ValueError("No valid questions found in JSON. Each item must include 'question' and 'answer'.")
 
-            # ---- Commit to UI state ----
             self.questions = parsed
             self.user_answers = {}
             self.current_index = 0
-
-            # Apply optional config toggles if present
-            if isinstance(set_learning, bool):
-                self.learning_mode.set(set_learning)
-                # Update legend based on mode
-                if self.learning_mode.get():
-                    self.legend_var.set("Learning Mode: choose an answer to see instant feedback (green = correct, red = your wrong choice).")
-                else:
-                    self.legend_var.set("")
-            if isinstance(set_slides, bool):
-                self.slides_mode.set(set_slides)
-                self.slides_btn.config(text=f"Slides Mode: {'ON' if self.slides_mode.get() else 'OFF'}")
-
-            # Load first question
             self.load_question(0)
             self.update_navigation_state()
             self.submit_btn.config(state="normal")
             self.unanswered_btn.config(state="normal")
             self.progress_var.set(self.progress_text())
-
-            # Title in window + header
-            self.quiz_title_var.set(f"Quiz: {quiz_title}")
+            # Update quiz title from file name
+            base = os.path.basename(file_path)
+            name, _ = os.path.splitext(base)
+            self.quiz_title_var.set(f"Quiz: {name}")
             try:
-                self.title(f"AI Quiz App — {quiz_title}")
+                self.title(f"AI Quiz App — {name}")
             except Exception:
                 pass
 
             messagebox.showinfo("Loaded", f"Loaded {len(self.questions)} questions.")
         except Exception as e:
             messagebox.showerror("Error", f"Failed to load JSON:\n{e}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # # ---------- Data loading ----------
-    # def open_json(self):
-    #     file_path = filedialog.askopenfilename(
-    #         title="Open quiz JSON",
-    #         filetypes=[("JSON Files", "*.json"), ("All Files", "*.*")]
-    #     )
-    #     if not file_path:
-    #         return
-    #     try:
-    #         with open(file_path, "r", encoding="utf-8") as f:
-    #             data = json.load(f)
-    #         if not isinstance(data, list):
-    #             raise ValueError("JSON root should be a list of question objects.")
-
-    #         parsed = []
-    #         for item in data:
-    #             if "question" not in item or "answer" not in item:
-    #                 continue
-    #             qtext = str(item["question"]).strip()
-    #             ans = item["answer"]
-    #             correct_letter = extract_correct_letter(ans)
-
-    #             display_options = None
-    #             if "options" in item and isinstance(item["options"], (list, tuple)) and len(item["options"]) >= 4:
-    #                 disp = []
-    #                 for i, opt in enumerate(item["options"][:4]):
-    #                     t = str(opt).strip()
-    #                     if t.upper().startswith(f"{LETTER_CHOICES[i]})"):
-    #                         disp.append(t)
-    #                     else:
-    #                         disp.append(f"{LETTER_CHOICES[i]}) {t}")
-    #                 display_options = disp
-
-    #             parsed.append({
-    #                 "question": qtext,
-    #                 "answer_letter": correct_letter,
-    #                 "options": display_options
-    #             })
-
-    #         if not parsed:
-    #             raise ValueError("No valid questions found in JSON. Each item must include 'question' and 'answer'.")
-
-    #         self.questions = parsed
-    #         self.user_answers = {}
-    #         self.current_index = 0
-    #         self.load_question(0)
-    #         self.update_navigation_state()
-    #         self.submit_btn.config(state="normal")
-    #         self.unanswered_btn.config(state="normal")
-    #         self.progress_var.set(self.progress_text())
-    #         # Update quiz title from file name
-    #         base = os.path.basename(file_path)
-    #         name, _ = os.path.splitext(base)
-    #         self.quiz_title_var.set(f"Quiz: {name}")
-    #         try:
-    #             self.title(f"AI Quiz App — {name}")
-    #         except Exception:
-    #             pass
-
-    #         messagebox.showinfo("Loaded", f"Loaded {len(self.questions)} questions.")
-    #     except Exception as e:
-    #         messagebox.showerror("Error", f"Failed to load JSON:\n{e}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # ---------- Navigation & display ----------
     def load_question(self, index: int):
