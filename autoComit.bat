@@ -1,9 +1,9 @@
 git --version
 git add .
-git commit -m "'Auto Commit"'"
+git commit -m "'Auto Commit Add library Files'"'"
 git push origin main
 
 :: === Tagging for GitHub Actions Release Build ===
-git tag v1.3
-git push origin v1.3
+git tag v1.4
+git push origin v1.4
 pause
